@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-noir-black text-wellness-glow font-sans antialiased;
+  }
+
+  /* Global high-contrast focus indicator */
+  :focus-visible {
+    @apply outline-none ring-2 ring-spirit-blue ring-offset-2 ring-offset-noir-black;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(226, 232, 240, 0.5);
+  }
+}
