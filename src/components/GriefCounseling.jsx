@@ -1,34 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
+import stagesData from '../data/stages.json';
 import '../styles/SubPages.scss';
-
-const stages = [
-    {
-        stage: '1. Denial',
-        desc: '"I probably just parked it on the next block. Or maybe it\'s invisible today."',
-        advice: 'Keep walking around the block in circles. It builds calf muscles.'
-    },
-    {
-        stage: '2. Anger',
-        desc: '"I hope the thief rides it into a volcano."',
-        advice: 'Scream into a pillow. Or write a strongly worded Yelp review for the sidewalk.'
-    },
-    {
-        stage: '3. Walking',
-        desc: '"Walking is natural. Humans have walked for millennia. I love walking. It takes 45 minutes to get milk now."',
-        advice: 'Invest in good shoes. You live in them now.'
-    },
-    {
-        stage: '4. Bus Fare',
-        desc: '"$2.75? For a ride that smells like unwashed gym socks?"',
-        advice: 'Accept that public transit is your new chauffeur.'
-    },
-    {
-        stage: '5. Acceptance',
-        desc: '"It was a nice bike. It belongs to the universe now. (And also Craig form Craigslist)."',
-        advice: 'Buy a U-lock next time. A real one.'
-    }
-];
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -44,29 +18,60 @@ const itemVariants = {
 };
 
 const GriefCounseling = () => {
+    const [currentSetIndex, setCurrentSetIndex] = useState(0);
+
+    const handleNext = () => {
+        setCurrentSetIndex((prev) => (prev + 1) % stagesData.length);
+    };
+
+    const handlePrev = () => {
+        setCurrentSetIndex((prev) => (prev - 1 + stagesData.length) % stagesData.length);
+    };
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentSetIndex((prev) => (prev + 1) % stagesData.length);
+        }, 30000);
+        return () => clearInterval(timer);
+    }, []);
+
+    const currentStages = stagesData[currentSetIndex];
+
     return (
         <div className="page">
             <div className="page__header">
                 <h2>The 5 Stages of Bike Grief</h2>
                 <p>Processing the loss of your two-wheeled companion.</p>
+                <div className="stages-controls" style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+                    <motion.button whileHover={{ scale: 1.1, boxShadow: '0 6px 16px rgba(0,0,0,0.12)' }} whileTap={{ scale: 0.95 }} onClick={handlePrev} aria-label="Previous Perspective" style={{ background: 'var(--color-surface)', color: 'var(--color-text-main)', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 12px rgba(0,0,0,0.08)', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                        <IoChevronBack size={18} />
+                    </motion.button>
+                    <motion.button whileHover={{ scale: 1.1, boxShadow: '0 6px 16px rgba(0,0,0,0.12)' }} whileTap={{ scale: 0.95 }} onClick={handleNext} aria-label="Next Perspective" style={{ background: 'var(--color-surface)', color: 'var(--color-text-main)', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 12px rgba(0,0,0,0.08)', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                        <IoChevronForward size={18} />
+                    </motion.button>
+                </div>
             </div>
 
-            <motion.ul 
-                className="counseling-list"
-                variants={containerVariants}
-                initial="hidden"
-                animate="show"
-            >
-                {stages.map((item, index) => (
-                    <motion.li key={index} className="counseling-card" variants={itemVariants}>
-                        <h3>{item.stage}</h3>
-                        <p className="counseling-card__desc">{item.desc}</p>
-                        <div className="counseling-card__advice">
-                            <strong>Coping Strategy:</strong> {item.advice}
-                        </div>
-                    </motion.li>
-                ))}
-            </motion.ul>
+            <AnimatePresence mode="wait">
+                <motion.ul 
+                    key={currentSetIndex}
+                    className="counseling-list"
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="show"
+                    exit="hidden"
+                >
+                    {currentStages.map((item, index) => (
+                        <motion.li key={index} className="counseling-card" variants={itemVariants}>
+                            <h3>{item.stage}</h3>
+                            <p className="counseling-card__desc">{item.desc}</p>
+                            <div className="counseling-card__advice">
+                                <strong>Coping Strategy:</strong> {item.advice}
+                            </div>
+                        </motion.li>
+                    ))}
+                </motion.ul>
+            </AnimatePresence>
         </div>
     );
 };

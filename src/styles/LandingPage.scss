@@ -5,7 +5,7 @@
 .landing {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 1rem;
 }
 
 .hero {
@@ -81,6 +81,14 @@
     display: block;
     aspect-ratio: 16 / 10;
     background-color: #e0e0e0; // fallback for placeholder
+    filter: grayscale(100%);
+    transform: scale(1);
+    transition: filter 0.8s ease, transform 0.8s ease;
+
+    &:hover {
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
   }
 
   &__image-inner-border {
@@ -183,7 +191,7 @@
     position: relative;
     z-index: 10;
     line-height: 1;
-    
+
     svg {
       display: inline-block;
     }

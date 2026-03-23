@@ -50,7 +50,10 @@ const LandingPage = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5, duration: 0.7 }}
                 >
-                    <img src="/assets/bike-placeholder.jpg" alt="Bike Ascending to Heaven" className="hero__image" />
+                    <picture>
+                        <source srcSet="https://res.cloudinary.com/bobmasondesign/image/upload/v1774302096/hero-bike-image_gzjqja.webp" type="image/webp" />
+                        <img src="https://res.cloudinary.com/bobmasondesign/image/upload/v1774302096/hero-bike-image_ofsvz3.jpg" alt="Bike Ascending to Heaven" className="hero__image" />
+                    </picture>
                     <div className="hero__image-inner-border"></div>
                 </motion.div>
             </section>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { IoBicycleOutline } from 'react-icons/io5';
+import { MdPedalBike } from 'react-icons/md';
 import '../styles/Layout.scss';
 
 const Layout = ({ children }) => {
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
             <nav className="navbar">
                 <div className="navbar__container">
                     <Link to="/" className="navbar__logo">
-                        <IoBicycleOutline className="logo-icon" />
+                        <MdPedalBike className="logo-icon" />
                         Stolen Bike Closure
                     </Link>
                     <div className="navbar__links">
