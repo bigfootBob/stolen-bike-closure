@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import '../styles/SubPages.scss';
 
 const stages = [
     {
@@ -28,29 +30,43 @@ const stages = [
     }
 ];
 
+const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: { staggerChildren: 0.1 }
+    }
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    show: { opacity: 1, x: 0, transition: { type: 'spring' } }
+};
+
 const GriefCounseling = () => {
     return (
-        <div className="max-w-4xl mx-auto space-y-12 animate-fade-in-up">
-            <div className="text-center space-y-4">
-                <h2 className="text-4xl md:text-5xl font-bold text-white">The 5 Stages of Bike Grief</h2>
-                <p className="text-xl text-gray-400">Processing the loss of your two-wheeled companion.</p>
+        <div className="page">
+            <div className="page__header">
+                <h2>The 5 Stages of Bike Grief</h2>
+                <p>Processing the loss of your two-wheeled companion.</p>
             </div>
 
-            <ul className="space-y-6">
+            <motion.ul 
+                className="counseling-list"
+                variants={containerVariants}
+                initial="hidden"
+                animate="show"
+            >
                 {stages.map((item, index) => (
-                    <li key={index} className="bg-noir-gray p-6 rounded-lg border border-noir-gray hover:border-spirit-blue/50 transition-all hover:shadow-[0_0_15px_rgba(165,180,252,0.1)] group">
-                        <h3 className="text-2xl font-serif text-spirit-blue mb-2 group-hover:text-wellness-glow transition-colors">
-                            {item.stage}
-                        </h3>
-                        <p className="text-lg text-white mb-4 italic">
-                            {item.desc}
-                        </p>
-                        <div className="text-sm text-gray-400 border-l-2 border-spirit-blue/30 pl-4 py-1">
-                            <span className="text-spirit-blue font-bold uppercase text-xs tracking-wider">Coping Strategy:</span> {item.advice}
+                    <motion.li key={index} className="counseling-card" variants={itemVariants}>
+                        <h3>{item.stage}</h3>
+                        <p className="counseling-card__desc">{item.desc}</p>
+                        <div className="counseling-card__advice">
+                            <strong>Coping Strategy:</strong> {item.advice}
                         </div>
-                    </li>
+                    </motion.li>
                 ))}
-            </ul>
+            </motion.ul>
         </div>
     );
 };

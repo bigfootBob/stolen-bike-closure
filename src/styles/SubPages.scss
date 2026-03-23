@@ -1,0 +1,259 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  
+  &__header {
+    text-align: center;
+    margin-bottom: 2rem;
+    
+    h2 {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      @include text-glow(rgba($color: #ff477e, $alpha: 0.5));
+      
+      @include respond-to('md') {
+        font-size: 4rem;
+      }
+    }
+    
+    p {
+      font-size: 1.2rem;
+      color: var(--color-text-muted);
+    }
+  }
+}
+
+// Grief Counseling List
+.counseling-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.counseling-card {
+  @include glassmorphism;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all var(--transition-speed) ease;
+  
+  &:hover {
+    transform: translateX(10px);
+    border-color: rgba($color: #2ec4b6, $alpha: 0.5);
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.3);
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  &__desc {
+    font-size: 1.1rem;
+    color: var(--color-text-main);
+    font-style: italic;
+    margin-bottom: 1.25rem;
+  }
+
+  &__advice {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    padding-left: 1rem;
+    border-left: 2px solid var(--color-accent);
+    
+    strong {
+      color: var(--color-accent);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+// Karma Chronicles Grid
+.karma-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.karma-card {
+  @include glassmorphism;
+  padding: 2.5rem;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-speed) ease;
+
+  &:hover {
+    border-color: rgba($color: #ff9f1c, $alpha: 0.5);
+    transform: translateY(-5px);
+  }
+
+  &__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba($color: #22333b, $alpha: 0.8);
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--color-text-muted);
+    border-bottom-left-radius: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+  }
+
+  &__summary {
+    font-size: 1.1rem;
+    color: var(--color-text-main);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  &__level {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+
+    span {
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      
+      &.level-immediate {
+        background: rgba($color: #ff477e, $alpha: 0.2);
+        color: #ff477e;
+      }
+      &.level-psychological {
+        background: rgba($color: #2ec4b6, $alpha: 0.2);
+        color: #2ec4b6;
+      }
+      &.level-slow-burn {
+        background: rgba($color: #ff9f1c, $alpha: 0.2);
+        color: #ff9f1c;
+      }
+    }
+  }
+}
+
+// Recovery Merch Grid
+.merch-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @include respond-to('sm') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include respond-to('lg') {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.merch-card {
+  @include glassmorphism;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-speed) ease;
+
+  &:hover {
+    border-color: rgba($color: #ff477e, $alpha: 0.5);
+    transform: translateY(-5px) scale(1.02);
+  }
+
+  &__image {
+    aspect-ratio: 1;
+    background: var(--color-surface);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    .sold-out {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: rgba(255,255,255,0.1);
+      transform: rotate(-15deg);
+      transition: all 0.5s ease;
+    }
+
+    &:hover .sold-out {
+      color: rgba(255,255,255,0.8);
+      transform: rotate(0) scale(1.2);
+    }
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    color: var(--color-text-main);
+    margin-bottom: 0.5rem;
+    transition: color var(--transition-speed) ease;
+  }
+
+  &:hover h3 {
+    color: var(--color-primary);
+  }
+
+  &__caption {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    
+    .price {
+      font-family: monospace;
+      color: var(--color-accent);
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .add-to-cart {
+      background: none;
+      border: none;
+      color: var(--color-text-main);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: color var(--transition-speed) ease;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+}

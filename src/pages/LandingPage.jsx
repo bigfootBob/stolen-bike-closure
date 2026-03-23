@@ -1,39 +1,77 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { GiHeartWings, GiCrystalBall } from 'react-icons/gi';
+import { FaUsersGear } from 'react-icons/fa6';
+import '../styles/LandingPage.scss';
 
 const LandingPage = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-[60vh] text-center space-y-12 animate-fade-in-up">
-            <div className="space-y-6 max-w-3xl">
-                <div className="inline-block px-4 py-1 rounded-full bg-noir-gray/50 text-spirit-blue text-sm mb-4 border border-spirit-blue/20">
-                    The #1 Place for Post-Theft Clarity
+        <div className="landing">
+            <section className="hero">
+                <div className="hero__content">
+                    <motion.h1 
+                        className="hero__title"
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 }}
+                    >
+                        They took your wheels.<br />
+                        Don't let them take your soul.
+                    </motion.h1>
+                    
+                    <motion.p 
+                        className="hero__subtitle"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4 }}
+                    >
+                        'Stolen Bike Closure they took your wheels. In your partica' image with your your wheels, men ærtosisuitor hana wheals in motating pompettion and emotionals heart in deep insight insight to you.
+                    </motion.p>
+                    
+                    <motion.div 
+                        className="hero__actions"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.6 }}
+                    >
+                        <Link to="/grief-counseling" className="btn btn--primary">
+                            START HEALING
+                        </Link>
+                        <Link to="/karma-chronicles" className="btn btn--secondary">
+                            REVENGE FANTASIES
+                        </Link>
+                    </motion.div>
                 </div>
-                <h1 className="text-5xl md:text-7xl font-bold leading-tight text-white drop-shadow-lg">
-                    They took your wheels.<br />
-                    <span className="text-spirit-blue italic">Don't let them take your soul.</span>
-                </h1>
-                <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                    Welcome to a safe space where we process the specific trauma of returning to where you locked your bike and finding only a cut lock on the ground.
-                </p>
-            </div>
-
-            <div className="flex gap-6 flex-wrap justify-center">
-                <Link
-                    to="/grief-counseling"
-                    className="px-8 py-4 bg-wellness-glow text-noir-black font-bold rounded-lg hover:bg-white hover:scale-105 transition-all shadow-[0_0_20px_rgba(226,232,240,0.3)]"
+                
+                <motion.div 
+                    className="hero__image-container"
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.5, duration: 0.7 }}
                 >
-                    Start Healing
-                </Link>
-                <Link
-                    to="/karma-chronicles"
-                    className="px-8 py-4 bg-transparent border border-noir-gray hover:border-spirit-blue text-wellness-glow rounded-lg hover:bg-noir-gray/30 transition-all"
-                >
-                    Read Revenge Fantasies
-                </Link>
-            </div>
+                    <img src="/assets/bike-placeholder.jpg" alt="Bike Ascending to Heaven" className="hero__image" />
+                    <div className="hero__image-inner-border"></div>
+                </motion.div>
+            </section>
 
-            {/* Decorative noir element */}
-            <div className="mt-24 w-full h-px bg-gradient-to-r from-transparent via-noir-gray to-transparent opacity-50"></div>
+            <section className="features">
+                <motion.div className="feature-card" whileHover={{ y: -5 }}>
+                    <div className="feature-card__icon"><GiHeartWings /></div>
+                    <h3>Heartfelt Guidance</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </motion.div>
+                <motion.div className="feature-card" whileHover={{ y: -5 }}>
+                    <div className="feature-card__icon"><FaUsersGear /></div>
+                    <h3>Community Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </motion.div>
+                <motion.div className="feature-card" whileHover={{ y: -5 }}>
+                    <div className="feature-card__icon"><GiCrystalBall /></div>
+                    <h3>Personal Medium</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </motion.div>
+            </section>
         </div>
     );
 };
