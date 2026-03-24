@@ -49,6 +49,7 @@ const NavLink = ({ to, current, children }) => {
         <Link
             to={to}
             className={`navbar__link ${isActive ? 'navbar__link--active' : ''}`}
+            aria-current={isActive ? 'page' : undefined}
         >
             {children}
         </Link>

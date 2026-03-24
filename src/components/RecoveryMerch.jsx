@@ -35,6 +35,10 @@ const RecoveryMerch = () => {
             <div className="page__header">
                 <h2>Recovery Merch</h2>
                 <p>Retail therapy is cheaper than a new bike. (Barely).</p>
+                <div className="coming-soon-banner">
+                    <h3>Coming Soon!</h3>
+                    <p>We're still manufacturing our tears into tangible goods. Nothing is available to order just yet.</p>
+                </div>
             </div>
 
             <ul className="merch-grid">
@@ -55,7 +59,7 @@ const RecoveryMerch = () => {
 
                         <div className="merch-card__footer">
                             <span className="price">{product.price}</span>
-                            <button className="add-to-cart">Add to Cart</button>
+                            <button className="add-to-cart" disabled style={{ cursor: 'not-allowed', opacity: 0.5 }}>Coming Soon</button>
                         </div>
                     </motion.li>
                 ))}
