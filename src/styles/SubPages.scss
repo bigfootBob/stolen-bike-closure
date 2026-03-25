@@ -202,10 +202,13 @@
   display: flex;
   flex-direction: column;
   transition: all var(--transition-speed) ease;
+  border: 1px solid rgba(150, 150, 150, 0.2);
+  cursor: pointer;
 
   &:hover {
     border-color: rgba($color: #ff477e, $alpha: 0.5);
     transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
   }
 
   &__image {
