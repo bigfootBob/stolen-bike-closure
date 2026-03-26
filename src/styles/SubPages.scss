@@ -7,22 +7,22 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  
+
   &__header {
     text-align: center;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 1rem;
+
     h2 {
       font-size: 2.5rem;
       color: var(--color-primary);
       margin-bottom: 1rem;
       @include text-glow(rgba($color: #ff477e, $alpha: 0.5));
-      
+
       @include respond-to('md') {
         font-size: 4rem;
       }
     }
-    
+
     p {
       font-size: 1.2rem;
       color: var(--color-text-muted);
@@ -65,11 +65,11 @@
   padding: 2rem;
   border-radius: 12px;
   transition: all var(--transition-speed) ease;
-  
+
   &:hover {
     transform: translateX(10px);
     border-color: rgba($color: #2ec4b6, $alpha: 0.5);
-    box-shadow: -5px 5px 15px rgba(0,0,0,0.3);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
   }
 
   h3 {
@@ -90,7 +90,7 @@
     color: var(--color-text-muted);
     padding-left: 1rem;
     border-left: 2px solid var(--color-accent);
-    
+
     strong {
       color: var(--color-accent);
       text-transform: uppercase;
@@ -163,15 +163,17 @@
     span {
       padding: 0.2rem 0.6rem;
       border-radius: 4px;
-      
+
       &.level-immediate {
         background: rgba($color: #ff477e, $alpha: 0.2);
         color: #ff477e;
       }
+
       &.level-psychological {
         background: rgba($color: #2ec4b6, $alpha: 0.2);
         color: #2ec4b6;
       }
+
       &.level-slow-burn {
         background: rgba($color: #ff9f1c, $alpha: 0.2);
         color: #ff9f1c;
@@ -189,7 +191,7 @@
   @include respond-to('sm') {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   @include respond-to('lg') {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -225,13 +227,13 @@
     .sold-out {
       font-size: 1.5rem;
       font-weight: 800;
-      color: rgba(255,255,255,0.1);
+      color: rgba(255, 255, 255, 0.1);
       transform: rotate(-15deg);
       transition: all 0.5s ease;
     }
 
     &:hover .sold-out {
-      color: rgba(255,255,255,0.8);
+      color: rgba(255, 255, 255, 0.8);
       transform: rotate(0) scale(1.2);
     }
   }
@@ -260,8 +262,8 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
     .price {
       font-family: monospace;
       color: var(--color-accent);

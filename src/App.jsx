@@ -7,6 +7,9 @@ import KarmaChronicles from './components/KarmaChronicles';
 import RecoveryMerch from './components/RecoveryMerch';
 import SubmitStory from './components/SubmitStory';
 import BuildStory from './components/BuildStory';
+import OnlineMedium from './components/OnlineMedium';
+import ObituaryTemplates from './components/ObituaryTemplates';
+import GriefArticles from './components/GriefArticles';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path="/recovery-merch" element={<RecoveryMerch />} />
           <Route path="/submit-story" element={<SubmitStory />} />
           <Route path="/build-story" element={<BuildStory />} />
+          <Route path="/online-medium" element={<OnlineMedium />} />
+          <Route path="/obituary-templates" element={<ObituaryTemplates />} />
+          <Route path="/grief-articles" element={<GriefArticles />} />
         </Routes>
       </Layout>
     </Router>
