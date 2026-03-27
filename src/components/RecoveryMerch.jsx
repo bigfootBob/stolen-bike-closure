@@ -5,18 +5,25 @@ import '../styles/SubPages.scss';
 const RecoveryMerch = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const token = import.meta.env.VITE_FOURTHWALL_STOREFRONT_TOKEN;
-                const res = await fetch(`https://storefront-api.fourthwall.com/v1/collections/all/products?storefront_token=${token}&page=0&size=50`);
+                setError('');
+                const res = await fetch('/api/merch-products');
+                if (!res.ok) {
+                    throw new Error(`Merch API failed with ${res.status}`);
+                }
                 const data = await res.json();
-                if (data.results) {
+                if (data.results && Array.isArray(data.results)) {
                     setProducts(data.results);
+                } else {
+                    setProducts([]);
                 }
             } catch (error) {
                 console.error("Failed to fetch merch:", error);
+                setError('We could not load the merch catalog right now. Please try again shortly.');
             } finally {
                 setLoading(false);
             }
@@ -31,6 +38,13 @@ const RecoveryMerch = () => {
         return doc.body.textContent || "";
     };
 
+    const openProductInNewTab = (slug) => {
+        const storefrontUrl = import.meta.env.VITE_FOURTHWALL_STOREFRONT_URL;
+        if (!storefrontUrl || !slug) return;
+        const targetUrl = `${storefrontUrl}/products/${slug}`;
+        window.open(targetUrl, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <div className="page">
             <div className="page__header">
@@ -40,6 +54,8 @@ const RecoveryMerch = () => {
 
             {loading ? (
                 <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--color-primary)' }}>Loading inventory...</div>
+            ) : error ? (
+                <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--color-text-main)' }}>{error}</div>
             ) : (
                 <ul className="merch-grid">
                     {products.map((product, index) => {
@@ -56,13 +72,13 @@ const RecoveryMerch = () => {
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: index * 0.1 }}
-                                onClick={() => window.open(`${import.meta.env.VITE_FOURTHWALL_STOREFRONT_URL}/products/${product.slug}`, '_blank')}
+                                onClick={() => openProductInNewTab(product.slug)}
                                 role="button"
                                 tabIndex={0}
                                 onKeyDown={(e) => { 
                                     if (e.key === 'Enter' || e.key === ' ') { 
                                         e.preventDefault(); 
-                                        window.open(`${import.meta.env.VITE_FOURTHWALL_STOREFRONT_URL}/products/${product.slug}`, '_blank');
+                                        openProductInNewTab(product.slug);
                                     } 
                                 }}
                             >
@@ -79,7 +95,15 @@ const RecoveryMerch = () => {
 
                                 <div className="merch-card__footer">
                                     <span className="price">{price}</span>
-                                    <button className="add-to-cart" tabIndex={-1}>View Store</button>
+                                    <button
+                                        className="add-to-cart"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            openProductInNewTab(product.slug);
+                                        }}
+                                    >
+                                        View Store
+                                    </button>
                                 </div>
                             </motion.li>
                         );

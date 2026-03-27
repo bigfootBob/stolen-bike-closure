@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { GiOpenBook } from 'react-icons/gi';
 import '../styles/SubPages.scss';
 
 const GriefArticles = () => {
+    const [message, setMessage] = useState('');
+
+    const handleReadArticle = () => {
+        setMessage('Full article pending publication. Check back soon.');
+    };
+
     return (
         <div className="page">
             <div className="page__header">
@@ -23,7 +29,7 @@ const GriefArticles = () => {
                     <div className="counseling-card__advice">
                         <strong>Author:</strong> Dr. H. Handlebars, PhD in Commuter Psychology
                     </div>
-                    <button className="btn btn--secondary" style={{ marginTop: '1.5rem' }} onClick={() => alert('Full article pending publication... Check back soon!')}>Read Article</button>
+                    <button className="btn btn--secondary" style={{ marginTop: '1.5rem' }} onClick={handleReadArticle}>Read Article</button>
                 </motion.div>
 
                 <motion.div className="counseling-card" whileHover={{ scale: 1.02 }}>
@@ -37,7 +43,7 @@ const GriefArticles = () => {
                     <div className="counseling-card__advice">
                         <strong>Author:</strong> The Coalition for Refined Searching Algorithms
                     </div>
-                    <button className="btn btn--secondary" style={{ marginTop: '1.5rem' }} onClick={() => alert('Full article pending publication... Check back soon!')}>Read Article</button>
+                    <button className="btn btn--secondary" style={{ marginTop: '1.5rem' }} onClick={handleReadArticle}>Read Article</button>
                 </motion.div>
 
                 <motion.div className="counseling-card" whileHover={{ scale: 1.02 }}>
@@ -51,9 +57,12 @@ const GriefArticles = () => {
                     <div className="counseling-card__advice">
                         <strong>Author:</strong> Prof. S. Spokes
                     </div>
-                    <button className="btn btn--secondary" style={{ marginTop: '1.5rem' }} onClick={() => alert('Full article pending publication... Check back soon!')}>Read Article</button>
+                    <button className="btn btn--secondary" style={{ marginTop: '1.5rem' }} onClick={handleReadArticle}>Read Article</button>
                 </motion.div>
             </div>
+            {message && (
+                <p style={{ textAlign: 'center', marginTop: '1.5rem', color: 'var(--color-primary)' }}>{message}</p>
+            )}
         </div>
     );
 };

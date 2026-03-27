@@ -6,6 +6,7 @@ import '../styles/SubPages.scss';
 const ObituaryTemplates = () => {
     const [isGenerated, setIsGenerated] = useState(false);
     const [showCopiedModal, setShowCopiedModal] = useState(false);
+    const [copyError, setCopyError] = useState('');
     const [isLightOn, setIsLightOn] = useState(false);
     const [lightCount, setLightCount] = useState(142);
     const [formData, setFormData] = useState({
@@ -19,48 +20,71 @@ const ObituaryTemplates = () => {
         lastLocation: ''
     });
 
-    const handleCopy = (text) => {
+    const handleCopy = async (text) => {
         const footer = `\n\n—\nStolen Bike Closure\nProcessing the loss of your two-wheeled companion.\nstolenbikeclosure.com`;
-        navigator.clipboard.writeText(text + footer);
-        setShowCopiedModal(true);
-        setTimeout(() => setShowCopiedModal(false), 3000);
+        try {
+            await navigator.clipboard.writeText(text + footer);
+            setCopyError('');
+            setShowCopiedModal(true);
+            setTimeout(() => setShowCopiedModal(false), 3000);
+        } catch (error) {
+            console.error('Clipboard write failed:', error);
+            setCopyError('Copy failed. Please copy manually from the template text.');
+            setTimeout(() => setCopyError(''), 3500);
+        }
     };
 
     const handlePrint = (text, title) => {
         const printWindow = window.open('', '_blank');
         if (printWindow) {
-            printWindow.document.write(`
-                <html>
-                    <head>
-                        <title>Print Obituary - ${title}</title>
-                        <style>
-                            body { font-family: 'Times New Roman', serif; padding: 2rem; line-height: 1.8; max-width: 800px; margin: 0 auto; font-size: 14pt; color: #000; }
-                            h1 { text-align: center; font-size: 24pt; margin-bottom: 2rem; }
-                            p { text-align: justify; }
-                            .footer { margin-top: 4rem; text-align: center; font-family: 'Arial', sans-serif; font-size: 11pt; color: #555; }
-                            .footer p { margin: 0.2rem 0; text-align: center; }
-                        </style>
-                    </head>
-                    <body>
-                        <h1>${title}</h1>
-                        <p><em>"${text}"</em></p>
-                        
-                        <div class="footer">
-                            <p style="margin-bottom: 0.5rem;">—</p>
-                            <p><strong>Stolen Bike Closure</strong></p>
-                            <p><em>Processing the loss of your two-wheeled companion.</em></p>
-                            <p>stolenbikeclosure.com</p>
-                        </div>
-                        <script>
-                            window.onload = () => {
-                                window.print();
-                                setTimeout(() => window.close(), 500);
-                            }
-                        </script>
-                    </body>
-                </html>
-            `);
-            printWindow.document.close();
+            const { document } = printWindow;
+            document.title = `Print Obituary - ${title}`;
+
+            const style = document.createElement('style');
+            style.textContent = `
+                body { font-family: 'Times New Roman', serif; padding: 2rem; line-height: 1.8; max-width: 800px; margin: 0 auto; font-size: 14pt; color: #000; }
+                h1 { text-align: center; font-size: 24pt; margin-bottom: 2rem; }
+                p { text-align: justify; }
+                .footer { margin-top: 4rem; text-align: center; font-family: 'Arial', sans-serif; font-size: 11pt; color: #555; }
+                .footer p { margin: 0.2rem 0; text-align: center; }
+            `;
+            document.head.appendChild(style);
+
+            const heading = document.createElement('h1');
+            heading.textContent = title;
+
+            const bodyText = document.createElement('p');
+            const em = document.createElement('em');
+            em.textContent = `"${text}"`;
+            bodyText.appendChild(em);
+
+            const footer = document.createElement('div');
+            footer.className = 'footer';
+
+            const divider = document.createElement('p');
+            divider.style.marginBottom = '0.5rem';
+            divider.textContent = '—';
+
+            const brand = document.createElement('p');
+            const strong = document.createElement('strong');
+            strong.textContent = 'Stolen Bike Closure';
+            brand.appendChild(strong);
+
+            const tagline = document.createElement('p');
+            const emTagline = document.createElement('em');
+            emTagline.textContent = 'Processing the loss of your two-wheeled companion.';
+            tagline.appendChild(emTagline);
+
+            const site = document.createElement('p');
+            site.textContent = 'stolenbikeclosure.com';
+
+            footer.append(divider, brand, tagline, site);
+            document.body.append(heading, bodyText, footer);
+
+            setTimeout(() => {
+                printWindow.print();
+                setTimeout(() => printWindow.close(), 500);
+            }, 100);
         }
     };
 
@@ -374,6 +398,21 @@ const ObituaryTemplates = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
+            {copyError && (
+                <div style={{
+                    position: 'fixed',
+                    bottom: '2rem',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    background: '#8b1e1e',
+                    color: '#fff',
+                    padding: '0.9rem 1.5rem',
+                    borderRadius: '10px',
+                    zIndex: 1001
+                }}>
+                    {copyError}
+                </div>
+            )}
         </div>
     );
 };

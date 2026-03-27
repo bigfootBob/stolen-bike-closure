@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { GiCrystalBall } from 'react-icons/gi';
 import '../styles/SubPages.scss';
 
 const OnlineMedium = () => {
+    const [message, setMessage] = useState('');
+
     return (
         <div className="page">
             <div className="page__header">
@@ -33,9 +35,12 @@ const OnlineMedium = () => {
                     Our digital mediums are currently recovering their spiritual energy after a recent wave of e-bike thefts. Please return later to physically channel the remaining spirit of your 
                     two-wheeled companion.
                 </p>
-                <button className="btn btn--secondary" style={{ marginTop: '2rem' }} onClick={() => alert('Séance connection failed. Please try again later.')}>
+                <button className="btn btn--secondary" style={{ marginTop: '2rem' }} onClick={() => setMessage('Séance connection failed. Please try again later.')}>
                     Attempt Connection
                 </button>
+                {message && (
+                    <p style={{ marginTop: '1rem', color: 'var(--color-primary)' }}>{message}</p>
+                )}
             </motion.div>
         </div>
     );
