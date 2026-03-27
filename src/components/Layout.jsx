@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { MdPedalBike } from 'react-icons/md';
 import '../styles/Layout.scss';
 
 const Layout = ({ children }) => {
     const location = useLocation();
+    const shouldReduceMotion = useReducedMotion();
 
     return (
         <div className="layout">
@@ -24,11 +25,11 @@ const Layout = ({ children }) => {
                 </div>
             </nav>
 
-            <motion.main 
+            <motion.main
                 className="main-content"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
+                initial={shouldReduceMotion ? false : { y: 20 }}
+                animate={shouldReduceMotion ? false : { y: 0 }}
+                exit={shouldReduceMotion ? false : { y: -20 }}
                 transition={{ duration: 0.5 }}
                 key={location.pathname}
             >

@@ -107,6 +107,6 @@
   &__disclaimer {
     margin-top: 0.5rem;
     font-size: 0.75rem !important;
-    opacity: 0.6;
+    /* Removed opacity: 0.6 — it reduced contrast to 2.43:1 (WCAG AA requires 4.5:1 for small text) */
   }
 }
