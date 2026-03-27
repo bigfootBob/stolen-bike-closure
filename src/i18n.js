@@ -27,6 +27,20 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    detection: {
+      order: ['localStorage', 'navigator'],
+      lookupLocalStorage: 'i18nextLng',
+      convertDetectedLanguage: (lng) => {
+        const map = {
+          'de': 'de-DE',
+          'zh': 'zh-CN',
+          'pt': 'pt-BR',
+          'nl': 'nl-NL',
+          'en-AU': 'en-AU',
+        };
+        return map[lng] ?? lng;
+      },
+    },
     resources: {
       'en-US': { landing: enUSLanding, layout: enUSLayout, advertisement: enUSAdvertisement },
       'zh-CN': { landing: zhCNLanding, layout: zhCNLayout, advertisement: zhCNAdvertisement },
