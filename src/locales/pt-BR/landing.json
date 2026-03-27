@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "title": "Eles levaram suas rodas.\nNão deixe que levem sua alma também.",
+    "subtitle": "Aqui homenageamos uma bike que partiu cedo demais, rezando para que seu quadro descanse em paz e seu ladrão descanse na cadeia. Mesmo que seu guidão nunca mais sinta seu toque, que quem roubou sua bike encontre pneus furados e justiça cármica.",
+    "cta_primary": "COMEÇAR A CURAR",
+    "cta_secondary": "FANTASIAS DE VINGANÇA",
+    "image_alt": "Bicicleta Ascendendo ao Céu"
+  },
+  "features": {
+    "heartfelt": {
+      "title": "Orientação Sincera",
+      "body": "Lidar com as consequências de um roubo pode ser avassalador. Estamos aqui para te ajudar a atravessar o vale da sombra de um bicicletário vazio, oferecendo apoio enquanto você preenche boletins de ocorrência que nunca serão lidos e pedidos de seguro que com certeza serão negados. Oferecemos suporte emocional para você parar de checar anúncios de bike a cada 5 minutos."
+    },
+    "community": {
+      "title": "Apoio da Comunidade",
+      "body": "Você não precisa caminhar por esse caminho sozinho. Junte-se a uma comunidade de pessoas que entendem a dor única de um cadeado U cortado. Nossos círculos de apoio oferecem um espaço seguro para compartilhar histórias dos seus passeios favoritos, desabafar sobre as lojas de penhores da cidade e coletivamente rezar pela rápida falha mecânica de cada transmissão roubada na cidade."
+    },
+    "medium": {
+      "title": "Médium Pessoal",
+      "body": "Para quem busca uma conexão mais profunda com o \"outro lado\", nossos especialistas te ajudam a encontrar o fechamento por meio de uma sessão espírita digital. Te ajudamos a visualizar a nova vida da sua bike. Através da aceitação consciente, te auxiliamos a liberar o espírito da sua companheira de fibra de carbono para que você possa curar e quem sabe um dia abrir seu coração para um novo pedal."
+    }
+  }
+}

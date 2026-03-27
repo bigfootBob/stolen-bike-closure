@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "title": "They took your wheels.\nDon't let them take your soul.",
+    "subtitle": "Here we honor a ride gone too soon, praying that your frame rests in peace and your thief rests in jail. Though your handlebars may never feel your grip again, may the person who took your ride find flat tires and karmic justice.",
+    "cta_primary": "START HEALING",
+    "cta_secondary": "REVENGE FANTASIES",
+    "image_alt": "Bike Ascending to Heaven"
+  },
+  "features": {
+    "heartfelt": {
+      "title": "Heartfelt Guidance",
+      "body": "Navigating the aftermath of a theft can be overwhelming. We're here to help you walk through the valley of the shadow of an empty bike rack, offering a steady hand as you fill out police reports that will never be read & insurance claims that will definitely be denied. Providing emotional scaffolding to stop checking bike listings every 5 minutes."
+    },
+    "community": {
+      "title": "Community Support",
+      "body": "You do not have to walk this path alone. Join a fellowship of those who understand the unique sting of a severed U-lock. Our support circles provide a safe space to share stories of your favorite rides, vent your frustrations toward local pawn shops, and collectively pray for the swift mechanical failure of every stolen drivetrain in the city."
+    },
+    "medium": {
+      "title": "Personal Medium",
+      "body": "For those seeking a deeper connection to the \"other side,\" our specialists help you find closure through digital séance. We help you visualize your bike's new life. Through mindful acceptance, we help you release the spirit of your Carbon Fiber companion so that you can heal & maybe even eventually open your heart to a new ride."
+    }
+  }
+}
