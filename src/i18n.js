@@ -52,7 +52,7 @@ i18n
     fallbackLng: 'en-US',
     defaultNS: 'landing',
     interpolation: {
-      escapeValue: false,
+      escapeValue: true,
     },
   });
 

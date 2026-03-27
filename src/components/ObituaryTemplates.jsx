@@ -29,7 +29,7 @@ const ObituaryTemplates = () => {
             setShowCopiedModal(true);
             setTimeout(() => setShowCopiedModal(false), 3000);
         } catch (error) {
-            console.error('Clipboard write failed:', error);
+            if (import.meta.env.DEV) console.error('Clipboard write failed:', error);
             setCopyError('Copy failed. Please copy manually from the template text.');
             setTimeout(() => setCopyError(''), 3500);
         }

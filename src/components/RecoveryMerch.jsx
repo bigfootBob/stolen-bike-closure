@@ -22,7 +22,7 @@ const RecoveryMerch = () => {
                     setProducts([]);
                 }
             } catch (error) {
-                console.error("Failed to fetch merch:", error);
+                if (import.meta.env.DEV) console.error("Failed to fetch merch:", error);
                 setError('We could not load the merch catalog right now. Please try again shortly.');
             } finally {
                 setLoading(false);
@@ -63,7 +63,8 @@ const RecoveryMerch = () => {
                             ? new Intl.NumberFormat('en-US', { style: 'currency', currency: product.variants[0].unitPrice.currency }).format(product.variants[0].unitPrice.value)
                             : '$0.00';
                             
-                        const imageUrl = product.images && product.images.length > 0 ? product.images[0].url : '';
+                        const rawImageUrl = product.images && product.images.length > 0 ? product.images[0].url : '';
+                        const imageUrl = /^https:\/\/[^/]*fourthwall\.com\//i.test(rawImageUrl) ? rawImageUrl : '';
                         
                         return (
                             <motion.li 
