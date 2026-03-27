@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "grief_counseling": "Trauerbegleitung",
+    "karma_chronicles": "Karma-Chroniken",
+    "recovery_merch": "Genesungs-Merchandise",
+    "select_language": "Sprache auswählen"
+  },
+  "footer": {
+    "copyright": "© {{year}} Stolen Bike Closure. Frieden finden nach dem Verschwinden eines Fahrrads.",
+    "disclaimer": "Parodie. Komödie. Humor. Spaß. Nicht mit echter Therapie verbunden."
+  }
+}

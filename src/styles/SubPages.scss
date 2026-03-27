@@ -64,6 +64,7 @@
   @include glassmorphism;
   padding: 2rem;
   border-radius: 12px;
+  border-color: rgba($color: #2ec4b6, $alpha: 0.25);
   transition: all var(--transition-speed) ease;
 
   &:hover {

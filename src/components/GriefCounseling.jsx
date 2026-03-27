@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { IoChevronBack, IoChevronForward, IoPause, IoPlay } from 'react-icons/io5';
 import { GiScrollQuill, GiOpenBook, GiCrystalBall } from 'react-icons/gi';
 import stagesData from '../data/stages.json';
+import BannerAdvert from './BannerAdvert';
 import '../styles/SubPages.scss';
 import '../styles/LandingPage.scss';
 
@@ -142,12 +143,14 @@ const GriefCounseling = () => {
                     <Link to="/online-medium" style={{ textDecoration: 'none' }}>
                         <motion.div className="feature-card" whileHover={{ y: -5 }}>
                             <div className="feature-card__icon"><GiCrystalBall /></div>
-                            <h3>Medium Guidance Online</h3>
-                            <p>Connect with a verifiable medium who can physically channel the remaining spirit of your bicycle, helping you finally say goodbye to its ghost.</p>
+                            <h3>Personal Medium</h3>
+                            <p>Connect with an automated online medium who can channel online the remaining spirit of your bicycle, helping you finally say goodbye to its ghost.</p>
                         </motion.div>
                     </Link>
                 </section>
+                
             </div>
+            <BannerAdvert />
         </div>
     );
 };

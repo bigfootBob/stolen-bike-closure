@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "Home",
+    "grief_counseling": "Grief Counseling",
+    "karma_chronicles": "Karma Chronicles",
+    "recovery_merch": "Recovery Merch",
+    "select_language": "Select language"
+  },
+  "footer": {
+    "copyright": "© {{year}} Stolen Bike Closure. Finding peace after a bike's disappearance.",
+    "disclaimer": "Parody. Comedy. Humor. Fun. Not affiliated with any actual therapy."
+  }
+}

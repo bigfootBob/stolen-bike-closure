@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { GiHeartWings, GiCrystalBall } from 'react-icons/gi';
 import { FaUsersGear } from 'react-icons/fa6';
 import { useTranslation } from 'react-i18next';
+import BannerAdvert from '../components/BannerAdvert';
 import '../styles/LandingPage.scss';
 
 const LandingPage = () => {
@@ -87,6 +88,7 @@ const LandingPage = () => {
                     </motion.div>
                 </Link>
             </section>
+            <BannerAdvert />
         </div>
     );
 };

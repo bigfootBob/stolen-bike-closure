@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import BannerAdvert from './BannerAdvert';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/SubPages.scss';
 
@@ -128,6 +129,7 @@ const KarmaChronicles = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
+            <BannerAdvert />
         </div>
     );
 };

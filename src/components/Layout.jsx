@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, useReducedMotion } from 'framer-motion';
 import { MdPedalBike, MdLanguage } from 'react-icons/md';
@@ -8,6 +8,7 @@ import '../styles/Layout.scss';
 const Layout = ({ children }) => {
     const location = useLocation();
     const shouldReduceMotion = useReducedMotion();
+    const { t } = useTranslation('layout');
 
     return (
         <div className="layout">
@@ -18,10 +19,10 @@ const Layout = ({ children }) => {
                         Stolen Bike Closure
                     </Link>
                     <div className="navbar__links">
-                        <NavLink to="/" current={location.pathname}>Home</NavLink>
-                        <NavLink to="/grief-counseling" current={location.pathname}>Grief Counseling</NavLink>
-                        <NavLink to="/karma-chronicles" current={location.pathname}>Karma Chronicles</NavLink>
-                        <NavLink to="/recovery-merch" current={location.pathname}>Recovery Merch</NavLink>
+                        <NavLink to="/" current={location.pathname}>{t('nav.home')}</NavLink>
+                        <NavLink to="/grief-counseling" current={location.pathname}>{t('nav.grief_counseling')}</NavLink>
+                        <NavLink to="/karma-chronicles" current={location.pathname}>{t('nav.karma_chronicles')}</NavLink>
+                        <NavLink to="/recovery-merch" current={location.pathname}>{t('nav.recovery_merch')}</NavLink>
                         <LanguageSwitcher />
                     </div>
                 </div>
@@ -39,8 +40,8 @@ const Layout = ({ children }) => {
             </motion.main>
 
             <footer className="footer">
-                <p>© {new Date().getFullYear()} Stolen Bike Closure. Finding peace after a bike's disappearance.</p>
-                <p className="footer__disclaimer">Parody. Comedy. Humor. Fun. Not affiliated with any actual therapy.</p>
+                <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
+                <p className="footer__disclaimer">{t('footer.disclaimer')}</p>
             </footer>
         </div>
     );
@@ -56,7 +57,7 @@ const LANGUAGES = [
 ];
 
 const LanguageSwitcher = () => {
-    const { i18n } = useTranslation();
+    const { i18n, t } = useTranslation('layout');
     const [open, setOpen] = useState(false);
     const ref = useRef(null);
 
@@ -77,7 +78,7 @@ const LanguageSwitcher = () => {
                 onClick={() => setOpen(o => !o)}
                 aria-haspopup="listbox"
                 aria-expanded={open}
-                aria-label="Select language"
+                aria-label={t('nav.select_language')}
             >
                 <MdLanguage className="lang-switcher__globe" />
                 <span className="lang-switcher__current">{current.flag}</span>

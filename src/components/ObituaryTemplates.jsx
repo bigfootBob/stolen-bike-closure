@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GiScrollQuill } from 'react-icons/gi';
+import BannerAdvert from './BannerAdvert';
 import '../styles/SubPages.scss';
 
 const ObituaryTemplates = () => {
@@ -413,6 +414,7 @@ const ObituaryTemplates = () => {
                     {copyError}
                 </div>
             )}
+            <BannerAdvert />
         </div>
     );
 };

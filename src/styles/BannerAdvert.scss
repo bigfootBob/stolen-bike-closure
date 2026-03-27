@@ -1,0 +1,94 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.banner-advert {
+  width: 75%;
+  margin: 0 auto;
+  padding: 3rem;
+
+  &__link {
+    display: block;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: opacity var(--transition-speed) ease,
+                transform var(--transition-speed) ease,
+                box-shadow var(--transition-speed) ease;
+
+    &:hover {
+      opacity: 0.92;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.5rem 1.75rem;
+    background: rgba(253, 248, 230, 0.88);
+    backdrop-filter: blur(4px);
+  }
+
+  &__eyebrow {
+    font-family: var(--font-family-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.2;
+  }
+
+  &__tagline {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+
+    em {
+      font-style: italic;
+    }
+  }
+
+  &__body {
+    font-size: 0.8rem;
+    color: var(--color-text-main);
+    line-height: 1.6;
+  }
+
+  &__cta {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 0.25rem;
+    padding: 0.5rem 1.2rem;
+    background: var(--color-primary);
+    color: #ffffff;
+    font-family: var(--font-family-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: background var(--transition-speed) ease;
+
+    .banner-advert__link:hover & {
+      background: var(--color-secondary);
+      color: var(--color-primary);
+    }
+  }
+}

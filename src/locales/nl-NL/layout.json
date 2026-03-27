@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "Home",
+    "grief_counseling": "Rouwbegeleiding",
+    "karma_chronicles": "Karma Kronieken",
+    "recovery_merch": "Herstel Merchandise",
+    "select_language": "Taal selecteren"
+  },
+  "footer": {
+    "copyright": "© {{year}} Stolen Bike Closure. Vrede vinden na het verdwijnen van je fiets.",
+    "disclaimer": "Parodie. Komedie. Humor. Lol. Niet gelieerd aan enige echte therapie."
+  }
+}

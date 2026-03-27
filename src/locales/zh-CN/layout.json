@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "首页",
+    "grief_counseling": "悲伤辅导",
+    "karma_chronicles": "因果编年史",
+    "recovery_merch": "疗愈周边",
+    "select_language": "选择语言"
+  },
+  "footer": {
+    "copyright": "© {{year}} Stolen Bike Closure. 在自行车失踪后寻找平静。",
+    "disclaimer": "恶搞。喜剧。幽默。娱乐。与任何真实治疗无关。"
+  }
+}
