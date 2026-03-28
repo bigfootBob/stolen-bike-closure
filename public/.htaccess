@@ -1,6 +1,18 @@
+# -----------------------------------------------------------
+# Set your Fourthwall token here (do not commit this value)
+# -----------------------------------------------------------
+<IfModule mod_env.c>
+  SetEnv FOURTHWALL_STOREFRONT_TOKEN your_token_here
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Route /api/merch-products to the PHP proxy (no extension in fetch call)
+  RewriteRule ^api/merch-products$ /api/merch-products.php [L]
+
+  # SPA fallback — everything else serves index.html
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
@@ -8,10 +20,10 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-  Header always set X-Content-Type-Options "nosniff"
-  Header always set X-Frame-Options "DENY"
-  Header always set X-XSS-Protection "1; mode=block"
-  Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://res.cloudinary.com https://*.fourthwall.com; connect-src 'self' https://storefront-api.fourthwall.com; frame-ancestors 'none';"
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "DENY"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://res.cloudinary.com https:; connect-src 'self' https://storefront-api.fourthwall.com; frame-ancestors 'none';"
 </IfModule>

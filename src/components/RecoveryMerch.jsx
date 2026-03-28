@@ -64,7 +64,7 @@ const RecoveryMerch = () => {
                             : '$0.00';
                             
                         const rawImageUrl = product.images && product.images.length > 0 ? product.images[0].url : '';
-                        const imageUrl = /^https:\/\/[^/]*fourthwall\.com\//i.test(rawImageUrl) ? rawImageUrl : '';
+                        const imageUrl = /^https:\/\//i.test(rawImageUrl) ? rawImageUrl : '';
                         
                         return (
                             <motion.li 

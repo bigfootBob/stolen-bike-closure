@@ -1,0 +1,2 @@
+# Block direct browser access to this directory listing
+Options -Indexes

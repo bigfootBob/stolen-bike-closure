@@ -1,5 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+};
 import Layout from './components/Layout';
 import LandingPage from './pages/LandingPage';
 import GriefCounseling from './components/GriefCounseling';
@@ -14,6 +21,7 @@ import GriefArticles from './components/GriefArticles';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<LandingPage />} />
