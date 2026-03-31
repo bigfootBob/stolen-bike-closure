@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { GiOpenBook } from 'react-icons/gi';
+import articles from '../data/griefarticles.json';
 import '../styles/SubPages.scss';
 
 const GriefArticles = () => {
-    const [message, setMessage] = useState('');
+    const [pendingMessage, setPendingMessage] = useState(false);
 
-    const handleReadArticle = () => {
-        setMessage('Full article pending publication. Check back soon.');
+    const handleClick = (url) => {
+        if (url) {
+            window.open(url, '_blank', 'noopener,noreferrer');
+        } else {
+            setPendingMessage(true);
+            setTimeout(() => setPendingMessage(false), 3000);
+        }
     };
 
     return (
@@ -18,50 +24,31 @@ const GriefArticles = () => {
             </div>
 
             <div className="counseling-list">
-                <motion.div className="counseling-card" whileHover={{ scale: 1.02 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
-                        <GiOpenBook size={24} color="var(--color-accent)" />
-                        <h3 style={{ margin: 0 }}>The Phantom Pedal Phenomenon</h3>
-                    </div>
-                    <p className="counseling-card__desc">
-                        A clinical look at why you still instinctively kick your leg out to catch a nonexistent kickstand when waiting at crosswalks on foot.
-                    </p>
-                    <div className="counseling-card__advice">
-                        <strong>Author:</strong> Dr. H. Handlebars, PhD in Commuter Psychology
-                    </div>
-                    <button className="btn btn--secondary" style={{ marginTop: '1.5rem' }} onClick={handleReadArticle}>Read Article</button>
-                </motion.div>
-
-                <motion.div className="counseling-card" whileHover={{ scale: 1.02 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
-                        <GiOpenBook size={24} color="var(--color-accent)" />
-                        <h3 style={{ margin: 0 }}>Craigslist Paranoia</h3>
-                    </div>
-                    <p className="counseling-card__desc">
-                        Understanding the compulsive need to refresh local classifieds at 3 AM looking for a 2018 Trek Marlin 5 that "kinda looks like yours even though the picture is blurry."
-                    </p>
-                    <div className="counseling-card__advice">
-                        <strong>Author:</strong> The Coalition for Refined Searching Algorithms
-                    </div>
-                    <button className="btn btn--secondary" style={{ marginTop: '1.5rem' }} onClick={handleReadArticle}>Read Article</button>
-                </motion.div>
-
-                <motion.div className="counseling-card" whileHover={{ scale: 1.02 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
-                        <GiOpenBook size={24} color="var(--color-accent)" />
-                        <h3 style={{ margin: 0 }}>Coping With "Who Takes Just the Wheel?"</h3>
-                    </div>
-                    <p className="counseling-card__desc">
-                        An exploration into the deep, unresolved existential dread when you return to the rack to find your frame, one wheel, and absolutely no logic behind what just occurred.
-                    </p>
-                    <div className="counseling-card__advice">
-                        <strong>Author:</strong> Prof. S. Spokes
-                    </div>
-                    <button className="btn btn--secondary" style={{ marginTop: '1.5rem' }} onClick={handleReadArticle}>Read Article</button>
-                </motion.div>
+                {articles.map((article) => (
+                    <motion.div key={article.id} className="counseling-card" whileHover={{ scale: 1.02 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+                            <GiOpenBook size={24} color="var(--color-accent)" />
+                            <h3 style={{ margin: 0 }}>{article.title}</h3>
+                        </div>
+                        <p className="counseling-card__desc">{article.description}</p>
+                        <div className="counseling-card__advice">
+                            <strong>Author:</strong> {article.author}
+                        </div>
+                        <button
+                            className="btn btn--secondary"
+                            style={{ marginTop: '1.5rem' }}
+                            onClick={() => handleClick(article.url)}
+                        >
+                            {article.url ? 'Read Article ↗' : 'Read Article'}
+                        </button>
+                    </motion.div>
+                ))}
             </div>
-            {message && (
-                <p style={{ textAlign: 'center', marginTop: '1.5rem', color: 'var(--color-primary)' }}>{message}</p>
+
+            {pendingMessage && (
+                <p style={{ textAlign: 'center', marginTop: '1.5rem', color: 'var(--color-primary)' }}>
+                    Full article pending publication. Check back soon.
+                </p>
             )}
         </div>
     );

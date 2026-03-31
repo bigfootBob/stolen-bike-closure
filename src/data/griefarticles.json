@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "The Phantom Pedal Phenomenon",
+    "description": "A clinical look at why you still instinctively kick your leg out to catch a nonexistent kickstand when waiting at crosswalks on foot.",
+    "author": "Dr. H. Handlebars, PhD in Commuter Psychology",
+    "url": "/assets/articles/phantom-pedal-phenomenon.html"
+  },
+  {
+    "id": 2,
+    "title": "Craigslist Paranoia",
+    "description": "Understanding the compulsive need to refresh local classifieds at 3 AM looking for a 2018 Trek Marlin 5 that \"kinda looks like yours even though the picture is blurry.\"",
+    "author": "The Coalition for Refined Searching Algorithms",
+    "url": null,
+    "story": ""
+  },
+  {
+    "id": 3,
+    "title": "Coping With \"Who Takes Just the Wheel?\"",
+    "description": "An exploration into the deep, unresolved existential dread when you return to the rack to find your frame, one wheel, and absolutely no logic behind what just occurred.",
+    "author": "Prof. S. Spokes",
+    "url": null,
+    "story": ""
+  },
+  {
+    "id": 4,
+    "title": "The Four Stages of Having Your Bike Stolen",
+    "description": "Cycling Weekly's humorous but painfully accurate breakdown of the emotional journey every cyclist takes after discovering their bike is gone.",
+    "author": "Cycling Weekly",
+    "url": "https://www.cyclingweekly.com/news/comment/four-stages-bike-stolen-400187"
+  },
+  {
+    "id": 5,
+    "title": "LITELOK — High Security Bike Locks",
+    "description": "Anti-angle grinder locks engineered to resist the tool of choice for every opportunistic thief. British-made, solar-powered factory. For those ready to make their next bike harder to steal.",
+    "author": "LITELOK",
+    "url": "https://us.litelok.com/"
+  },
+  {
+    "id": 6,
+    "title": "The Last Post: Bicycle Love, Loss & Longing",
+    "description": "A heartfelt reflection on saying goodbye to beloved touring bikes after a cross-Europe adventure — on the strange grief of parting with a machine that carried you so far.",
+    "author": "Cycle Australia",
+    "url": "https://cycleaustralia2014.com/2024/08/11/the-last-post-bicycle-love-loss-longing/"
+  },
+  {
+    "id": 7,
+    "title": "The Afterlife of a Stolen Bike",
+    "description": "An investigation into what actually happens to your bike after it disappears — where stolen bikes end up, how they're moved, and why the odds of recovery are so brutally low.",
+    "author": "Escape Collective",
+    "url": "https://escapecollective.com/the-afterlife-of-a-stolen-bike/"
+  }
+]
