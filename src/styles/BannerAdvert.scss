@@ -2,9 +2,14 @@
 @use './mixins' as *;
 
 .banner-advert {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem 1rem;
+
+  @include respond-to(lg) {
+    width: 75%;
+    padding: 3rem;
+  }
 
   &__link {
     display: block;
@@ -34,31 +39,44 @@
   }
 
   &__text {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 42%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 0.75rem;
-    padding: 1.5rem 1.75rem;
-    background: rgba(253, 248, 230, 0.88);
-    backdrop-filter: blur(4px);
+    padding: 1.25rem 1rem;
+    background: rgba(253, 248, 230, 0.95);
+
+    @include respond-to(lg) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 42%;
+      justify-content: center;
+      padding: 1.5rem 1.75rem;
+      background: rgba(253, 248, 230, 0.88);
+      backdrop-filter: blur(4px);
+    }
   }
 
   &__eyebrow {
     font-family: var(--font-family-heading);
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--color-primary);
     line-height: 1.2;
+
+    @include respond-to(lg) {
+      font-size: 1.4rem;
+    }
   }
 
   &__tagline {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: var(--color-text-muted);
+
+    @include respond-to(lg) {
+      font-size: 0.85rem;
+    }
 
     em {
       font-style: italic;
@@ -66,9 +84,13 @@
   }
 
   &__body {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     color: var(--color-text-main);
     line-height: 1.6;
+
+    @include respond-to(lg) {
+      font-size: 0.8rem;
+    }
   }
 
   &__cta {
@@ -79,12 +101,16 @@
     background: var(--color-primary);
     color: #ffffff;
     font-family: var(--font-family-body);
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     border-radius: 6px;
     transition: background var(--transition-speed) ease;
+
+    @include respond-to(lg) {
+      font-size: 0.8rem;
+    }
 
     .banner-advert__link:hover & {
       background: var(--color-secondary);
