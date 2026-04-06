@@ -7,14 +7,17 @@ import '../styles/SubPages.scss';
 const OnlineMedium = () => {
     const [transmission, setTransmission] = useState(null);
     const [isChanneling, setIsChanneling] = useState(false);
+    const [lastId, setLastId] = useState(null);
 
     const handleAttemptConnection = () => {
         setIsChanneling(true);
         setTransmission(null);
 
         setTimeout(() => {
-            const random = messages[Math.floor(Math.random() * messages.length)];
+            const pool = messages.filter(m => m.id !== lastId);
+            const random = pool[Math.floor(Math.random() * pool.length)];
             setTransmission(random);
+            setLastId(random.id);
             setIsChanneling(false);
         }, 2500);
     };
