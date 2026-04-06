@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { IoChevronBack, IoChevronForward, IoPause, IoPlay } from 'react-icons/io5';
 import { GiScrollQuill, GiOpenBook, GiCrystalBall } from 'react-icons/gi';
 import { useTranslation } from 'react-i18next';
-import stagesData from '../data/stages.json';
 import BannerAdvert from './BannerAdvert';
 import '../styles/SubPages.scss';
 import '../styles/LandingPage.scss';
@@ -24,6 +23,7 @@ const itemVariants = {
 
 const GriefCounseling = () => {
     const { t } = useTranslation('griefcounseling');
+    const stagesData = useMemo(() => t('stagesets', { returnObjects: true }), [t]);
     const [currentSetIndex, setCurrentSetIndex] = useState(0);
     const [currentStageIndex, setCurrentStageIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false);

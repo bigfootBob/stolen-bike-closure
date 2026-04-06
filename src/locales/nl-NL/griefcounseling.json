@@ -12,6 +12,89 @@
     "show_all": "Ik ben er klaar voor. Laat me alle fasen zien.",
     "step_back": "Ik moet een stap terug doen."
   },
+  "stagesets": [
+    [
+      {
+        "stage": "1. Ontkenning",
+        "desc": "\"Ik heb het vast op het volgende blokje geparkeerd. Of misschien is het vandaag onzichtbaar.\"",
+        "advice": "Blijf rondjes lopen om het blok. Het traint je kuiten."
+      },
+      {
+        "stage": "2. Woede",
+        "desc": "\"Ik hoop dat de dief ermee een vulkaan inrijdt.\"",
+        "advice": "Schreeuw in een kussen. Of schrijf een scherpe recensie over het trottoir."
+      },
+      {
+        "stage": "3. Lopen",
+        "desc": "\"Lopen is natuurlijk. Mensen lopen al millennia. Ik hou van lopen. Het duurt nu 45 minuten om melk te halen.\"",
+        "advice": "Investeer in goede schoenen. Je woont er nu in."
+      },
+      {
+        "stage": "4. Bustarief",
+        "desc": "\"€1,08? Voor een rit die ruikt naar ongewassen sportkleding?\"",
+        "advice": "Accepteer dat het openbaar vervoer je nieuwe chauffeur is."
+      },
+      {
+        "stage": "5. Acceptatie",
+        "desc": "\"Het was een mooie fiets. Hij behoort nu het universum toe. (En ook Marktplaats-Henk).\"",
+        "advice": "Koop een U-slot de volgende keer. Een echte."
+      }
+    ],
+    [
+      {
+        "stage": "1. Schok",
+        "desc": "\"Wauw, de fietsfee had mijn stadsfiets blijkbaar nodig voor een noodgeval!\"",
+        "advice": "Adem diep in. De fee bestaat niet."
+      },
+      {
+        "stage": "2. Verwarring",
+        "desc": "\"Waarom lieten ze het voorwiel achter? Het is een heel mooi wiel.\"",
+        "advice": "Draag het wiel overal mee naartoe om je aan je verlies te herinneren."
+      },
+      {
+        "stage": "3. Onderhandelen",
+        "desc": "\"Als ik genoeg flyers ophang, brengen ze het vast terug met een berichtje van sorry.\"",
+        "advice": "Gebruik watervaste markers voor de flyers. Tranen smeren ze uit."
+      },
+      {
+        "stage": "4. Jaloezie",
+        "desc": "\"Kijk die vent daar op zijn fiets. Weet hij hoe gelukkig hij is?\"",
+        "advice": "Stop met staren naar fietsers. Ze voelen het."
+      },
+      {
+        "stage": "5. Vervanging",
+        "desc": "\"Ik koop een verroest frame uit de jaren 80 waar niemand aan wil komen.\"",
+        "advice": "Zorg voor een tetanusinjectie voor je eerste rit."
+      }
+    ],
+    [
+      {
+        "stage": "1. Ongeloof",
+        "desc": "\"Ik had het letterlijk 45 seconden op slot gezet terwijl ik een koffie haalde.\"",
+        "advice": "Neem de fiets de volgende keer mee naar binnen in het café. De barista begrijpt het wel."
+      },
+      {
+        "stage": "2. Wraak",
+        "desc": "\"Ik word een vigilante held die 's nachts fietsendieven opspoort.\"",
+        "advice": "Annuleer de batarang-bestelling. Je hebt het budget niet."
+      },
+      {
+        "stage": "3. Nostalgie",
+        "desc": "\"Weet je nog dat we door het park reden en samen door een kuil reden? Mooie tijden.\"",
+        "advice": "Schrijf een gedicht over de kuil. Het helpt."
+      },
+      {
+        "stage": "4. Berusting",
+        "desc": "\"Ik denk dat deze stad echt elke paar maanden een offer eist.\"",
+        "advice": "Betaal je tribuut en ga verder."
+      },
+      {
+        "stage": "5. Wedergeboorte",
+        "desc": "\"Ik heb geen versnellingen of remmen nodig. Ik koop een eenwieler.\"",
+        "advice": "Koop ook kniebeschermers. Veel ervan."
+      }
+    ]
+  ],
   "services": {
     "title": "Begeleidingsdiensten",
     "subtitle": "Extra premiumresources om uw spirituele herstel te ondersteunen.",

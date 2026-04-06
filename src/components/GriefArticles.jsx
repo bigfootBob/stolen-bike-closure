@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { GiOpenBook } from 'react-icons/gi';
-import articles from '../data/griefarticles.json';
+import { useTranslation } from 'react-i18next';
 import '../styles/SubPages.scss';
 
 const GriefArticles = () => {
+    const { t } = useTranslation('griefarticles');
+    const articles = useMemo(() => t('articles', { returnObjects: true }), [t]);
     const [pendingMessage, setPendingMessage] = useState(false);
 
     const handleClick = (url) => {
@@ -19,8 +21,8 @@ const GriefArticles = () => {
     return (
         <div className="page">
             <div className="page__header">
-                <h2>Grief Articles</h2>
-                <p>Peer-reviewed literature on the psychological impact of losing your bicycle.</p>
+                <h2>{t('header.title')}</h2>
+                <p>{t('header.subtitle')}</p>
             </div>
 
             <div className="counseling-list">
@@ -32,14 +34,14 @@ const GriefArticles = () => {
                         </div>
                         <p className="counseling-card__desc">{article.description}</p>
                         <div className="counseling-card__advice">
-                            <strong>Author:</strong> {article.author}
+                            <strong>{t('header.author_label')}</strong> {article.author}
                         </div>
                         <button
                             className="btn btn--secondary"
                             style={{ marginTop: '1.5rem' }}
                             onClick={() => handleClick(article.url)}
                         >
-                            {article.url ? 'Read Article ↗' : 'Read Article'}
+                            {article.url ? t('header.read_article_external') : t('header.read_article')}
                         </button>
                     </motion.div>
                 ))}
@@ -47,7 +49,7 @@ const GriefArticles = () => {
 
             {pendingMessage && (
                 <p style={{ textAlign: 'center', marginTop: '1.5rem', color: 'var(--color-primary)' }}>
-                    Full article pending publication. Check back soon.
+                    {t('header.pending')}
                 </p>
             )}
         </div>

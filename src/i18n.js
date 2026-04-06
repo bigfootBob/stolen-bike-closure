@@ -51,6 +51,13 @@ import enAURecoveryMerch from './locales/en-AU/recoverymerch.json';
 import nlNLRecoveryMerch from './locales/nl-NL/recoverymerch.json';
 import deDERecoveryMerch from './locales/de-DE/recoverymerch.json';
 
+import enUSGriefArticles from './locales/en-US/griefarticles.json';
+import zhCNGriefArticles from './locales/zh-CN/griefarticles.json';
+import ptBRGriefArticles from './locales/pt-BR/griefarticles.json';
+import enAUGriefArticles from './locales/en-AU/griefarticles.json';
+import nlNLGriefArticles from './locales/nl-NL/griefarticles.json';
+import deDEGriefArticles from './locales/de-DE/griefarticles.json';
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -70,12 +77,12 @@ i18n
       },
     },
     resources: {
-      'en-US': { landing: enUSLanding, layout: enUSLayout, advertisement: enUSAdvertisement, karmachronicles: enUSKarma, seancemessages: enUSSeance, griefcounseling: enUSGriefCounseling, recoverymerch: enUSRecoveryMerch },
-      'zh-CN': { landing: zhCNLanding, layout: zhCNLayout, advertisement: zhCNAdvertisement, karmachronicles: zhCNKarma, seancemessages: zhCNSeance, griefcounseling: zhCNGriefCounseling, recoverymerch: zhCNRecoveryMerch },
-      'pt-BR': { landing: ptBRLanding, layout: ptBRLayout, advertisement: ptBRAdvertisement, karmachronicles: ptBRKarma, seancemessages: ptBRSeance, griefcounseling: ptBRGriefCounseling, recoverymerch: ptBRRecoveryMerch },
-      'en-AU': { landing: enAULanding, layout: enAULayout, advertisement: enAUAdvertisement, karmachronicles: enAUKarma, seancemessages: enAUSeance, griefcounseling: enAUGriefCounseling, recoverymerch: enAURecoveryMerch },
-      'nl-NL': { landing: nlNLLanding, layout: nlNLLayout, advertisement: nlNLAdvertisement, karmachronicles: nlNLKarma, seancemessages: nlNLSeance, griefcounseling: nlNLGriefCounseling, recoverymerch: nlNLRecoveryMerch },
-      'de-DE': { landing: deDELanding, layout: deDELayout, advertisement: deDEAdvertisement, karmachronicles: deDEKarma, seancemessages: deDESeance, griefcounseling: deDEGriefCounseling, recoverymerch: deDERecoveryMerch },
+      'en-US': { landing: enUSLanding, layout: enUSLayout, advertisement: enUSAdvertisement, karmachronicles: enUSKarma, seancemessages: enUSSeance, griefcounseling: enUSGriefCounseling, recoverymerch: enUSRecoveryMerch, griefarticles: enUSGriefArticles },
+      'zh-CN': { landing: zhCNLanding, layout: zhCNLayout, advertisement: zhCNAdvertisement, karmachronicles: zhCNKarma, seancemessages: zhCNSeance, griefcounseling: zhCNGriefCounseling, recoverymerch: zhCNRecoveryMerch, griefarticles: zhCNGriefArticles },
+      'pt-BR': { landing: ptBRLanding, layout: ptBRLayout, advertisement: ptBRAdvertisement, karmachronicles: ptBRKarma, seancemessages: ptBRSeance, griefcounseling: ptBRGriefCounseling, recoverymerch: ptBRRecoveryMerch, griefarticles: ptBRGriefArticles },
+      'en-AU': { landing: enAULanding, layout: enAULayout, advertisement: enAUAdvertisement, karmachronicles: enAUKarma, seancemessages: enAUSeance, griefcounseling: enAUGriefCounseling, recoverymerch: enAURecoveryMerch, griefarticles: enAUGriefArticles },
+      'nl-NL': { landing: nlNLLanding, layout: nlNLLayout, advertisement: nlNLAdvertisement, karmachronicles: nlNLKarma, seancemessages: nlNLSeance, griefcounseling: nlNLGriefCounseling, recoverymerch: nlNLRecoveryMerch, griefarticles: nlNLGriefArticles },
+      'de-DE': { landing: deDELanding, layout: deDELayout, advertisement: deDEAdvertisement, karmachronicles: deDEKarma, seancemessages: deDESeance, griefcounseling: deDEGriefCounseling, recoverymerch: deDERecoveryMerch, griefarticles: deDEGriefArticles },
     },
     fallbackLng: 'en-US',
     defaultNS: 'landing',

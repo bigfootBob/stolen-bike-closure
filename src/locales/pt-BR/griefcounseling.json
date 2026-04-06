@@ -12,6 +12,89 @@
     "show_all": "Estou pronto. Me mostre todas as fases.",
     "step_back": "Preciso dar um passo atrás."
   },
+  "stagesets": [
+    [
+      {
+        "stage": "1. Negação",
+        "desc": "\"Provavelmente estacionei na próxima esquina. Ou talvez esteja invisível hoje.\"",
+        "advice": "Continue andando em círculos ao redor do quarteirão. Fortalece a panturrilha."
+      },
+      {
+        "stage": "2. Raiva",
+        "desc": "\"Espero que o ladrão vá de bike direto para um vulcão.\"",
+        "advice": "Grite num travesseiro. Ou escreva uma crítica raivosa para a calçada no Google."
+      },
+      {
+        "stage": "3. Caminhada",
+        "desc": "\"Caminhar é natural. Os humanos caminham há milênios. Adoro caminhar. Agora leva 45 minutos para buscar leite.\"",
+        "advice": "Invista em bons tênis. Você mora neles agora."
+      },
+      {
+        "stage": "4. Passagem de Ônibus",
+        "desc": "\"R$4,40? Por uma viagem que cheira a meia suja de academia?\"",
+        "advice": "Aceite que o transporte público é seu novo motorista particular."
+      },
+      {
+        "stage": "5. Aceitação",
+        "desc": "\"Era uma bicicleta boa. Agora ela pertence ao universo. (E também ao vendedor do OLX do bairro).\"",
+        "advice": "Compre um cadeado U da próxima vez. Um de verdade."
+      }
+    ],
+    [
+      {
+        "stage": "1. Choque",
+        "desc": "\"Uau, a fada das bicicletas deve ter precisado da minha speed de emergência!\"",
+        "advice": "Respire fundo. A fada não existe."
+      },
+      {
+        "stage": "2. Confusão",
+        "desc": "\"Por que eles deixaram a roda dianteira? É uma roda muito bonita.\"",
+        "advice": "Carregue a roda em todo lugar para lembrar da sua perda."
+      },
+      {
+        "stage": "3. Barganha",
+        "desc": "\"Se eu colocar panfletos suficientes, com certeza eles vão devolver com uma cartinha de desculpas.\"",
+        "advice": "Use canetas permanentes nos panfletos. As lágrimas vão borrar."
+      },
+      {
+        "stage": "4. Inveja",
+        "desc": "\"Olha aquele cara andando de bicicleta. Ele sabe como é sortudo?\"",
+        "advice": "Para de encarar ciclistas. Eles conseguem sentir."
+      },
+      {
+        "stage": "5. Substituição",
+        "desc": "\"Vou comprar um quadro enferrujado dos anos 80 que ninguém quer tocar.\"",
+        "advice": "Tome a vacina antitetânica antes do primeiro passeio."
+      }
+    ],
+    [
+      {
+        "stage": "1. Incredulidade",
+        "desc": "\"Eu trancou por literalmente 45 segundos enquanto pegava um café.\"",
+        "advice": "Da próxima vez, leva a bike para dentro do café. O barista vai entender."
+      },
+      {
+        "stage": "2. Vingança",
+        "desc": "\"Vou me tornar um vigilante que caça ladrões de bicicleta à noite.\"",
+        "advice": "Cancela o pedido do batarangue. Não tá no orçamento."
+      },
+      {
+        "stage": "3. Nostalgia",
+        "desc": "\"Lembra quando a gente pedalou pelo parque e caiu no mesmo buraco? Bons tempos.\"",
+        "advice": "Escreva um poema sobre o buraco. Ajuda."
+      },
+      {
+        "stage": "4. Resignação",
+        "desc": "\"Acho que essa cidade realmente exige um sacrifício a cada poucos meses.\"",
+        "advice": "Pague sua contribuição e siga em frente."
+      },
+      {
+        "stage": "5. Renascimento",
+        "desc": "\"Não preciso de marchas ou freios. Vou comprar um monociclo.\"",
+        "advice": "Também compra joelheiras. Muitas delas."
+      }
+    ]
+  ],
   "services": {
     "title": "Serviços de Aconselhamento",
     "subtitle": "Recursos premium adicionais para auxiliar sua recuperação espiritual.",

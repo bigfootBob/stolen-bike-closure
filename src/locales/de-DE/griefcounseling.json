@@ -12,6 +12,89 @@
     "show_all": "Ich bin bereit. Zeig mir alle Phasen.",
     "step_back": "Ich muss einen Schritt zurücktreten."
   },
+  "stagesets": [
+    [
+      {
+        "stage": "1. Verleugnung",
+        "desc": "\"Ich hab's bestimmt um die Ecke geparkt. Oder es ist heute unsichtbar.\"",
+        "advice": "Laufen Sie weiter in Kreisen um den Block. Das stärkt die Wadenmuskulatur."
+      },
+      {
+        "stage": "2. Wut",
+        "desc": "\"Ich hoffe, der Dieb fährt damit in einen Vulkan.\"",
+        "advice": "Schreien Sie in ein Kissen. Oder schreiben Sie eine wütende Rezension über den Bürgersteig."
+      },
+      {
+        "stage": "3. Zu Fuß gehen",
+        "desc": "\"Zu Fuß gehen ist natürlich. Menschen laufen seit Jahrtausenden. Ich liebe das Laufen. Es dauert jetzt 45 Minuten bis zur Milch.\"",
+        "advice": "Investieren Sie in gute Schuhe. Sie wohnen jetzt darin."
+      },
+      {
+        "stage": "4. Busticket",
+        "desc": "\"2,75 €? Für eine Fahrt, die nach ungewaschenem Sportzeug riecht?\"",
+        "advice": "Akzeptieren Sie, dass der ÖPNV Ihr neuer Chauffeur ist."
+      },
+      {
+        "stage": "5. Akzeptanz",
+        "desc": "\"Es war ein schönes Fahrrad. Es gehört jetzt dem Universum. (Und auch Klaus von eBay-Kleinanzeigen).\"",
+        "advice": "Kaufen Sie nächstes Mal ein U-Schloss. Ein richtiges."
+      }
+    ],
+    [
+      {
+        "stage": "1. Schock",
+        "desc": "\"Wow, die Fahrradfee brauchte wohl mein Hybridrad für einen Notfall!\"",
+        "advice": "Atmen Sie tief durch. Die Fee existiert nicht."
+      },
+      {
+        "stage": "2. Verwirrung",
+        "desc": "\"Warum haben sie das Vorderrad gelassen? Es ist ein sehr schönes Rad.\"",
+        "advice": "Tragen Sie das Rad überall hin, um an Ihren Verlust erinnert zu werden."
+      },
+      {
+        "stage": "3. Verhandeln",
+        "desc": "\"Wenn ich genug Flugblätter aufhänge, bringen sie es bestimmt mit einer Entschuldigungsnote zurück.\"",
+        "advice": "Verwenden Sie wasserfeste Marker für die Flugblätter. Tränen werden sie verwischen."
+      },
+      {
+        "stage": "4. Neid",
+        "desc": "\"Schau mal, der Typ fährt Fahrrad. Weiß er, wie glücklich er ist?\"",
+        "advice": "Hören Sie auf, Radfahrer anzustarren. Die spüren das."
+      },
+      {
+        "stage": "5. Ersatz",
+        "desc": "\"Ich kaufe mir einen rostigen Rahmen aus den 80ern, den niemand anfassen will.\"",
+        "advice": "Holen Sie sich eine Tetanusimpfung vor der ersten Fahrt."
+      }
+    ],
+    [
+      {
+        "stage": "1. Unglaube",
+        "desc": "\"Ich hatte es buchstäblich 45 Sekunden angeschlossen, während ich einen Kaffee holte.\"",
+        "advice": "Bringen Sie das Fahrrad nächstes Mal in das Café. Der Barista wird Verständnis haben."
+      },
+      {
+        "stage": "2. Rache",
+        "desc": "\"Ich werde ein Vigilante-Held, der nachts Fahrraddiebe jagt.\"",
+        "advice": "Stornieren Sie die Batarang-Bestellung. Das Budget reicht nicht."
+      },
+      {
+        "stage": "3. Nostalgie",
+        "desc": "\"Erinnerst du dich, als wir durch den Park gefahren sind und zusammen in ein Schlagloch gefahren sind? Schöne Zeiten.\"",
+        "advice": "Schreiben Sie ein Gedicht über das Schlagloch. Es hilft."
+      },
+      {
+        "stage": "4. Resignation",
+        "desc": "\"Diese Stadt verlangt wohl alle paar Monate ein Opfer.\"",
+        "advice": "Zollen Sie Ihren Tribut und machen Sie weiter."
+      },
+      {
+        "stage": "5. Wiedergeburt",
+        "desc": "\"Ich brauche keine Gänge oder Bremsen. Ich kaufe ein Einrad.\"",
+        "advice": "Kaufen Sie auch Knieschoner. Viele davon."
+      }
+    ]
+  ],
   "services": {
     "title": "Beratungsangebote",
     "subtitle": "Zusätzliche Premium-Ressourcen zur Unterstützung Ihrer spirituellen Genesung.",

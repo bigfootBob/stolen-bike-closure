@@ -1,0 +1,61 @@
+{
+  "header": {
+    "title": "Trauerartikel",
+    "subtitle": "Begutachtete Fachliteratur über die psychologischen Auswirkungen des Fahrradverlusts.",
+    "author_label": "Autor:",
+    "read_article": "Artikel lesen",
+    "read_article_external": "Artikel lesen \u2197",
+    "pending": "Vollständiger Artikel wartet auf Veröffentlichung. Schauen Sie bald wieder vorbei."
+  },
+  "articles": [
+    {
+      "id": 1,
+      "title": "Das Phantom-Pedal-Phänomen",
+      "description": "Eine klinische Untersuchung darüber, warum Sie beim Warten an Fußgängerampeln instinktiv das Bein ausfahren, um einen nicht vorhandenen Ständer abzufangen.",
+      "author": "Dr. H. Handlebars, PhD in Pendlerpsychologie",
+      "url": "/assets/articles/phantom-pedal-phenomenon.html"
+    },
+    {
+      "id": 2,
+      "title": "eBay-Kleinanzeigen-Paranoia",
+      "description": "Ein Blick auf den zwanghaften Drang, nachts um 3 Uhr eBay-Kleinanzeigen zu durchsuchen — auf der Suche nach einem Trek Marlin 5 von 2018, der \"irgendwie aussieht wie Ihres, auch wenn das Foto unscharf ist.\"",
+      "author": "Die Koalition für verfeinerte Suchalgorithmen",
+      "url": "/assets/articles/craigslist-paranoia.html"
+    },
+    {
+      "id": 3,
+      "title": "Umgang mit \"Wer nimmt nur das Rad?\"",
+      "description": "Eine Erkundung der tiefen, ungelösten existenziellen Angst, wenn Sie zum Fahrradständer zurückkehren und nur den Rahmen, ein Rad und keinerlei Logik für das Geschehene vorfinden.",
+      "author": "Prof. S. Speichen",
+      "url": "/assets/articles/who-takes-just-the-wheel.html"
+    },
+    {
+      "id": 4,
+      "title": "The Four Stages of Having Your Bike Stolen",
+      "description": "Cycling Weeklys humorvolle, aber schmerzhaft treffende Aufschlüsselung der emotionalen Reise, die jeder Radfahrer nach dem Diebstahl seines Fahrrads durchmacht.",
+      "author": "Cycling Weekly",
+      "url": "https://www.cyclingweekly.com/news/comment/four-stages-bike-stolen-400187"
+    },
+    {
+      "id": 5,
+      "title": "LITELOK — Hochsicherheits-Fahrradschlösser",
+      "description": "Winkelschleifer-resistente Schlösser, entwickelt gegen das Lieblingswerkzeug opportunistischer Diebe. In Großbritannien hergestellt, solarangetriebene Fabrik. Für alle, die ihr nächstes Fahrrad schwerer stehlbar machen wollen.",
+      "author": "LITELOK",
+      "url": "https://us.litelok.com/"
+    },
+    {
+      "id": 6,
+      "title": "The Last Post: Bicycle Love, Loss & Longing",
+      "description": "Eine herzliche Reflexion über den Abschied von geliebten Tourenrädern nach einem Europa-Abenteuer — über die seltsame Trauer, sich von einer Maschine zu trennen, die einen so weit getragen hat.",
+      "author": "Cycle Australia",
+      "url": "https://cycleaustralia2014.com/2024/08/11/the-last-post-bicycle-love-loss-longing/"
+    },
+    {
+      "id": 7,
+      "title": "The Afterlife of a Stolen Bike",
+      "description": "Eine Untersuchung darüber, was wirklich mit Ihrem Fahrrad passiert, nachdem es verschwunden ist — wo gestohlene Räder landen, wie sie weiterbewegt werden und warum die Chancen auf Wiederfindung so brutal gering sind.",
+      "author": "Escape Collective",
+      "url": "https://escapecollective.com/the-afterlife-of-a-stolen-bike/"
+    }
+  ]
+}

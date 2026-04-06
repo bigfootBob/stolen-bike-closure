@@ -1,0 +1,61 @@
+{
+  "header": {
+    "title": "悲伤文章",
+    "subtitle": "关于失去自行车的心理影响的同行评审文献。",
+    "author_label": "作者：",
+    "read_article": "阅读文章",
+    "read_article_external": "阅读文章 \u2197",
+    "pending": "完整文章等待发布，请稍后再来。"
+  },
+  "articles": [
+    {
+      "id": 1,
+      "title": "幻象踏板现象",
+      "description": "临床研究：为何步行等红绿灯时，你仍会本能地伸腿去撑一个并不存在的脚撑。",
+      "author": "H. 车把博士，通勤心理学博士",
+      "url": "/assets/articles/phantom-pedal-phenomenon.html"
+    },
+    {
+      "id": 2,
+      "title": "闲鱼偏执症",
+      "description": "探究凌晨3点强迫性刷新闲鱼的冲动——寻找一辆2018款崔克Marlin 5，「看起来有点像你的那辆，虽然照片很模糊」。",
+      "author": "精炼搜索算法联盟",
+      "url": "/assets/articles/craigslist-paranoia.html"
+    },
+    {
+      "id": 3,
+      "title": "应对「谁只拿走车轮？」",
+      "description": "深入探讨当你回到停车架，发现只剩车架、一个车轮，以及毫无逻辑可言的现场时，那种深层、未解的存在性恐惧。",
+      "author": "辐条教授",
+      "url": "/assets/articles/who-takes-just-the-wheel.html"
+    },
+    {
+      "id": 4,
+      "title": "The Four Stages of Having Your Bike Stolen",
+      "description": "《Cycling Weekly》对每位车主发现爱车失窃后情绪历程的幽默而痛苦精准的解析。",
+      "author": "Cycling Weekly",
+      "url": "https://www.cyclingweekly.com/news/comment/four-stages-bike-stolen-400187"
+    },
+    {
+      "id": 5,
+      "title": "LITELOK — 高安全性自行车锁",
+      "description": "专为抵抗角磨机而设计的车锁，直击机会型盗贼的惯用工具。英国制造，太阳能工厂。适合那些决心让下一辆车更难被偷的人。",
+      "author": "LITELOK",
+      "url": "https://us.litelok.com/"
+    },
+    {
+      "id": 6,
+      "title": "The Last Post: Bicycle Love, Loss & Longing",
+      "description": "一篇深情的回忆，讲述在横跨欧洲的旅途结束后与深爱的旅行车告别——关于与一台承载你走过漫长旅程的机器分离时那种奇异的悲伤。",
+      "author": "Cycle Australia",
+      "url": "https://cycleaustralia2014.com/2024/08/11/the-last-post-bicycle-love-loss-longing/"
+    },
+    {
+      "id": 7,
+      "title": "The Afterlife of a Stolen Bike",
+      "description": "调查你的自行车失踪后究竟发生了什么——被盗车辆的去向、转手方式，以及为何找回的概率如此残酷地低。",
+      "author": "Escape Collective",
+      "url": "https://escapecollective.com/the-afterlife-of-a-stolen-bike/"
+    }
+  ]
+}

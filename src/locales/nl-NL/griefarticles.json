@@ -1,0 +1,61 @@
+{
+  "header": {
+    "title": "Rouwartikelen",
+    "subtitle": "Peer-reviewed literatuur over de psychologische impact van het verlies van uw fiets.",
+    "author_label": "Auteur:",
+    "read_article": "Artikel lezen",
+    "read_article_external": "Artikel lezen \u2197",
+    "pending": "Volledig artikel wacht op publicatie. Kom snel terug."
+  },
+  "articles": [
+    {
+      "id": 1,
+      "title": "Het Spookpedaal-Fenomeen",
+      "description": "Een klinische blik op waarom u bij voetgangersoversteekplaatsen nog steeds instinctief uw been uitsteekt om een niet-bestaande standaard op te vangen.",
+      "author": "Dr. H. Stuur, PhD in Forensen-Psychologie",
+      "url": "/assets/articles/phantom-pedal-phenomenon.html"
+    },
+    {
+      "id": 2,
+      "title": "Marktplaats-Paranoia",
+      "description": "Inzicht in de dwangmatige behoefte om 's nachts om 3 uur Marktplaats te verversen op zoek naar een Trek Marlin 5 uit 2018 die \"een beetje op die van jou lijkt, ook al is de foto wazig.\"",
+      "author": "De Coalitie voor Verfijnde Zoekalgoritmen",
+      "url": "/assets/articles/craigslist-paranoia.html"
+    },
+    {
+      "id": 3,
+      "title": "Omgaan met \"Wie Neemt Alleen het Wiel?\"",
+      "description": "Een verkenning van de diepe, onopgeloste existentiële angst wanneer u terugkeert naar het rek en alleen het frame, één wiel en absoluut geen logica achter wat er zojuist is gebeurd aantreft.",
+      "author": "Prof. S. Spaken",
+      "url": "/assets/articles/who-takes-just-the-wheel.html"
+    },
+    {
+      "id": 4,
+      "title": "The Four Stages of Having Your Bike Stolen",
+      "description": "Cycling Weekly's humoristische maar pijnlijk accurate beschrijving van de emotionele reis die elke fietser maakt nadat zijn fiets is gestolen.",
+      "author": "Cycling Weekly",
+      "url": "https://www.cyclingweekly.com/news/comment/four-stages-bike-stolen-400187"
+    },
+    {
+      "id": 5,
+      "title": "LITELOK — Hoogbeveiligde Fietssloten",
+      "description": "Slijptol-resistente sloten ontworpen om het favoriete gereedschap van elke opportunistische dief te weerstaan. Brits gemaakt, zonne-energie fabriek. Voor degenen die hun volgende fiets moeilijker te stelen willen maken.",
+      "author": "LITELOK",
+      "url": "https://us.litelok.com/"
+    },
+    {
+      "id": 6,
+      "title": "The Last Post: Bicycle Love, Loss & Longing",
+      "description": "Een hartverwarmende reflectie op het afscheid nemen van geliefde toerfietsen na een avontuur door Europa — over het vreemde verdriet van afscheid nemen van een machine die u zo ver heeft gedragen.",
+      "author": "Cycle Australia",
+      "url": "https://cycleaustralia2014.com/2024/08/11/the-last-post-bicycle-love-loss-longing/"
+    },
+    {
+      "id": 7,
+      "title": "The Afterlife of a Stolen Bike",
+      "description": "Een onderzoek naar wat er werkelijk met uw fiets gebeurt nadat hij verdwijnt — waar gestolen fietsen belanden, hoe ze worden verplaatst en waarom de kans op terugvinden zo wreed laag is.",
+      "author": "Escape Collective",
+      "url": "https://escapecollective.com/the-afterlife-of-a-stolen-bike/"
+    }
+  ]
+}

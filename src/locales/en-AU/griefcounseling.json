@@ -12,6 +12,89 @@
     "show_all": "I'm ready. Show me all the stages.",
     "step_back": "I need to take a step back."
   },
+  "stagesets": [
+    [
+      {
+        "stage": "1. Denial",
+        "desc": "\"I probably just parked it around the corner. Or maybe it's invisible today.\"",
+        "advice": "Keep walking around the block in circles. It builds calf muscles, mate."
+      },
+      {
+        "stage": "2. Anger",
+        "desc": "\"I hope the thief rides it into a billabong.\"",
+        "advice": "Scream into a pillow. Or write a strongly worded review for the footpath."
+      },
+      {
+        "stage": "3. Walking",
+        "desc": "\"Walking is natural. Humans have walked for millennia. I love walking. It takes 45 minutes to get milk now.\"",
+        "advice": "Invest in good thongs. You live in them now."
+      },
+      {
+        "stage": "4. Bus Fare",
+        "desc": "\"$3.20? For a ride that smells like an unwashed footy jumper?\"",
+        "advice": "Accept that public transit is your new chauffeured chariot."
+      },
+      {
+        "stage": "5. Acceptance",
+        "desc": "\"It was a ripper bike. It belongs to the universe now. (And also Dave from Gumtree).\"",
+        "advice": "Buy a proper D-lock next time. A real one."
+      }
+    ],
+    [
+      {
+        "stage": "1. Shock",
+        "desc": "\"Strewth, the bike fairy must have needed my hybrid for an arvo emergency!\"",
+        "advice": "Take deep breaths. The fairy isn't real."
+      },
+      {
+        "stage": "2. Confusion",
+        "desc": "\"Why did they leave the front wheel? It's a very bonzer wheel.\"",
+        "advice": "Carry the wheel everywhere to remind you of your loss."
+      },
+      {
+        "stage": "3. Bargaining",
+        "desc": "\"If I post enough flyers, they'll surely return it with an apology note.\"",
+        "advice": "Use waterproof markers for the flyers. Tears will smudge them."
+      },
+      {
+        "stage": "4. Envy",
+        "desc": "\"Look at that bloke riding a bike. Does he know how lucky he is?\"",
+        "advice": "Stop glaring at cyclists. They can feel it."
+      },
+      {
+        "stage": "5. Replacement",
+        "desc": "\"I am buying a $50 rusted frame from the 80s that nobody will touch.\"",
+        "advice": "Get a tetanus shot before your first ride."
+      }
+    ],
+    [
+      {
+        "stage": "1. Disbelief",
+        "desc": "\"I locked it for literally 45 seconds while I grabbed a flat white.\"",
+        "advice": "Next time, bring the bike into the café. The barista will understand."
+      },
+      {
+        "stage": "2. Vengeance",
+        "desc": "\"I will become a vigilante hero who hunts bike thieves in the arvo.\"",
+        "advice": "Cancel the batarang order. You don't have the budget."
+      },
+      {
+        "stage": "3. Nostalgia",
+        "desc": "\"Remember that time we rode through the park and hit a pothole together? Good times.\"",
+        "advice": "Write a poem about the pothole. It helps."
+      },
+      {
+        "stage": "4. Resignation",
+        "desc": "\"I guess this city really does require a sacrifice every few months.\"",
+        "advice": "Pay your tribute and move on."
+      },
+      {
+        "stage": "5. Rebirth",
+        "desc": "\"I don't need gears or brakes. I'm getting a unicycle.\"",
+        "advice": "Also get knee pads. Lots of them."
+      }
+    ]
+  ],
   "services": {
     "title": "Counselling Services",
     "subtitle": "Additional premium resources to aid your spiritual recovery.",

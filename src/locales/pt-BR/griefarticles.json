@@ -1,0 +1,61 @@
+{
+  "header": {
+    "title": "Artigos sobre o Luto",
+    "subtitle": "Literatura revisada por pares sobre o impacto psicológico de perder sua bicicleta.",
+    "author_label": "Autor:",
+    "read_article": "Ler Artigo",
+    "read_article_external": "Ler Artigo \u2197",
+    "pending": "Artigo completo aguardando publicação. Volte em breve."
+  },
+  "articles": [
+    {
+      "id": 1,
+      "title": "O Fenômeno do Pedal Fantasma",
+      "description": "Um olhar clínico sobre por que você ainda chuta instintivamente a perna para travar um descanso inexistente ao esperar em semáforos a pé.",
+      "author": "Dr. H. Guidão, PhD em Psicologia do Ciclista Urbano",
+      "url": "/assets/articles/phantom-pedal-phenomenon.html"
+    },
+    {
+      "id": 2,
+      "title": "Paranoia no OLX",
+      "description": "Entendendo a necessidade compulsiva de atualizar o OLX às 3 da manhã procurando uma Trek Marlin 5 2018 que \"parece a sua mesmo com a foto borrada.\"",
+      "author": "A Coalizão por Algoritmos de Busca Refinados",
+      "url": "/assets/articles/craigslist-paranoia.html"
+    },
+    {
+      "id": 3,
+      "title": "Lidando com \"Quem Leva Só a Roda?\"",
+      "description": "Uma exploração do profundo pavor existencial quando você volta ao bicicletário e encontra o quadro, uma roda e absolutamente nenhuma lógica para o que acabou de acontecer.",
+      "author": "Prof. S. Raios",
+      "url": "/assets/articles/who-takes-just-the-wheel.html"
+    },
+    {
+      "id": 4,
+      "title": "The Four Stages of Having Your Bike Stolen",
+      "description": "A análise humorística mas dolorosamente precisa da Cycling Weekly sobre a jornada emocional de todo ciclista ao descobrir que sua bike foi roubada.",
+      "author": "Cycling Weekly",
+      "url": "https://www.cyclingweekly.com/news/comment/four-stages-bike-stolen-400187"
+    },
+    {
+      "id": 5,
+      "title": "LITELOK — Cadeados de Alta Segurança",
+      "description": "Cadeados resistentes a esmerilhadeiras, projetados para resistir à ferramenta preferida de todo ladrão oportunista. Fabricado no Reino Unido, fábrica solar. Para quem está pronto para dificultar o roubo da próxima bike.",
+      "author": "LITELOK",
+      "url": "https://us.litelok.com/"
+    },
+    {
+      "id": 6,
+      "title": "The Last Post: Bicycle Love, Loss & Longing",
+      "description": "Uma reflexão emocionante sobre se despedir de amadas bikes de touring após uma aventura pela Europa — sobre a estranha dor de se separar de uma máquina que te carregou tão longe.",
+      "author": "Cycle Australia",
+      "url": "https://cycleaustralia2014.com/2024/08/11/the-last-post-bicycle-love-loss-longing/"
+    },
+    {
+      "id": 7,
+      "title": "The Afterlife of a Stolen Bike",
+      "description": "Uma investigação sobre o que realmente acontece com sua bike depois que ela desaparece — para onde vão as bicicletas roubadas, como são movidas e por que as chances de recuperação são tão brutalmente baixas.",
+      "author": "Escape Collective",
+      "url": "https://escapecollective.com/the-afterlife-of-a-stolen-bike/"
+    }
+  ]
+}
