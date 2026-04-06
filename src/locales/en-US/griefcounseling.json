@@ -1,0 +1,31 @@
+{
+  "stages": {
+    "title": "The 5 Stages of Bike Grief",
+    "subtitle": "Processing the loss of your two-wheeled companion.",
+    "coping_strategy": "Coping Strategy:",
+    "controls": {
+      "prev": "Previous Perspective",
+      "next": "Next Perspective",
+      "play": "Play Presentation",
+      "pause": "Pause Presentation"
+    },
+    "show_all": "I'm ready. Show me all the stages.",
+    "step_back": "I need to take a step back."
+  },
+  "services": {
+    "title": "Counseling Services",
+    "subtitle": "Additional premium resources to aid your spiritual recovery.",
+    "obituary": {
+      "title": "Obituary Templates",
+      "body": "Beautifully crafted, pre-written obituaries for your local classifieds. Honor the exact top-tube geometry and emotional impact your bike had on your life."
+    },
+    "articles": {
+      "title": "Grief Articles",
+      "body": "Explore our peer-reviewed library dissecting the psychological impact of seeing a stranger riding your bike two weeks later and knowing there's nothing you can do."
+    },
+    "medium": {
+      "title": "Personal Medium",
+      "body": "Connect with an automated online medium who can channel online the remaining spirit of your bicycle, helping you finally say goodbye to its ghost."
+    }
+  }
+}

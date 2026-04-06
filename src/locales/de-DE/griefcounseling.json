@@ -1,0 +1,31 @@
+{
+  "stages": {
+    "title": "Die 5 Phasen der Fahrradtrauer",
+    "subtitle": "Die Verarbeitung des Verlustes Ihres zweirädrigen Begleiters.",
+    "coping_strategy": "Bewältigungsstrategie:",
+    "controls": {
+      "prev": "Vorherige Perspektive",
+      "next": "Nächste Perspektive",
+      "play": "Präsentation abspielen",
+      "pause": "Präsentation pausieren"
+    },
+    "show_all": "Ich bin bereit. Zeig mir alle Phasen.",
+    "step_back": "Ich muss einen Schritt zurücktreten."
+  },
+  "services": {
+    "title": "Beratungsangebote",
+    "subtitle": "Zusätzliche Premium-Ressourcen zur Unterstützung Ihrer spirituellen Genesung.",
+    "obituary": {
+      "title": "Nachrufsvorlagen",
+      "body": "Sorgfältig ausgearbeitete, vorgeschriebene Nachrufe für Ihren lokalen Anzeiger. Ehren Sie die genaue Oberrohrgeometrie und die emotionale Wirkung, die Ihr Fahrrad auf Ihr Leben hatte."
+    },
+    "articles": {
+      "title": "Trauerartikel",
+      "body": "Erkunden Sie unsere von Fachleuten geprüfte Bibliothek, die die psychologischen Auswirkungen analysiert, wenn man zwei Wochen später einen Fremden auf dem eigenen Fahrrad sieht und weiß, dass man nichts dagegen tun kann."
+    },
+    "medium": {
+      "title": "Persönliches Medium",
+      "body": "Verbinden Sie sich mit einem automatisierten Online-Medium, das den verbleibenden Geist Ihres Fahrrads kanalisieren kann und Ihnen hilft, endlich von seinem Gespenst Abschied zu nehmen."
+    }
+  }
+}

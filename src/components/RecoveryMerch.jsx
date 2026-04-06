@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import '../styles/SubPages.scss';
 
 const RecoveryMerch = () => {
+    const { t } = useTranslation('recoverymerch');
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
@@ -23,7 +25,7 @@ const RecoveryMerch = () => {
                 }
             } catch (error) {
                 if (import.meta.env.DEV) console.error("Failed to fetch merch:", error);
-                setError('We could not load the merch catalog right now. Please try again shortly.');
+                setError(t('error'));
             } finally {
                 setLoading(false);
             }
@@ -48,12 +50,12 @@ const RecoveryMerch = () => {
     return (
         <div className="page">
             <div className="page__header">
-                <h2>Recovery Merch</h2>
-                <p>Retail therapy is cheaper than a new bike. (Barely).</p>
+                <h2>{t('title')}</h2>
+                <p>{t('subtitle')}</p>
             </div>
 
             {loading ? (
-                <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--color-primary)' }}>Loading inventory...</div>
+                <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--color-primary)' }}>{t('loading')}</div>
             ) : error ? (
                 <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--color-text-main)' }}>{error}</div>
             ) : (
@@ -87,7 +89,7 @@ const RecoveryMerch = () => {
                                     {imageUrl ? (
                                         <img src={imageUrl} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                                     ) : (
-                                        <div style={{ color: 'var(--color-text-muted)' }}>No Image</div>
+                                        <div style={{ color: 'var(--color-text-muted)' }}>{t('no_image')}</div>
                                     )}
                                 </div>
 
@@ -103,7 +105,7 @@ const RecoveryMerch = () => {
                                             openProductInNewTab(product.slug);
                                         }}
                                     >
-                                        View Store
+                                        {t('view_store')}
                                     </button>
                                 </div>
                             </motion.li>

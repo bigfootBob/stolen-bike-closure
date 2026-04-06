@@ -1,0 +1,34 @@
+{
+  "ui": {
+    "title": "Crônicas do Carma",
+    "subtitle": "Porque às vezes o universo contra-ataca.",
+    "case_file": "Caso #{{number}}",
+    "karma_level": "Nível de Carma:",
+    "submit_story": "Envie Sua História",
+    "build_story": "Construir uma História",
+    "close_modal": "Fechar"
+  },
+  "stories": [
+    {
+      "title": "O Ladrão que Roubou uma Bike sem Freios",
+      "summary": "Danny achou que tinha ganhado uma fixie. Ganhou uma viagem direto para o arbusto no final da Rua 4.",
+      "karmaLevel": "Imediato",
+      "karmaLevelKey": "immediate",
+      "story": "Era uma terça-feira à noite quando Danny avistou a fixie preta fosca presa — frouxamente, como o destino quis — a um poste em frente a um café na Rua Clement. Em menos de quatro minutos ela era dele. Em menos de seis, ele descia a ladeira em direção à Rua 4 em velocidade máxima, pernas girando livremente, vento no rosto, se sentindo invencível.\n\nA bike não tinha freios. Isso é uma característica conhecida das bikes de pista. Danny não sabia disso. Danny nunca tinha andado de fixie na vida. Danny também, de forma bastante crítica, nunca tinha descido uma ladeira que terminava numa cerca viva, num muro de pedra baixo e no jardim particular de um engenheiro civil aposentado chamado Gerald que, naquele exato momento, estava regando suas rosas.\n\nO impacto foi descrito por Gerald como 'considerável.' Danny saiu ileso, o que talvez seja a parte mais decepcionante desta história. A bike, no entanto, torceu o garfo dianteiro na parede do jardim de Gerald e ficou inutilizável. Danny a abandonou no local e voltou para casa a pé. Gerald ficou com a bike. Gerald consertou o garfo. Gerald agora pedala até a feira orgânica todo domingo e adora cada segundo disso."
+    },
+    {
+      "title": "A Gangue da Corrente Enferrujada",
+      "summary": "Roubada durante uma chuva forte, a corrente da bike travou exatamente 3 milhas antes da casa do ladrão. Ele teve que carregá-la de volta.",
+      "karmaLevel": "Fogo Lento",
+      "karmaLevelKey": "slow-burn",
+      "story": "Marcus estava de olho na bike havia três dias. Uma híbrida azul empoeirada, presa do lado de fora do prédio na Rua Vine com um cadeado de cabo que uma criança determinada teria conseguido abrir. Ah, ele a queria... ela seria sua. Ele esperou a chuva; não por qualquer raciocínio estratégico, mas porque estava no bairro quando a tempestade chegou e achou que o dono dificilmente viria verificar.\n\nNisso ele acertou. Em todo o resto, errou feio.\n\nA bike não era pedalada há quatro meses. Sua dona, uma estudante de pós-graduação, pretendia lubrificar a corrente desde setembro. Agora era janeiro. A corrente havia desenvolvido um padrão de ferrugem que um metalurgista descreveria mais tarde, ao ver uma foto, como 'impressionantemente completo.'\n\nMarcus percorreu exatamente 3,1 milhas — confirmadas depois pelo segmento do Strava que ele ativou sem querer num celular emprestado — antes de a corrente travar completamente numa pequena subida na Avenida Burnside. A bike parou. Marcus, brevemente, não; se segurou no guidão na última hora.\n\nDepois disso, ele carregou a bike as três milhas restantes até em casa, na chuva. Levou uma hora e quarenta minutos. Os vizinhos o viram chegar. Ele disse que tinha encontrado a bike e ninguém acreditou. Ela ficou no corredor por duas semanas antes de ele deixá-la do lado de fora do prédio de outra pessoa com um cartaz 'DE GRAÇA' colado no quadro."
+    },
+    {
+      "title": "O Incidente do Apple AirTag",
+      "summary": "A dona não chamou a polícia. Apenas ativou remotamente o alto-falante escondido tocando 'Baby Shark' às 3 da manhã por uma semana inteira.",
+      "karmaLevel": "Psicológico",
+      "karmaLevelKey": "psychological",
+      "story": "Quando a Specialized Sirrus de Renata foi roubada de fora da academia numa quarta-feira à tarde, ela não entrou em pânico. Ela havia antecipado isso. Dezoito meses antes, após sua bike anterior ter sido levada, Renata fez o que qualquer pessoa razoável com formação em engenharia e uma profunda capacidade de paciência faria: escondeu um AirTag dentro do tubo do guidão, envolto em fita isolante, encaixado atrás da tampa do punho.\n\nNa manhã de quinta-feira ela já sabia exatamente onde a bike estava. Uma casa na Rua Delancey, onze quarteirões dali. Ela não chamou a polícia. Na última vez tinha chamado. Desta vez ela tinha um plano diferente.\n\nTodas as noites por sete noites, às exatamente 3h07, Renata acionava o pequeno alto-falante Bluetooth que também havia escondido dentro do canote do selim... um alto-falante que ela admitiria mais tarde ter comprado especificamente para essa contingência. Ele tocava Baby Shark sem parar em volume moderado. Alto o suficiente para acordar o ladrão, mas não tanto para acordar os vizinhos.\n\nEla monitorava o AirTag. A bike não se moveu por quatro dias. No quinto dia se deslocou seis quarteirões. No sexto dia apareceu em outro endereço. No sétimo dia foi abandonada, destrancada, num bicicletário público em frente a uma farmácia na Broadway.\n\nRenata a recuperou às 7h da manhã. A tampa do punho havia sido arrancada, presumivelmente numa busca desesperada pela fonte da música. O AirTag permanecia intacto, exatamente onde ela o havia deixado. Ela ainda tem a bike. Ela não removeu o alto-falante... doot doot doot."
+    }
+  ]
+}

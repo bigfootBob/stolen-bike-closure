@@ -1,0 +1,34 @@
+{
+  "ui": {
+    "title": "Karma-Chroniken",
+    "subtitle": "Denn manchmal schlägt das Universum zurück.",
+    "case_file": "Akte #{{number}}",
+    "karma_level": "Karma-Level:",
+    "submit_story": "Eigene Geschichte einreichen",
+    "build_story": "Geschichte erstellen",
+    "close_modal": "Schließen"
+  },
+  "stories": [
+    {
+      "title": "Der Dieb, der ein Fahrrad ohne Bremsen stahl",
+      "summary": "Danny dachte, er hätte ein Fixie ergattert. Er ergatterte eine Reise in die Hecken am Ende der 4. Straße.",
+      "karmaLevel": "Sofortig",
+      "karmaLevelKey": "immediate",
+      "story": "Es war ein Dienstagabend, als Danny das matte schwarze Fixie entdeckte — locker, wie es das Schicksal wollte — an einem Straßenschild vor einem Café in der Clement Street befestigt. Innerhalb von vier Minuten gehörte es ihm. Innerhalb von sechs raste er den Hügel Richtung 4th Street hinunter, die Beine frei kreisend, Wind im Gesicht, sich unbesiegbar fühlend.\n\nDas Fahrrad hatte keine Bremsen. Das ist eine bekannte Eigenschaft von Bahnrädern. Danny wusste das nicht. Danny hatte noch nie ein Fixie gefahren in seinem Leben. Danny hatte auch, entscheidend, noch nie einen Hügel hinuntergefahren, der in einer Hecke, einer niedrigen Steinmauer und dem Privatgarten eines pensionierten Bauingenieurs namens Gerald endete, der in genau diesem Moment seine Rosen goss.\n\nDen Aufprall beschrieb Gerald als 'beträchtlich.' Danny blieb unverletzt, was vielleicht der enttäuschendste Teil dieser Geschichte ist. Das Fahrrad hatte jedoch seine Vordergabel an Geralds Gartenmauer verbogen und war nicht mehr fahrbar. Danny ließ es stehen und ging zu Fuß nach Hause. Gerald behielt das Fahrrad. Gerald reparierte die Gabel. Gerald fährt damit jetzt jeden Sonntag zum Wochenmarkt und liebt es."
+    },
+    {
+      "title": "Die Rostige Kettenbande",
+      "summary": "Während eines Regengusses gestohlen, blockierte die Kette des Fahrrads genau 5 Kilometer vom Haus des Diebes entfernt. Er musste es nach Hause tragen.",
+      "karmaLevel": "Schwelend",
+      "karmaLevelKey": "slow-burn",
+      "story": "Marcus hatte das Fahrrad seit drei Tagen im Blick. Ein staubiges blaues Hybridrad, vor dem Wohnhaus in der Vine Street mit einem Kabelschloss gesichert, das ein entschlossenes Kind hätte knacken können. Oh, er wollte es... es würde ihm gehören. Er wartete auf Regen; nicht aus strategischem Kalkül, sondern weil er zufällig in der Gegend war, als der Sturm aufzog, und davon ausging, dass der Besitzer kaum nachschauen kommen würde.\n\nDamit hatte er recht. Mit allem anderen lag er völlig falsch.\n\nDas Fahrrad war seit vier Monaten nicht gefahren worden. Seine Besitzerin, eine Doktorandin, hatte die Kette seit September ölen wollen. Es war jetzt Januar. Die Kette hatte ein Rostmuster entwickelt, das ein Metallurge später, als ihm ein Foto gezeigt wurde, als 'beeindruckend gründlich' beschrieb.\n\nMarcus schaffte genau 5 Kilometer — später bestätigt durch das Strava-Segment, das er versehentlich auf einem geliehenen Telefon auslöste — bevor die Kette an einer leichten Steigung in der Burnside Avenue vollständig blockierte. Das Fahrrad stand still. Marcus kurz nicht, bevor er sich am Lenker auffangen konnte.\n\nDanach trug er das Fahrrad die restlichen drei Kilometer im Regen nach Hause. Es dauerte eine Stunde und vierzig Minuten. Seine Nachbarn sahen ihn ankommen. Er sagte, er habe es gefunden, und niemand glaubte ihm. Das Fahrrad stand zwei Wochen in seinem Flur, bevor er es vor einem anderen Wohnhaus abstellte, mit einem 'GRATIS'-Schild am Rahmen."
+    },
+    {
+      "title": "Der Apple AirTag-Vorfall",
+      "summary": "Die Besitzerin rief nicht die Polizei. Sie spielte eine Woche lang jede Nacht um 3 Uhr morgens per Fernzugriff 'Baby Shark' über den versteckten Lautsprecher.",
+      "karmaLevel": "Psychologisch",
+      "karmaLevelKey": "psychological",
+      "story": "Als Renatas Specialized Sirrus an einem Mittwochnachmittag vor ihrem Fitnessstudio gestohlen wurde, geriet sie nicht in Panik. Sie hatte das vorhergesehen. Achtzehn Monate zuvor, nachdem ihr vorheriges Fahrrad gestohlen worden war, hatte Renata getan, was jede vernünftige Person mit einem technischen Hintergrund und einem tiefen Vorrat an Geduld getan hätte: Sie hatte einen AirTag im Lenkrohr versteckt, in Isolierband gewickelt und hinter dem Lenkergriffstopfen verkeilt.\n\nBis Donnerstagmorgen wusste sie genau, wo das Fahrrad war. Ein Haus in der Delancey Street, elf Blocks entfernt. Sie rief nicht die Polizei. Beim letzten Mal hatte sie die Polizei gerufen. Diesmal hatte sie einen anderen Plan.\n\nJede Nacht für sieben Nächte, um genau 3:07 Uhr, aktivierte Renata den kleinen Bluetooth-Lautsprecher, den sie ebenfalls in der Sattelstütze versteckt hatte... einen Lautsprecher, den sie, wie sie später zugab, speziell für diesen Notfall angeschafft hatte. Er spielte unerbittlich Baby Shark in moderater Lautstärke. Nicht laut genug, um die Nachbarn zu wecken, aber laut genug, um den Dieb zu wecken.\n\nSie überwachte den AirTag. Das Fahrrad bewegte sich vier Tage lang nicht. Am fünften Tag bewegte es sich sechs Blocks weiter. Am sechsten Tag tauchte es vor einer anderen Adresse auf. Am siebten Tag wurde es, ungesichert, an einem öffentlichen Fahrradständer vor einer Apotheke am Broadway abgestellt.\n\nRenata holte es um 7 Uhr morgens ab. Der Lenkergriffstopfen war entfernt worden, vermutlich bei einer verzweifelten Suche nach der Quelle der Musik. Der AirTag lag unberührt genau dort, wo sie ihn gelassen hatte. Sie hat das Fahrrad noch immer. Sie hat den Lautsprecher nicht entfernt... doot doot doot."
+    }
+  ]
+}

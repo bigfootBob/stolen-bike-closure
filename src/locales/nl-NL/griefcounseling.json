@@ -1,0 +1,31 @@
+{
+  "stages": {
+    "title": "De 5 Fasen van Fietsrouw",
+    "subtitle": "Het verwerken van het verlies van je twee wielen tellende metgezel.",
+    "coping_strategy": "Verwerkingsstrategie:",
+    "controls": {
+      "prev": "Vorig Perspectief",
+      "next": "Volgend Perspectief",
+      "play": "Presentatie Afspelen",
+      "pause": "Presentatie Pauzeren"
+    },
+    "show_all": "Ik ben er klaar voor. Laat me alle fasen zien.",
+    "step_back": "Ik moet een stap terug doen."
+  },
+  "services": {
+    "title": "Begeleidingsdiensten",
+    "subtitle": "Extra premiumresources om uw spirituele herstel te ondersteunen.",
+    "obituary": {
+      "title": "Rouwbericht Sjablonen",
+      "body": "Zorgvuldig geschreven, kant-en-klare rouwberichten voor uw lokale advertentieblad. Eer de exacte bovenbuis geometrie en de emotionele impact die uw fiets op uw leven had."
+    },
+    "articles": {
+      "title": "Rouwartikelen",
+      "body": "Verken onze peer-reviewed bibliotheek die de psychologische impact ontleedt van het zien van een vreemde die twee weken later op uw fiets rijdt, terwijl u niets kunt doen."
+    },
+    "medium": {
+      "title": "Persoonlijk Medium",
+      "body": "Maak contact met een geautomatiseerd online medium dat de resterende geest van uw fiets kan kanaliseren en u helpt eindelijk afscheid te nemen van zijn spook."
+    }
+  }
+}

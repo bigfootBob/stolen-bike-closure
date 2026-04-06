@@ -13,7 +13,7 @@ const SubmitStory = () => {
     return (
         <div className="page">
             <div className="page__header">
-                <h2>Submit Your Own Story</h2>
+                <h2>COMING SOON!Submit Your Own Story</h2>
                 <p>Share your tale of karmic justice with the world.</p>
             </div>
             <motion.div 

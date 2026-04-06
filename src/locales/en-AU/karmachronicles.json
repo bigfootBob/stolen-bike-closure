@@ -1,0 +1,34 @@
+{
+  "ui": {
+    "title": "Karma Chronicles",
+    "subtitle": "Because sometimes the universe strikes back.",
+    "case_file": "Case File #{{number}}",
+    "karma_level": "Karma Level:",
+    "submit_story": "Submit Your Own Story",
+    "build_story": "Build a Story",
+    "close_modal": "Close"
+  },
+  "stories": [
+    {
+      "title": "The Bloke Who Nicked a Bike with No Brakes",
+      "summary": "Dazza thought he'd scored a fixie. He scored a trip into the bushes at the bottom of 4th Street.",
+      "karmaLevel": "Immediate",
+      "karmaLevelKey": "immediate",
+      "story": "It was a Tuesday evening when Dazza spotted the matte black fixie locked — loosely, as fate would have it — to a signpost outside a café on Clement Street. Within four minutes it was his. Within six, he was flying down the hill toward 4th Street, legs spinning freely, wind in his face, feeling absolutely invincible.\n\nThe bike had no brakes. This is a known feature of track bikes. Dazza did not know this. Dazza had never ridden a fixie in his life. Dazza had also, critically, never ridden down a hill that ended in a hedge, a low stone wall, and the private garden of a retired civil engineer named Gerald who was, at that exact moment, watering his roses.\n\nThe impact was described by Gerald as 'considerable.' Dazza was uninjured, which is perhaps the most disappointing part of this story. The bike, however, bent its front fork on Gerald's garden wall and became unrideable. Dazza abandoned it on the spot and legged it home. Gerald kept the bike. Gerald fixed the fork. Gerald now rides it to the farmers' market every Sunday and absolutely loves it."
+    },
+    {
+      "title": "The Rusty Chain Gang",
+      "summary": "Nicked during a downpour, the bike's chain seized up exactly 3 miles from the thief's house. He had to lug it home on foot.",
+      "karmaLevel": "Slow Burn",
+      "karmaLevelKey": "slow-burn",
+      "story": "Marcus had been eyeing the bike for three days. A dusty blue hybrid, locked outside the block of flats on Vine Street with a cable lock that a determined kid could have defeated. Ooh he wanted it... it would be his. He'd waited for rain; not out of any strategic thinking, but because he happened to be in the area when the storm came in and figured the owner was unlikely to come check on it.\n\nHe was right about that. He was wrong about everything else.\n\nThe bike hadn't been ridden in four months. Its owner, a postgrad student, had been meaning to oil the chain since September. It was now January. The chain had developed a rust pattern that a metallurgist would later describe, when shown a photograph, as 'impressively thorough.'\n\nMarcus made it exactly 3.1 miles — confirmed later by the Strava segment he accidentally triggered on a borrowed phone, before the chain seized completely on a slight incline on Burnside Avenue. The bike stopped. Marcus did not, briefly, before catching himself on the handlebars.\n\nHe then carried the bike the remaining three miles home in the rain. It took an hour and forty minutes. His neighbours saw him arrive. He told them he'd found it and nobody believed him. The bike sat in his hallway for two weeks before he dumped it outside someone else's block with a 'FREE' sign taped to the frame."
+    },
+    {
+      "title": "The Apple AirTag Incident",
+      "summary": "The owner didn't ring the cops. They just remotely played 'Baby Shark' on the hidden speaker at 3 AM every night for a week.",
+      "karmaLevel": "Psychological",
+      "karmaLevelKey": "psychological",
+      "story": "When Renata's Specialized Sirrus was pinched from outside her gym on a Wednesday arvo, she did not panic. She had anticipated this. Eighteen months prior, after her previous bike had been taken, Renata had done what any reasonable person with an engineering background and a deep capacity for patience would do: she had hidden an AirTag inside the handlebar tube, wrapped in electrical tape, wedged behind the bar plug.\n\nShe knew exactly where the bike was by Thursday morning. A house on Delancey Street, eleven blocks away. She did not call the police. She had called the police last time. She had a different plan this time.\n\nEvery night for seven nights, at precisely 3:07 AM, Renata triggered the small Bluetooth speaker she had also hidden inside the seatpost... a speaker she had, she would later admit, specifically purchased for this contingency. It relentlessly played Baby Shark at moderate volume. Not loud enough to wake the neighbours, yet loud enough to wake the thief.\n\nShe monitored the AirTag. The bike didn't move for four days. On the fifth day it moved six blocks. On the sixth day it turned up outside a different address. On the seventh day it was left, unlocked, on a public bike rack outside a chemist on Broadway.\n\nRenata collected it at 7 AM. The bar plug had been yanked off, presumably in a desperate search for the source of the music. The AirTag remained, untouched, exactly where she had left it. She still has the bike. She has not removed the speaker... doot doot doot."
+    }
+  ]
+}

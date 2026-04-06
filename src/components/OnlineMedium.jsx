@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GiCrystalBall } from 'react-icons/gi';
-import messages from '../data/seancemessages.json';
+import { useTranslation } from 'react-i18next';
 import '../styles/SubPages.scss';
 
 const OnlineMedium = () => {
+    const { t } = useTranslation('seancemessages');
+    const messages = t('messages', { returnObjects: true });
     const [transmission, setTransmission] = useState(null);
     const [isChanneling, setIsChanneling] = useState(false);
     const [lastId, setLastId] = useState(null);

@@ -1,0 +1,31 @@
+{
+  "stages": {
+    "title": "As 5 Fases do Luto pela Bike",
+    "subtitle": "Processando a perda do seu companheiro de duas rodas.",
+    "coping_strategy": "Estratégia de Enfrentamento:",
+    "controls": {
+      "prev": "Perspectiva Anterior",
+      "next": "Próxima Perspectiva",
+      "play": "Reproduzir Apresentação",
+      "pause": "Pausar Apresentação"
+    },
+    "show_all": "Estou pronto. Me mostre todas as fases.",
+    "step_back": "Preciso dar um passo atrás."
+  },
+  "services": {
+    "title": "Serviços de Aconselhamento",
+    "subtitle": "Recursos premium adicionais para auxiliar sua recuperação espiritual.",
+    "obituary": {
+      "title": "Modelos de Obituário",
+      "body": "Obituários pré-escritos e cuidadosamente elaborados para os classificados locais. Honre a geometria exata do tubo superior e o impacto emocional que sua bike teve em sua vida."
+    },
+    "articles": {
+      "title": "Artigos sobre o Luto",
+      "body": "Explore nossa biblioteca revisada por pares que disseca o impacto psicológico de ver um estranho pedalando sua bike duas semanas depois e saber que não há nada que você possa fazer."
+    },
+    "medium": {
+      "title": "Médium Pessoal",
+      "body": "Conecte-se com um médium online automatizado que pode canalizar o espírito remanescente da sua bicicleta, ajudando você a finalmente se despedir do seu fantasma."
+    }
+  }
+}

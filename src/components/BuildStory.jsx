@@ -18,7 +18,7 @@ const BuildStory = () => {
     return (
         <div className="page">
             <div className="page__header">
-                <h2>Build a Story</h2>
+                <h2>COMING SOON! Build a Story</h2>
                 <p>Let the universe weave a tale of revenge for you.</p>
             </div>
             <motion.div 

@@ -1,0 +1,34 @@
+{
+  "ui": {
+    "title": "Karma Kronieken",
+    "subtitle": "Want soms slaat het universum terug.",
+    "case_file": "Dossier #{{number}}",
+    "karma_level": "Karmaniveau:",
+    "submit_story": "Dien Uw Verhaal In",
+    "build_story": "Bouw een Verhaal",
+    "close_modal": "Sluiten"
+  },
+  "stories": [
+    {
+      "title": "De Dief Die een Fiets Zonder Remmen Stal",
+      "summary": "Danny dacht dat hij een fixie had buitgemaakt. Hij belandde in de struiken onderaan de 4e Straat.",
+      "karmaLevel": "Direct",
+      "karmaLevelKey": "immediate",
+      "story": "Het was een dinsdagavond toen Danny de matte zwarte fixie zag staan — losjes vastgemaakt, zoals het lot zou willen — aan een verkeersbord voor een koffiebar op Clement Street. Binnen vier minuten was hij er vandoor. Binnen zes vloog hij de heuvel af richting 4th Street, benen vrij ronddraaiend, wind in zijn gezicht, zich onoverwinnelijk voelend.\n\nDe fiets had geen remmen. Dit is een bekende eigenschap van baanfietsen. Danny wist dit niet. Danny had nog nooit een fixie gereden in zijn leven. Danny had ook, cruciaal, nog nooit een heuvel afgereden die eindigde in een heg, een lage stenen muur en de tuin van een gepensioneerde civiel ingenieur genaamd Gerald die op dat exacte moment zijn rozen aan het water was.\n\nDe impact werd door Gerald omschreven als 'aanzienlijk.' Danny liep geen letsel op, wat misschien wel het meest teleurstellende deel van dit verhaal is. De fiets had echter zijn voorvork verbogen aan Geralds tuinmuur en was onrijdbaar geworden. Danny liet hem achter en liep naar huis. Gerald hield de fiets. Gerald repareerde de vork. Gerald rijdt er nu elke zondag mee naar de boerenmarkt en is er dol op."
+    },
+    {
+      "title": "De Roestige Ketting Bende",
+      "summary": "Gestolen tijdens een regenbui, blokkeerde de ketting van de fiets precies 5 kilometer van het huis van de dief. Hij moest hem naar huis dragen.",
+      "karmaLevel": "Sluimervuur",
+      "karmaLevelKey": "slow-burn",
+      "story": "Marcus had de fiets al drie dagen in de gaten gehouden. Een stoffige blauwe hybride, vastgemaakt aan de buitenkant van het appartementencomplex aan Vine Street met een kabelslot dat een vastberaden kind had kunnen openbreken. Oh, hij wilde hem... hij zou van hem zijn. Hij had gewacht op regen; niet uit enige strategische overweging, maar omdat hij toevallig in de buurt was toen de storm begon en vermoedde dat de eigenaar niet snel zou komen controleren.\n\nDaarin had hij gelijk. In al het andere had hij het mis.\n\nDe fiets was al vier maanden niet bereden. De eigenaar, een afstudeerder, had de ketting al sinds september willen smeren. Het was nu januari. De ketting had een roestpatroon ontwikkeld dat een metallurg later, toen hem een foto werd getoond, omschreef als 'indrukwekkend grondig.'\n\nMarcus haalde precies 5 kilometer — later bevestigd door het Strava-segment dat hij per ongeluk activeerde op een geleende telefoon — voordat de ketting volledig vastzat op een lichte helling aan de Burnside Avenue. De fiets stopte. Marcus even niet, voor hij zichzelf op het stuur opving.\n\nVervolgens droeg hij de fiets de resterende drie kilometer naar huis in de regen. Het duurde een uur en veertig minuten. Zijn buren zagen hem aankomen. Hij vertelde dat hij hem gevonden had en niemand geloofde hem. De fiets stond twee weken in zijn gang voordat hij hem buiten een ander appartementencomplex zette met een 'GRATIS' bordje op het frame."
+    },
+    {
+      "title": "Het Apple AirTag Incident",
+      "summary": "De eigenaar belde geen politie. Ze speelden op afstand elke nacht om 3 uur 'Baby Shark' via de verborgen speaker — een week lang.",
+      "karmaLevel": "Psychologisch",
+      "karmaLevelKey": "psychological",
+      "story": "Toen Renata's Specialized Sirrus op een woensdagmiddag voor haar sportschool werd gestolen, raakte ze niet in paniek. Ze had dit voorzien. Achttien maanden eerder, nadat haar vorige fiets was gestolen, had Renata gedaan wat ieder redelijk persoon met een technische achtergrond en een diepe voorraad geduld zou doen: ze had een AirTag verborgen in de stuurbuizen, in isolatietape gewikkeld en achter de stuurplug vastgeklemd.\n\nDonderdagochtend wist ze precies waar de fiets was. Een huis in Delancey Street, elf blokken verderop. Ze belde geen politie. Ze had de vorige keer de politie gebeld. Deze keer had ze een ander plan.\n\nElke nacht gedurende zeven nachten, om precies 3:07 uur, activeerde Renata de kleine Bluetooth-speaker die ze ook in de zadelpen had verstopt... een speaker die ze, zou ze later toegeven, speciaal voor dit soort situaties had aangeschaft. Die speelde Baby Shark onophoudelijk op een matig volume. Niet hard genoeg om de buren wakker te maken, maar wel hard genoeg om de dief te wekken.\n\nZe hield de AirTag in de gaten. De fiets bewoog vier dagen niet. Op de vijfde dag verplaatste hij zich zes blokken. Op de zesde dag verscheen hij bij een ander adres. Op de zevende dag stond hij, onvergrendeld, bij een openbaar fietsrek voor een apotheek aan de Broadway.\n\nRenata haalde hem op om 7 uur 's ochtends. De stuurplug was verwijderd, vermoedelijk in een wanhopige zoektocht naar de bron van de muziek. De AirTag lag onberoerd op precies de plek waar ze hem had achtergelaten. Ze heeft de fiets nog steeds. Ze heeft de speaker er niet uitgehaald... doot doot doot."
+    }
+  ]
+}
