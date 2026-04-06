@@ -1,0 +1,69 @@
+{
+  "ui": {
+    "title": "编写故事",
+    "subtitle": "填写空白，让宇宙编织一段因果报应的故事。",
+    "generate_button": "生成因果报应",
+    "try_different": "换一个故事",
+    "start_over": "重新开始",
+    "error_one": "还有1个字段需要填写。",
+    "error_other": "还有{{count}}个字段需要填写。"
+  },
+  "sections": {
+    "specs":   { "title": "基本设定", "subtitle": "设置场景"       },
+    "villain": { "title": "反派角色", "subtitle": "描述小偷"       },
+    "karma":   { "title": "因果报应", "subtitle": "宇宙的反击"     }
+  },
+  "fields": {
+    "bikeAdj":            { "label": "形容自行车的词",              "placeholder": "例如：生锈的、荧光粉色的、碳纤维的"             },
+    "bikeType":           { "label": "自行车类型",                  "placeholder": "例如：死飞、山地车、双人车、独轮车"              },
+    "bikeNickname":       { "label": "自行车的昵称",                "placeholder": "例如：银弹、老可靠"                             },
+    "lockType":           { "label": "锁的类型",                    "placeholder": "例如：一根软绵绵的扎带、一段牙线"               },
+    "thiefInsult":        { "label": "对小偷的骂人话",              "placeholder": "例如：人渣、链条舔狗、流氓"                     },
+    "thiefItem":          { "label": "小偷穿戴的可疑物品",          "placeholder": "例如：小丑鼻子、一只UGG、一件披风"              },
+    "thiefSpeed":         { "label": "逃跑速度",                    "placeholder": "例如：2公里/小时、光速、龟速"                   },
+    "crimeVerb":          { "label": "作案方式的动词",              "placeholder": "例如：偷走了、凭空取走了、忽悠走了"              },
+    "crimePlace":         { "label": "你停放自行车的奇怪地点",      "placeholder": "例如：高风险宾果厅外、一棵可疑仙人掌后面"       },
+    "crimeSound":         { "label": "发现车丢了时听到的声音",      "placeholder": "例如：悲伤的长号声、一声孤独的蟋蟀叫"           },
+    "trapFeature":        { "label": "自行车上的机关",              "placeholder": "例如：仙人掌座椅、闪粉大炮"                     },
+    "minorInconvenience": { "label": "对小偷的小小折磨",            "placeholder": "例如：永久性内裤夹屁股、永远赶不上绿灯"         },
+    "ultimateFate":       { "label": "小偷的最终命运",              "placeholder": "例如：被一群愤怒的鹅追赶、误加入职业独轮车团"   }
+  },
+  "templates": [
+    {
+      "name": "黑色侦探",
+      "story": "那是一个平凡的星期二——阴云密布，冷酷无情，空气中弥漫着淡淡的悔恨气息——一个穿着{{thiefItem}}的{{thiefInsult}}开始行动了。你那辆{{bikeAdj}}的{{bikeType}}，人称{{bikeNickname}}，停在{{crimePlace}}外，仅靠{{lockType}}固定着。那家伙以{{thiefSpeed}}的速度{{crimeVerb}}了它。你只听到{{crimeSound}}在地面上回响。他不知道——也不可能知道——{{bikeNickname}}装备了{{trapFeature}}。宇宙耐心地安排了{{minorInconvenience}}。当最终的账单到来时，它分文不少：{{ultimateFate}}。正义按自己的速度前进，一直如此。"
+    },
+    {
+      "name": "自然纪录片",
+      "story": "瞧——在{{crimePlace}}外的城市丛林中——我们观察到了{{thiefInsult}}在其自然栖息地的行为。注意那显眼的{{thiefItem}}，这是该物种的明显领地标记。该生物靠近那辆被{{lockType}}松散固定、被主人称为{{bikeNickname}}的{{bikeAdj}}{{bikeType}}。以{{thiefSpeed}}的速度，它{{crimeVerb}}了自行车，消失在混凝土丛林中。唯一的目击者：{{crimeSound}}。但大自然，一如既往，恢复了平衡。{{trapFeature}}按计划启动。正如任何自然学家所证实的，这个物种的长期预后十分悲观——{{minorInconvenience}}跟随它走遍每个角落，直到最终与命运相遇：{{ultimateFate}}。这个循环，就像自行车的轮子一样，继续转动。"
+    },
+    {
+      "name": "法庭审判",
+      "story": "关于{{bikeNickname}}（一辆{{bikeAdj|upper}}{{bikeType|upper}}）诉宇宙一案：被告——一名{{thiefInsult}}，最后被目击时穿着{{thiefItem}}——故意恶意地{{crimeVerb}}了上述车辆，该车辆原停放于{{crimePlace}}外，并依法用{{lockType}}锁定。事发时，目击者报告听到了{{crimeSound}}。被告以{{thiefSpeed}}逃窜。然而，法庭注意到该车辆配备了{{trapFeature}}——这一重要事实未向被告披露。判决：{{minorInconvenience}}（立即执行，无限期）。此外：{{ultimateFate}}。本庭满意。庭审结束。"
+    },
+    {
+      "name": "睡前故事",
+      "story": "从前有一个糟糕的星期二，一个穿着{{thiefItem}}的{{thiefInsult}}觉得自己应该拥有一辆{{bikeAdj}}{{bikeType}}。\"啊哈！\"他们叫道，看到了停在{{crimePlace}}外、仅靠{{lockType}}固定的{{bikeNickname}}。他们以{{thiefSpeed}}{{crimeVerb}}了它——全世界只听到了{{crimeSound}}。但{{bikeNickname}}有一个秘密：{{trapFeature}}。而一直在旁观的宇宙安排了{{minorInconvenience}}跟随那个{{thiefInsult}}到天涯海角——直到最终，不可避免地：{{ultimateFate}}。故事结束。晚安。锁好你的车。"
+    },
+    {
+      "name": "野人目击报告",
+      "story": "以下是向中国野人研究协会提交的一份宣誓证词。大约在{{thiefSpeed}}时，一名{{thiefInsult}}穿着{{thiefItem}}，在{{crimePlace}}外被目击{{crimeVerb}}了一辆{{bikeAdj}}{{bikeType}}——其主人称之为{{bikeNickname}}——该车用{{lockType}}固定。现场最后报告的声音是{{crimeSound}}。小偷没有料到的是野人的存在——它自1987年以来一直以{{crimePlace}}为觅食地，对小偷行为深恶痛绝。{{trapFeature}}立即警告了这只生物。调查人员后来证实，{{minorInconvenience}}与野人实施的惩罚相符。小偷目前下落不明，但树线附近的追踪相机拍到了与{{ultimateFate}}一致的画面。案件仍未结案。自行车已结案。"
+    },
+    {
+      "name": "鬼魂附身",
+      "story": "据说{{bikeNickname}}——一辆仅靠{{lockType}}拴在{{crimePlace}}外柱子上的{{bikeAdj}}{{bikeType}}——从未真正离去。那个以{{thiefSpeed}}{{crimeVerb}}了它的{{thiefInsult}}，莫名其妙地穿着{{thiefItem}}，逃跑时只听到了{{crimeSound}}。但那天夜里，嘎嘎声响起了。{{trapFeature}}唤醒了某种东西。每天早晨：{{minorInconvenience}}。每天夜晚：一根不该存在的自行车链条发出微弱的嘎吱声。邻居报告看到一个发光的{{bikeAdj}}身影在走廊里飘荡。请来了道士。没有用。这场鬼魂纠缠，如所有纠缠一样，以{{ultimateFate}}告终。{{bikeNickname}}的鬼魂此后再未出现。它是找到了安息，还是只是找到了一个更好的小偷来折磨，无人知晓。"
+    },
+    {
+      "name": "钟馗预言",
+      "story": "事发三天前，钟馗被人目击停在{{crimePlace}}上方的路灯上，直盯着固定{{bikeNickname}}的{{lockType}}。没有人理会这个预兆。在约定之日，{{thiefInsult}}——目击者凭借其{{thiefItem}}认出——到来并以一贯的傲慢{{crimeVerb}}了那辆{{bikeAdj}}{{bikeType}}，以{{thiefSpeed}}离开，{{crimeSound}}响彻整条街道。钟馗预见到了这一切，也预见到了接下来发生的事。{{trapFeature}}启动了。{{minorInconvenience}}从第二天早上开始，至今未停。钟馗最后一次出现是在{{ultimateFate}}那个夜晚，从高处俯视，双翼收拢，似乎颇为满意。有人说他仍在守望。更多人说：把你的车锁好。"
+    },
+    {
+      "name": "尼斯湖水怪证词",
+      "story": "尼斯湖水怪证词，通过水下速记录制并从水语翻译。\"我在{{crimePlace}}附近的排水口旁浮出水面，目睹一名穿着{{thiefItem}}的{{thiefInsult}}靠近一辆被认定为{{bikeNickname}}的{{bikeAdj}}{{bikeType}}。固定装置——{{lockType}}——没有任何阻力。该对象以{{thiefSpeed}}{{crimeVerb}}了车辆。我听到了{{crimeSound}}。我活了四亿年，从未见过如此厚颜无耻的行为。当小偷经过时，我用尾巴启动了{{trapFeature}}。我亲自确保{{minorInconvenience}}从此一直有效。此事于上周四以{{ultimateFate}}告终。我现在回湖里去了。我从未来过这里。\""
+    },
+    {
+      "name": "外星截获电文",
+      "story": "截获电文——深空中继站7号：\"第三颗星球上的生物继续表现出令人费解的行为。今天，一名{{thiefInsult}}穿着{{thiefItem}}，在{{crimePlace}}外窃取了一辆{{bikeAdj}}{{bikeType}}（本地编号{{bikeNickname}}）。作案方式：{{crimeVerb}}。安全装置：{{lockType}}。逃逸速度：{{thiefSpeed}}。离开时的声学特征：{{crimeSound}}。由于{{trapFeature}}（我们的仪器将其识别为潜在能源），我们已对{{bikeNickname}}监测了六个星期。我们进行了干预。该对象现在经历{{minorInconvenience}}——按我们的标准，这是一种低等级后果。完整干预以{{ultimateFate}}告终。我们认为这个星球的因果基础设施不够发达，但前景可期。电文结束。\""
+    }
+  ]
+}

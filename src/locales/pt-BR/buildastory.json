@@ -1,0 +1,69 @@
+{
+  "ui": {
+    "title": "Criar uma História",
+    "subtitle": "Preencha os espaços. Deixe o universo tecer um conto de retribuição kármica.",
+    "generate_button": "Gerar Retribuição Kármica",
+    "try_different": "Tentar uma História Diferente",
+    "start_over": "Recomeçar",
+    "error_one": "1 campo ainda precisa ser preenchido.",
+    "error_other": "{{count}} campos ainda precisam ser preenchidos."
+  },
+  "sections": {
+    "specs":   { "title": "As Especificações", "subtitle": "Preparando o cenário"      },
+    "villain": { "title": "O Vilão",           "subtitle": "Descrevendo o ladrão"      },
+    "karma":   { "title": "O Karma",           "subtitle": "O universo contra-ataca"   }
+  },
+  "fields": {
+    "bikeAdj":            { "label": "Adjetivo para a bike",                            "placeholder": "ex.: enferrujada, rosa-neon, de fibra de carbono"                   },
+    "bikeType":           { "label": "Tipo de bike",                                    "placeholder": "ex.: speed, mountain bike, tandem, monociclo"                      },
+    "bikeNickname":       { "label": "Apelido da bike",                                 "placeholder": "ex.: A Bala de Prata, Velha Confiável"                             },
+    "lockType":           { "label": "Tipo de cadeado usado",                           "placeholder": "ex.: uma abraçadeira frouxa, um fio dental"                        },
+    "thiefInsult":        { "label": "Um xingamento para o ladrão",                     "placeholder": "ex.: safado, lambe-corrente, hooligan"                             },
+    "thiefItem":          { "label": "Um item suspeito que ele usava",                  "placeholder": "ex.: um nariz de palhaço, uma UGG só, uma capa"                    },
+    "thiefSpeed":         { "label": "A velocidade de fuga",                            "placeholder": "ex.: 3 km/h, velocidade da luz, em câmera lenta"                   },
+    "crimeVerb":          { "label": "Um verbo para como foi levada",                   "placeholder": "ex.: furtou, levitou, enrolou para levar"                          },
+    "crimePlace":         { "label": "Um lugar estranho onde você deixou a bike",       "placeholder": "ex.: em frente a uma casa de bingo, atrás de um cacto suspeito"    },
+    "crimeSound":         { "label": "Um som que você ouviu quando percebeu o sumiço",  "placeholder": "ex.: uma tuba triste, um único grilo"                              },
+    "trapFeature":        { "label": "Uma armadilha na bike",                           "placeholder": "ex.: um selim de cacto, um canhão de glitter"                      },
+    "minorInconvenience": { "label": "Uma pequena chateação para o ladrão",             "placeholder": "ex.: fio dental eterno no traseiro, sempre pegar sinal vermelho"   },
+    "ultimateFate":       { "label": "O destino final do ladrão",                       "placeholder": "ex.: ser perseguido por um bando de gansos furiosos"               }
+  },
+  "templates": [
+    {
+      "name": "Detetive Noir",
+      "story": "Era uma terça-feira como qualquer outra — nublada, implacável e com um leve cheiro de arrependimento — quando um {{thiefInsult}} usando {{thiefItem}} deu o bote. Sua {{bikeAdj}} {{bikeType}}, carinhosamente conhecida como {{bikeNickname}}, estava na frente de {{crimePlace}}, presa por nada mais do que {{lockType}}. O malandro {{crimeVerb}} ela a aproximadamente {{thiefSpeed}}. Tudo que você ouviu foi {{crimeSound}} ecoando pela calçada. O que ele não sabia — não podia saber — era que {{bikeNickname}} vinha equipada com {{trapFeature}}. O universo, sempre paciente, providenciou {{minorInconvenience}}. E quando a conta final chegou, veio integral: {{ultimateFate}}. A justiça caminha no seu próprio ritmo. Sempre."
+    },
+    {
+      "name": "Documentário da Natureza",
+      "story": "E aqui — na savana urbana em frente a {{crimePlace}} — observamos o {{thiefInsult}} em seu habitat natural. Note o característico {{thiefItem}}, uma clara marcação territorial da espécie. A criatura se aproxima da {{bikeAdj}} {{bikeType}} conhecida como {{bikeNickname}}, presa frouxamente por {{lockType}}. Com uma velocidade de {{thiefSpeed}}, ela {{crimeVerb}} a bicicleta e se dissolve na selva de concreto. A única testemunha: {{crimeSound}}. Mas a natureza, como sempre, restaura o equilíbrio. O {{trapFeature}} ativou conforme planejado. E como qualquer naturalista confirmará, o prognóstico de longo prazo para esse espécime se mostrou sombrio — {{minorInconvenience}} seguiu a criatura por onde quer que fosse, até finalmente encontrar seu destino: {{ultimateFate}}. O ciclo, assim como a bicicleta, continua girando."
+    },
+    {
+      "name": "Processo Judicial",
+      "story": "NO PROCESSO DE {{bikeNickname}} (UMA {{bikeAdj|upper}} {{bikeType|upper}}) CONTRA O UNIVERSO: O réu — um {{thiefInsult}}, visto pela última vez usando {{thiefItem}} — deliberada e maliciosamente {{crimeVerb}} o referido veículo de frente a {{crimePlace}}, onde estava devidamente preso com {{lockType}}. Testemunhas relataram {{crimeSound}} no momento do incidente. O réu fugiu a {{thiefSpeed}}. O tribunal observa, contudo, que o veículo estava equipado com {{trapFeature}} — fato material não divulgado ao réu. Sentença: {{minorInconvenience}} (imediata, por tempo indeterminado). Adicionalmente: {{ultimateFate}}. Este tribunal está satisfeito. Sessão encerrada."
+    },
+    {
+      "name": "História de Ninar",
+      "story": "Era uma vez, numa terrível terça-feira, um {{thiefInsult}} usando {{thiefItem}} que decidiu que merecia uma {{bikeAdj}} {{bikeType}}. \"Aha!\" gritou, avistando {{bikeNickname}} na frente de {{crimePlace}}, presa por {{lockType}}. Ele {{crimeVerb}} ela a {{thiefSpeed}} — e o mundo inteiro ouviu apenas {{crimeSound}}. Mas {{bikeNickname}} tinha um segredo: {{trapFeature}}. E o universo, que estava assistindo o tempo todo, providenciou que {{minorInconvenience}} seguisse aquele {{thiefInsult}} por onde fosse — até que, por fim, inevitavelmente: {{ultimateFate}}. Fim. Durma bem. Tranca sua bike."
+    },
+    {
+      "name": "Relatório da Mapinguari",
+      "story": "A seguir, uma declaração juramentada entregue ao Centro Brasileiro de Pesquisa da Mapinguari. A aproximadamente {{thiefSpeed}}, um {{thiefInsult}} em {{thiefItem}} foi observado em frente a {{crimePlace}} enquanto {{crimeVerb}} uma {{bikeAdj}} {{bikeType}} — conhecida pelo seu dono como {{bikeNickname}} — que estava presa com {{lockType}}. O último som relatado na cena foi {{crimeSound}}. O que o ladrão não previu foi a Mapinguari, que usava {{crimePlace}} como área de forrageamento desde 1987 e tem uma visão muito negativa sobre crimes contra bicicletas. O {{trapFeature}} alertou a criatura imediatamente. Investigadores confirmaram que {{minorInconvenience}} é consistente com uma punição aplicada pela Mapinguari. O paradeiro atual do ladrão é desconhecido, embora câmeras na beirada da floresta tenham capturado imagens compatíveis com {{ultimateFate}}. O caso continua aberto. A bike, não."
+    },
+    {
+      "name": "Assombração",
+      "story": "Dizem que {{bikeNickname}} — uma {{bikeAdj}} {{bikeType}}, acorrentada a um poste em frente a {{crimePlace}} por nada além de {{lockType}} — nunca realmente foi embora. O {{thiefInsult}} que a {{crimeVerb}} a {{thiefSpeed}}, misteriosamente vestindo {{thiefItem}}, ouviu apenas {{crimeSound}} ao fugir. Mas naquela noite, o chacoalhar começou. O {{trapFeature}} havia despertado algo. Toda manhã: {{minorInconvenience}}. Toda noite: o leve rangido de uma corrente de bicicleta que não deveria existir. Vizinhos relataram ver uma forma {{bikeAdj}} brilhante deslizando pelos corredores. Um padre foi chamado. Não adiantou. A assombração culminou, como toda assombração deve, em {{ultimateFate}}. O fantasma de {{bikeNickname}} não foi visto desde então. Se encontrou paz, ou simplesmente encontrou um ladrão melhor para atormentar, ninguém sabe."
+    },
+    {
+      "name": "Profecia do Curupira",
+      "story": "Três dias antes do incidente, o Curupira foi avistado empoleirado em um poste de luz acima de {{crimePlace}}, olhando fixamente para o {{lockType}} que prendia {{bikeNickname}}. Ninguém deu ouvidos ao presságio. No dia marcado, o {{thiefInsult}} — identificado por testemunhas pelo seu {{thiefItem}} — chegou e {{crimeVerb}} a {{bikeAdj}} {{bikeType}} com insolência característica, partindo a {{thiefSpeed}} enquanto {{crimeSound}} ecoava pela rua. O Curupira, que havia previsto isso, também havia previsto o que viria em seguida. O {{trapFeature}} foi acionado. O {{minorInconvenience}} começou na manhã seguinte e não parou. O Curupira foi visto pela última vez na noite de {{ultimateFate}}, observando de grande altura, satisfeito. Alguns dizem que ainda observa. A maioria diz: tranca melhor sua bike."
+    },
+    {
+      "name": "Depoimento de Nessie",
+      "story": "DEPOIMENTO DE NESSIE, registrado em taquigrafia subaquática e traduzido do aquático. \"Eu estava emergindo perto do ralo de esgoto adjacente a {{crimePlace}} quando observei um {{thiefInsult}} usando {{thiefItem}} se aproximar de uma {{bikeAdj}} {{bikeType}} identificada como {{bikeNickname}}. O dispositivo de segurança — {{lockType}} — não ofereceu resistência. O sujeito {{crimeVerb}} o veículo a {{thiefSpeed}}. Ouvi {{crimeSound}}. Vivo há quatrocentos milhões de anos e nunca testemunhei comportamento tão descarado. Ativei o {{trapFeature}} com minha cauda quando o ladrão passou. Garanti pessoalmente que {{minorInconvenience}} esteja em vigor desde então. O assunto se encerrou na quinta passada com {{ultimateFate}}. Vou retornar ao lago agora. Eu nunca estive aqui.\""
+    },
+    {
+      "name": "Transmissão Interceptada",
+      "story": "TRANSMISSÃO INTERCEPTADA — ESTAÇÃO RELÉ ESPACIAL 7: \"Sujeitos no terceiro planeta continuam exibindo comportamento desconcertante. Hoje, um {{thiefInsult}} em {{thiefItem}} foi observado roubando uma {{bikeAdj}} {{bikeType}} (designada localmente como {{bikeNickname}}) de frente a {{crimePlace}}. Método: {{crimeVerb}}. Dispositivo de segurança: {{lockType}}. Velocidade de escape: {{thiefSpeed}}. Paisagem sonora de partida: {{crimeSound}}. Estávamos monitorando {{bikeNickname}} há seis semanas locais devido ao {{trapFeature}}, que nossos instrumentos identificaram como fonte potencial de energia. Intervimos. O sujeito agora experimenta {{minorInconvenience}} — uma consequência padrão de baixo nível pelas nossas métricas. A intervenção completa concluiu com {{ultimateFate}}. Consideramos a infraestrutura kármica deste planeta subdesenvolvida, mas promissora. FIM DA TRANSMISSÃO.\""
+    }
+  ]
+}

@@ -1,39 +1,137 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useMemo } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import '../styles/SubPages.scss';
+import '../styles/BuildStory.scss';
+
+const H = ({ children }) => <span className="build-story__highlight">{children}</span>;
+
+// Parses "Hello {{name}}, you are a {{adj|upper}} person." into React nodes,
+// wrapping each {{token}} in <H> and applying |upper if present.
+const renderTemplate = (str, values) =>
+    str.split(/(\{\{[^}]+\}\})/).map((part, i) => {
+        const match = part.match(/^\{\{([^|}\s]+)(\|upper)?\}\}$/);
+        if (!match) return part;
+        const val = values[match[1]] ?? '';
+        return <H key={i}>{match[2] ? val.toUpperCase() : val}</H>;
+    });
+
+const SECTION_DEFS = [
+    { key: 'specs',   badge: '1', modifier: 'specs',   fieldKeys: ['bikeAdj', 'bikeType', 'bikeNickname', 'lockType'] },
+    { key: 'villain', badge: '2', modifier: 'villain', fieldKeys: ['thiefInsult', 'thiefItem', 'thiefSpeed', 'crimeVerb', 'crimePlace', 'crimeSound'] },
+    { key: 'karma',   badge: '3', modifier: 'karma',   fieldKeys: ['trapFeature', 'minorInconvenience', 'ultimateFate'] },
+];
+
+const ALL_KEYS = SECTION_DEFS.flatMap(s => s.fieldKeys);
+const EMPTY = Object.fromEntries(ALL_KEYS.map(k => [k, '']));
 
 const BuildStory = () => {
-    const [story, setStory] = useState('');
+    const { t } = useTranslation('buildastory');
+    const templates = useMemo(() => t('templates', { returnObjects: true }), [t]);
 
-    const generateStory = () => {
-        const intros = ["It was a dark and stormy Tuesday when ", "Locked safely outside a hipster coffee shop, ", "With a cable lock thinner than dry spaghetti, "];
-        const actions = ["the thief decided to take my majestic steed.", "a rogue with bolt cutters struck.", "my beloved two-wheeler disappeared."];
-        const karmas = [" Two days later, they hit a pothole and bent the rim.", " Karma ensured their right pedal remained forever squeaky.", " But the universe struck back: the chain slipped on every uphill."];
-        
-        const randomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
-        
-        setStory(randomElement(intros) + randomElement(actions) + randomElement(karmas));
+    const [values, setValues] = useState(EMPTY);
+    const [resultIndex, setResultIndex] = useState(null);
+    const [showErrors, setShowErrors] = useState(false);
+
+    const emptyKeys = ALL_KEYS.filter(k => !values[k].trim());
+    const isComplete = emptyKeys.length === 0;
+
+    const handleChange = (key, val) => setValues(prev => ({ ...prev, [key]: val }));
+
+    const handleGenerate = () => {
+        if (!isComplete) { setShowErrors(true); return; }
+        setShowErrors(false);
+        setResultIndex(Math.floor(Math.random() * templates.length));
     };
+
+    const handleRegenerate = () => {
+        let next;
+        do { next = Math.floor(Math.random() * templates.length); }
+        while (next === resultIndex && templates.length > 1);
+        setResultIndex(next);
+    };
+
+    const currentTemplate = resultIndex !== null ? templates[resultIndex] : null;
 
     return (
         <div className="page">
             <div className="page__header">
-                <h2>COMING SOON! Build a Story</h2>
-                <p>Let the universe weave a tale of revenge for you.</p>
+                <h2>{t('ui.title')}</h2>
+                <p>{t('ui.subtitle')}</p>
             </div>
-            <motion.div 
-                className="karma-card"
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                style={{ maxWidth: '600px', margin: '0 auto', width: '100%', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}
-            >
-                <div style={{ minHeight: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', fontStyle: 'italic', marginBottom: '2rem', color: 'var(--color-text-main)' }}>
-                    {story ? `"${story}"` : "Click below to invoke karmic justice..."}
-                </div>
-                <button className="btn btn--secondary" onClick={generateStory}>
-                    Generate Karmic Retribution
-                </button>
-            </motion.div>
+
+            <div className="build-story__sections">
+                {SECTION_DEFS.map(section => (
+                    <div key={section.key} className="build-story__section">
+                        <div className="build-story__section-header">
+                            <div className={`build-story__section-badge build-story__section-badge--${section.modifier}`}>
+                                {section.badge}
+                            </div>
+                            <div>
+                                <p className="build-story__section-title">{t(`sections.${section.key}.title`)}</p>
+                                <p className="build-story__section-subtitle">{t(`sections.${section.key}.subtitle`)}</p>
+                            </div>
+                        </div>
+                        <div className="build-story__fields">
+                            {section.fieldKeys.map(fieldKey => (
+                                <div key={fieldKey} className="build-story__field">
+                                    <label className="build-story__label">{t(`fields.${fieldKey}.label`)}</label>
+                                    <input
+                                        className={`build-story__input${showErrors && !values[fieldKey].trim() ? ' build-story__input--error' : ''}`}
+                                        type="text"
+                                        placeholder={t(`fields.${fieldKey}.placeholder`)}
+                                        value={values[fieldKey]}
+                                        onChange={e => handleChange(fieldKey, e.target.value)}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            <div className="build-story__generate">
+                <motion.button
+                    className="btn btn--primary"
+                    onClick={handleGenerate}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                >
+                    {t('ui.generate_button')}
+                </motion.button>
+                {showErrors && !isComplete && (
+                    <p className="build-story__error">
+                        {t(emptyKeys.length === 1 ? 'ui.error_one' : 'ui.error_other', { count: emptyKeys.length })}
+                    </p>
+                )}
+            </div>
+
+            <AnimatePresence mode="wait">
+                {currentTemplate && (
+                    <motion.div
+                        key={resultIndex}
+                        initial={{ opacity: 0, y: 24 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -12 }}
+                        transition={{ type: 'spring', stiffness: 200, damping: 22 }}
+                    >
+                        <div className="build-story__result-card">
+                            <div className="build-story__result-label">{currentTemplate.name}</div>
+                            <p className="build-story__result-text">
+                                {renderTemplate(currentTemplate.story, values)}
+                            </p>
+                            <div className="build-story__result-actions">
+                                <button className="btn btn--secondary" onClick={handleRegenerate}>
+                                    {t('ui.try_different')}
+                                </button>
+                                <button className="btn btn--secondary" onClick={() => { setResultIndex(null); setValues(EMPTY); setShowErrors(false); }}>
+                                    {t('ui.start_over')}
+                                </button>
+                            </div>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };

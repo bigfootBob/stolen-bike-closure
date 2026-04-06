@@ -1,0 +1,69 @@
+{
+  "ui": {
+    "title": "Geschichte erstellen",
+    "subtitle": "Füll die Lücken aus. Lass das Universum eine Geschichte karmischer Vergeltung weben.",
+    "generate_button": "Karmische Vergeltung generieren",
+    "try_different": "Andere Geschichte versuchen",
+    "start_over": "Von vorne anfangen",
+    "error_one": "1 Feld muss noch ausgefüllt werden.",
+    "error_other": "{{count}} Felder müssen noch ausgefüllt werden."
+  },
+  "sections": {
+    "specs":   { "title": "Die Details",  "subtitle": "Die Bühne wird gesetzt"       },
+    "villain": { "title": "Der Schurke",  "subtitle": "Der Dieb wird beschrieben"    },
+    "karma":   { "title": "Das Karma",    "subtitle": "Das Universum schlägt zurück" }
+  },
+  "fields": {
+    "bikeAdj":            { "label": "Adjektiv für das Fahrrad",                            "placeholder": "z. B. verrostet, neonpink, carbonfaser"                             },
+    "bikeType":           { "label": "Fahrradtyp",                                          "placeholder": "z. B. Fixie, Mountainbike, Tandem, Einrad"                          },
+    "bikeNickname":       { "label": "Spitzname des Fahrrads",                              "placeholder": "z. B. Die Silberkugel, Alter Zuverlässiger"                         },
+    "lockType":           { "label": "Art des Schlosses",                                   "placeholder": "z. B. ein wackeliger Kabelbinder, ein Stück Zahnseide"              },
+    "thiefInsult":        { "label": "Ein Schimpfwort für den Dieb",                        "placeholder": "z. B. Taugenichts, Speichenlecker, Halunke"                         },
+    "thiefItem":          { "label": "Ein verdächtiger Gegenstand, den er trug",            "placeholder": "z. B. eine Clownsnase, ein einzelner Croc, ein Umhang"              },
+    "thiefSpeed":         { "label": "Fluchtgeschwindigkeit",                               "placeholder": "z. B. 3 km/h, Lichtgeschwindigkeit, Schneckentempo"                 },
+    "crimeVerb":          { "label": "Ein Verb für die Tat",                                "placeholder": "z. B. klaute, teleportierte, trickste weg"                          },
+    "crimePlace":         { "label": "Ein merkwürdiger Ort, wo du es abgestellt hast",      "placeholder": "z. B. vor einer Spielhölle, hinter einem verdächtigen Kaktus"       },
+    "crimeSound":         { "label": "Ein Geräusch als du merktest, dass es weg war",       "placeholder": "z. B. eine traurige Tuba, ein einzelnes Grillenzirpen"              },
+    "trapFeature":        { "label": "Eine Falle am Fahrrad",                               "placeholder": "z. B. ein Sattel aus Kaktus, eine Glitzerkanone"                    },
+    "minorInconvenience": { "label": "Eine kleine Unannehmlichkeit für den Dieb",           "placeholder": "z. B. immer an roten Ampeln stehen, ein Stein im Schuh"             },
+    "ultimateFate":       { "label": "Das endgültige Schicksal des Diebes",                 "placeholder": "z. B. von einer wütenden Gänseschar gejagt werden"                  }
+  },
+  "templates": [
+    {
+      "name": "Noir-Detektiv",
+      "story": "Es war ein Dienstag wie jeder andere — bewölkt, gnadenlos und mit einem leichten Geruch nach Reue — als ein {{thiefInsult}} in {{thiefItem}} seinen Zug machte. Dein {{bikeAdj}} {{bikeType}}, liebevoll bekannt als {{bikeNickname}}, stand vor {{crimePlace}}, gesichert durch nichts als {{lockType}}. Der Schurke {{crimeVerb}} es mit ungefähr {{thiefSpeed}}. Alles, was du hörtest, war {{crimeSound}}, das über das Pflaster hallte. Was er nicht wusste — nicht wissen konnte — war, dass {{bikeNickname}} mit {{trapFeature}} ausgestattet war. Das Universum, stets geduldig, arrangierte {{minorInconvenience}}. Und als die Rechnung fällig war, kam sie in voller Höhe: {{ultimateFate}}. Gerechtigkeit bewegt sich in ihrem eigenen Tempo. Das tut sie immer."
+    },
+    {
+      "name": "Naturdokumentation",
+      "story": "Und hier — in der urbanen Savanne vor {{crimePlace}} — beobachten wir den {{thiefInsult}} in seinem natürlichen Lebensraum. Beachten Sie das markante {{thiefItem}}, ein klares Territorialzeichen der Art. Das Wesen nähert sich dem {{bikeAdj}} {{bikeType}}, bekannt als {{bikeNickname}}, locker gesichert durch {{lockType}}. Mit einer Geschwindigkeit von {{thiefSpeed}} {{crimeVerb}} es das Fahrrad und löst sich in der Betonwildnis auf. Der einzige Zeuge: {{crimeSound}}. Doch die Natur stellt, wie immer, das Gleichgewicht wieder her. Die {{trapFeature}} aktivierte sich wie vorgesehen. Und wie jeder Naturforscher bestätigen wird, war die Langzeitprognose für dieses Exemplar düster — {{minorInconvenience}} folgte dem Wesen überallhin, bis es schließlich seinem Schicksal begegnete: {{ultimateFate}}. Der Kreislauf, ganz wie das Fahrrad, dreht sich weiter."
+    },
+    {
+      "name": "Gerichtsverhandlung",
+      "story": "IN DER SACHE {{bikeNickname}} (EIN {{bikeAdj|upper}} {{bikeType|upper}}) GEGEN DAS UNIVERSUM: Der Angeklagte — ein {{thiefInsult}}, zuletzt gesehen in {{thiefItem}} — hat vorsätzlich und böswillig {{crimeVerb}}, das vorgenannte Fahrzeug von vor {{crimePlace}} zu entwenden, wo es ordnungsgemäß mit {{lockType}} gesichert war. Zeugen meldeten {{crimeSound}} zum Zeitpunkt des Vorfalls. Der Angeklagte floh mit {{thiefSpeed}}. Das Gericht stellt fest, dass das Fahrzeug mit {{trapFeature}} ausgestattet war — eine dem Angeklagten nicht mitgeteilte wesentliche Tatsache. Urteil: {{minorInconvenience}} (sofort, unbefristet). Weiters: {{ultimateFate}}. Das Gericht ist zufrieden. Die Verhandlung ist geschlossen."
+    },
+    {
+      "name": "Gute-Nacht-Geschichte",
+      "story": "Es war einmal an einem schrecklichen Dienstag, als ein {{thiefInsult}} in {{thiefItem}} beschloss, ein {{bikeAdj}} {{bikeType}} zu verdienen. \"Aha!\" riefen sie, als sie {{bikeNickname}} vor {{crimePlace}} entdeckten, gehalten von {{lockType}}. Sie {{crimeVerb}} es mit {{thiefSpeed}} davon — und die ganze Welt hörte nur {{crimeSound}}. Aber {{bikeNickname}} hatte ein Geheimnis: {{trapFeature}}. Und das Universum, das die ganze Zeit zugeschaut hatte, sorgte dafür, dass {{minorInconvenience}} diesem {{thiefInsult}} überall hin folgte — bis schließlich, unvermeidlich: {{ultimateFate}}. Ende. Schlaf gut. Schließ dein Fahrrad ab."
+    },
+    {
+      "name": "Wolpertinger-Zeugenbericht",
+      "story": "Das Folgende ist eine eidesstattliche Erklärung, die beim Bayerischen Wolpertinger-Forschungszentrum eingereicht wurde. Bei ungefähr {{thiefSpeed}} wurde ein {{thiefInsult}} in {{thiefItem}} vor {{crimePlace}} dabei beobachtet, wie er ein {{bikeAdj}} {{bikeType}} — im Besitz seines Eigentümers als {{bikeNickname}} bekannt — {{crimeVerb}}, das mit {{lockType}} gesichert war. Das letzte am Tatort gemeldete Geräusch war {{crimeSound}}. Was der Dieb nicht voraussah, war der Wolpertinger, der {{crimePlace}} seit 1987 als Futterplatz nutzte und Kleinkriminalität sehr missbilligt. Die {{trapFeature}} alarmierte die Kreatur sofort. Ermittler bestätigten später, dass {{minorInconvenience}} mit einer wolpertingerartig verhängten Strafe übereinstimmt. Der aktuelle Aufenthaltsort des Diebes ist unbekannt, obwohl Wildkameras nahe der Baumgrenze Aufnahmen gemacht haben, die mit {{ultimateFate}} übereinstimmen. Der Fall bleibt offen. Das Fahrrad nicht."
+    },
+    {
+      "name": "Heimsuchung",
+      "story": "Man sagt, {{bikeNickname}} — ein {{bikeAdj}} {{bikeType}}, an einen Pfosten vor {{crimePlace}} gekettet durch nichts als {{lockType}} — hat den Ort nie wirklich verlassen. Der {{thiefInsult}}, der es mit {{thiefSpeed}} {{crimeVerb}}, unerklärlich gekleidet in {{thiefItem}}, hörte beim Fliehen nur {{crimeSound}}. Doch in dieser Nacht begann das Rasseln. Die {{trapFeature}} hatte etwas geweckt. Jeden Morgen: {{minorInconvenience}}. Jeden Abend: das leise Knarren einer Fahrradkette, die nicht existieren sollte. Nachbarn berichteten, eine glühende {{bikeAdj}} Gestalt durch Flure gleiten zu sehen. Ein Pfarrer wurde gerufen. Er konnte nicht helfen. Die Heimsuchung gipfelte, wie alle Heimsuchungen, in {{ultimateFate}}. Das Gespenst von {{bikeNickname}} ist seitdem nicht mehr gesehen worden. Ob es Frieden gefunden hat, oder einfach einen besseren Dieb zum Quälen, ist unbekannt."
+    },
+    {
+      "name": "Erlkönig-Prophezeiung",
+      "story": "Drei Tage vor dem Vorfall wurde der Erlkönig auf einem Laternenpfahl über {{crimePlace}} gesichtet, den Blick starr auf das {{lockType}} gerichtet, das {{bikeNickname}} sicherte. Niemand achtete auf das Omen. Am besagten Tag erschien der {{thiefInsult}} — von Zeugen an seinem {{thiefItem}} erkannt — und {{crimeVerb}} das {{bikeAdj}} {{bikeType}} mit charakteristischer Dreistigkeit, davoneilend mit {{thiefSpeed}}, während {{crimeSound}} durch die Straße hallte. Der Erlkönig, der dies vorhergesagt hatte, hatte auch vorhergesagt, was als nächstes käme. Die {{trapFeature}} wurde aktiviert. Die {{minorInconvenience}} begann am nächsten Morgen und hat seitdem nicht aufgehört. Der Erlkönig wurde zuletzt in der Nacht von {{ultimateFate}} gesehen, aus großer Höhe beobachtend, Flügel gefaltet, offenbar zufrieden. Manche sagen, er beobachtet noch immer. Die meisten sagen: Schließ dein Fahrrad besser ab."
+    },
+    {
+      "name": "Nessie-Protokoll",
+      "story": "PROTOKOLL VON NESSIE, aufgenommen per Unterwasser-Kurzschrift und aus dem Aquatischen übersetzt. \"Ich tauchte in der Nähe des Abwasserauslasses neben {{crimePlace}} auf, als ich einen {{thiefInsult}} in {{thiefItem}} beobachtete, der sich einem {{bikeAdj}} {{bikeType}}, bekannt als {{bikeNickname}}, näherte. Die Sicherungsvorrichtung — {{lockType}} — leistete keinen Widerstand. Das Subjekt {{crimeVerb}} das Fahrzeug mit {{thiefSpeed}}. Ich hörte {{crimeSound}}. Ich lebe seit vierhundert Millionen Jahren und habe nie solch unverschämtes Verhalten gesehen. Ich aktivierte die {{trapFeature}} mit meinem Schwanz, als der Dieb vorbeikam. Ich habe persönlich dafür gesorgt, dass {{minorInconvenience}} seitdem gilt. Die Angelegenheit schloss sich letzten Donnerstag mit {{ultimateFate}} ab. Ich kehre jetzt in den See zurück. Ich war nie hier.\""
+    },
+    {
+      "name": "Abgefangene Transmission",
+      "story": "ABGEFANGENE TRANSMISSION — TIEFRAUM-RELAISSTATION 7: \"Wesen auf dem dritten Felsen zeigen weiterhin verwirrende Verhaltensweisen. Heute wurde ein {{thiefInsult}} in {{thiefItem}} dabei beobachtet, wie er ein {{bikeAdj}} {{bikeType}} (lokal bezeichnet als {{bikeNickname}}) vor {{crimePlace}} entwendete. Methode: {{crimeVerb}}. Sicherheitsvorrichtung: {{lockType}}. Fluchtgeschwindigkeit: {{thiefSpeed}}. Akustische Signatur bei Abgang: {{crimeSound}}. Wir beobachteten {{bikeNickname}} bereits seit sechs ihrer Wochen wegen der {{trapFeature}}, die unsere Instrumente als potenzielle Energiequelle identifizierten. Wir haben eingegriffen. Das Subjekt erlebt nun {{minorInconvenience}} — eine standardmäßige Niedrig-Konsequenz nach unseren Maßstäben. Die vollständige Intervention endete mit {{ultimateFate}}. Wir betrachten die karmische Infrastruktur dieses Planeten als unterentwickelt, aber vielversprechend. ÜBERTRAGUNGSENDE.\""
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "ui": {
+    "title": "Build a Story",
+    "subtitle": "Fill in the blanks. Let the universe weave a tale of karmic retribution.",
+    "generate_button": "Generate Karmic Retribution",
+    "try_different": "Try a Different Story",
+    "start_over": "Start Over",
+    "error_one": "1 field still needs filling in.",
+    "error_other": "{{count}} fields still need filling in."
+  },
+  "sections": {
+    "specs":   { "title": "The Specs",   "subtitle": "Setting the scene"         },
+    "villain": { "title": "The Villain", "subtitle": "Describing the thief"      },
+    "karma":   { "title": "The Karma",   "subtitle": "The universe strikes back" }
+  },
+  "fields": {
+    "bikeAdj":            { "label": "Adjective for the bike",                              "placeholder": "e.g. rusty, neon-pink, carbon-fiber"                                },
+    "bikeType":           { "label": "Type of bike",                                        "placeholder": "e.g. fixie, mountain bike, tandem, unicycle"                        },
+    "bikeNickname":       { "label": "The bike's nickname",                                 "placeholder": "e.g. The Silver Bullet, Old Reliable"                              },
+    "lockType":           { "label": "Type of lock used",                                   "placeholder": "e.g. a flimsy zip-tie, a literal piece of dental floss"            },
+    "thiefInsult":        { "label": "An insult for the thief",                             "placeholder": "e.g. drongo, galah, bludger"                                       },
+    "thiefItem":          { "label": "A suspicious item they were wearing",                 "placeholder": "e.g. a single thong, a fluorescent tradie vest, a cork hat"         },
+    "thiefSpeed":         { "label": "Their getaway speed",                                 "placeholder": "e.g. 2 km/h, warp speed, slower than a wet week"                   },
+    "crimeVerb":          { "label": "A verb for how it was taken",                         "placeholder": "e.g. nicked, half-inched, borrowed indefinitely"                   },
+    "crimePlace":         { "label": "A weird place you left the bike",                     "placeholder": "e.g. outside a servo, behind a suspicious gum tree"                },
+    "crimeSound":         { "label": "A sound you heard when you realized it was gone",     "placeholder": "e.g. a sad didgeridoo, a single kookaburra laugh"                  },
+    "trapFeature":        { "label": "A booby-trap feature on the bike",                    "placeholder": "e.g. a seat made of bull-ant nest, a vegemite cannon"              },
+    "minorInconvenience": { "label": "A minor inconvenience for the thief",                 "placeholder": "e.g. a permanent sand-in-the-jocks situation, every servo being out of pies" },
+    "ultimateFate":       { "label": "The thief's ultimate fate",                           "placeholder": "e.g. being chased by a wedge-tailed eagle, accidentally joining a ute muster" }
+  },
+  "templates": [
+    {
+      "name": "Noir Detective",
+      "story": "It was a Tuesday like any other — overcast, unforgiving, and smelling faintly of regret — when a {{thiefInsult}} wearing {{thiefItem}} made their move. Your {{bikeAdj}} {{bikeType}}, lovingly known as {{bikeNickname}}, stood outside {{crimePlace}}, secured by nothing more than {{lockType}}. The mongrel {{crimeVerb}} it at approximately {{thiefSpeed}}. All you heard was {{crimeSound}} echoing across the footpath. What they didn't know — couldn't know — was that {{bikeNickname}} came fitted with {{trapFeature}}. The universe, ever patient, arranged for {{minorInconvenience}}. And when the final bill came due, it arrived in full: {{ultimateFate}}. Justice moves at its own speed. She always does."
+    },
+    {
+      "name": "Nature Documentary",
+      "story": "And here — in the urban scrubland outside {{crimePlace}} — we observe the {{thiefInsult}} in its natural habitat. Note the distinctive {{thiefItem}}, a clear territorial marking of the species. The creature approaches the {{bikeAdj}} {{bikeType}} known as {{bikeNickname}}, secured loosely by {{lockType}}. With a speed of {{thiefSpeed}}, it {{crimeVerb}} the bicycle and dissolves into the concrete bushland. The only witness: {{crimeSound}}. But nature, as always, restores balance. The {{trapFeature}} activated as intended. And as any naturalist will confirm, the long-term prognosis for this specimen proved grim — {{minorInconvenience}} followed the creature everywhere it went, until at last it met its destiny: {{ultimateFate}}. The cycle, much like the bicycle, continues."
+    },
+    {
+      "name": "Legal Proceedings",
+      "story": "IN THE MATTER OF {{bikeNickname}} (A {{bikeAdj|upper}} {{bikeType|upper}}) v. THE UNIVERSE: The defendant — a {{thiefInsult}}, last seen wearing {{thiefItem}} — did willfully and with malice {{crimeVerb}} the aforementioned vehicle from outside {{crimePlace}}, where it had been lawfully secured using {{lockType}}. Witnesses reported {{crimeSound}} at the time of the incident. The defendant fled at {{thiefSpeed}}. The court notes, however, that the vehicle was equipped with {{trapFeature}} — a material fact not disclosed to the defendant. Sentence: {{minorInconvenience}} (immediate, indefinite). Further: {{ultimateFate}}. This court is satisfied. Court is adjourned. No worries."
+    },
+    {
+      "name": "Bedtime Story",
+      "story": "Once upon a terrible Tuesday, a {{thiefInsult}} wearing {{thiefItem}} decided they deserved a {{bikeAdj}} {{bikeType}}. \"Ripper!\" they cried, spotting {{bikeNickname}} outside {{crimePlace}}, held in place by {{lockType}}. They {{crimeVerb}} it away at {{thiefSpeed}} — and all the world heard was {{crimeSound}}. But {{bikeNickname}} had a secret: {{trapFeature}}. And the universe, who had been watching the whole time, arranged for {{minorInconvenience}} to follow that {{thiefInsult}} everywhere they went — until, at last, inevitably: {{ultimateFate}}. The end. Sleep tight. Lock your bike, mate."
+    },
+    {
+      "name": "Bigfoot Witness Report",
+      "story": "The following is a sworn statement filed with the Yowie Research Council of Australia. At approximately {{thiefSpeed}}, a {{thiefInsult}} in {{thiefItem}} was observed outside {{crimePlace}} as they {{crimeVerb}} a {{bikeAdj}} {{bikeType}} — known to its owner as {{bikeNickname}} — which had been secured with {{lockType}}. The last sound reported at the scene was {{crimeSound}}. What the thief did not anticipate was the Yowie, who had been using {{crimePlace}} as a foraging site since 1987 and takes a very dim view of petty crime. The {{trapFeature}} alerted the creature immediately. Investigators later confirmed that {{minorInconvenience}} was consistent with a Yowie-administered punishment. The thief's current whereabouts are unknown, though trail cameras near the treeline have captured footage consistent with {{ultimateFate}}. The case remains open. The bike does not."
+    },
+    {
+      "name": "Haunting",
+      "story": "They reckon {{bikeNickname}} — a {{bikeAdj}} {{bikeType}}, chained to a post outside {{crimePlace}} by nothing but {{lockType}} — never really left. The {{thiefInsult}} who {{crimeVerb}} it at {{thiefSpeed}}, dressed inexplicably in {{thiefItem}}, heard only {{crimeSound}} as they legged it. But that night, the rattling began. The {{trapFeature}} had awakened something. Every morning: {{minorInconvenience}}. Every night: the faint creak of a bicycle chain that shouldn't exist. Neighbours reported seeing a glowing {{bikeAdj}} shape drifting through the hallway. The local priest was called. He did not help. The haunting culminated, as all hauntings must, in {{ultimateFate}}. The ghost of {{bikeNickname}} has not been seen since. Whether it found peace, or simply found a better drongo to torment, is anyone's guess."
+    },
+    {
+      "name": "Mothman Prophecy",
+      "story": "Three days before the incident, Mothman was spotted perched on a streetlight above {{crimePlace}}, staring directly at the {{lockType}} securing {{bikeNickname}}. Nobody heeded the omen. On the appointed day, the {{thiefInsult}} — identified by witnesses by their {{thiefItem}} — arrived and {{crimeVerb}} the {{bikeAdj}} {{bikeType}} with characteristic insolence, departing at {{thiefSpeed}} as {{crimeSound}} rang out across the street. Mothman, who had predicted this, had also predicted what came next. The {{trapFeature}} deployed. The {{minorInconvenience}} began the following morning and has not stopped since. Mothman was last seen on the night of {{ultimateFate}}, watching from a great height, wings folded, apparently satisfied. Some say it still watches. Most say lock your bike better."
+    },
+    {
+      "name": "Loch Ness Deposition",
+      "story": "DEPOSITION OF NESSIE, taken via underwater shorthand and translated from aquatic. \"I was surfacing near the drainage outlet adjacent to {{crimePlace}} when I observed a {{thiefInsult}} wearing {{thiefItem}} approach a {{bikeAdj}} {{bikeType}} identified as {{bikeNickname}}. The securing device — {{lockType}} — offered no resistance. The subject {{crimeVerb}} the vehicle at {{thiefSpeed}}. I heard {{crimeSound}}. I have lived for four hundred million years and I have never witnessed such brazen behaviour. I activated the {{trapFeature}} with my tail as the thief passed. I have personally ensured {{minorInconvenience}} has been in effect ever since. The matter concluded last Thursday with {{ultimateFate}}. I will now return to the loch. I was never here.\""
+    },
+    {
+      "name": "Alien Abduction Report",
+      "story": "INTERCEPTED TRANSMISSION — DEEP SPACE RELAY STATION 7: \"Subjects on third rock continue to exhibit confounding behaviour. Today a {{thiefInsult}} in {{thiefItem}} was observed stealing a {{bikeAdj}} {{bikeType}} (locally designated {{bikeNickname}}) from outside {{crimePlace}}. Method of acquisition: {{crimeVerb}}. Security device: {{lockType}}. Escape velocity: {{thiefSpeed}}. Departure soundscape: {{crimeSound}}. We had been monitoring {{bikeNickname}} for six of their weeks due to the {{trapFeature}}, which our instruments identified as a potential energy source. We intervened. The subject now experiences {{minorInconvenience}} — a standard low-grade consequence by our metrics. The full intervention concluded with {{ultimateFate}}. We consider this planet's karmic infrastructure underdeveloped but showing promise. END TRANSMISSION.\""
+    }
+  ]
+}

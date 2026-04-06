@@ -1,0 +1,69 @@
+{
+  "ui": {
+    "title": "Bouw een Verhaal",
+    "subtitle": "Vul de lege plekken in. Laat het universum een verhaal van karmische vergelding weven.",
+    "generate_button": "Genereer Karmische Vergelding",
+    "try_different": "Probeer een Ander Verhaal",
+    "start_over": "Opnieuw Beginnen",
+    "error_one": "1 veld moet nog worden ingevuld.",
+    "error_other": "{{count}} velden moeten nog worden ingevuld."
+  },
+  "sections": {
+    "specs":   { "title": "De Specs",   "subtitle": "Het toneel wordt gezet"      },
+    "villain": { "title": "De Schurk",  "subtitle": "De dief beschreven"          },
+    "karma":   { "title": "Het Karma",  "subtitle": "Het universum slaat terug"   }
+  },
+  "fields": {
+    "bikeAdj":            { "label": "Bijvoeglijk naamwoord voor de fiets",         "placeholder": "bijv. verroest, neonroze, koolstofvezel"                              },
+    "bikeType":           { "label": "Type fiets",                                  "placeholder": "bijv. fixie, mountainbike, tandem, eenwieler"                         },
+    "bikeNickname":       { "label": "Bijnaam van de fiets",                        "placeholder": "bijv. De Zilveren Pijl, Ouwe Trouwe"                                 },
+    "lockType":           { "label": "Type slot",                                   "placeholder": "bijv. een slap kabeltje, een stuk tandenstoker"                       },
+    "thiefInsult":        { "label": "Een scheldwoord voor de dief",                "placeholder": "bijv. uitschot, spaaklikker, schoelje"                                },
+    "thiefItem":          { "label": "Een verdacht item dat hij droeg",             "placeholder": "bijv. een clownsneus, één UGG-laars, een cape"                        },
+    "thiefSpeed":         { "label": "De vluchtsnelheid",                           "placeholder": "bijv. 3 km/u, lichtsnelheid, slakkentempo"                           },
+    "crimeVerb":          { "label": "Een werkwoord voor hoe het werd meegenomen",  "placeholder": "bijv. pikte, liet verdwijnen, bamboezelde weg"                        },
+    "crimePlace":         { "label": "Een vreemde plek waar je de fiets achterliet","placeholder": "bijv. voor een verdachte frituur, achter een mysterieuze cactus"     },
+    "crimeSound":         { "label": "Een geluid dat je hoorde toen je het merkte", "placeholder": "bijv. een trieste tuba, één enkele krekel"                           },
+    "trapFeature":        { "label": "Een valstrik op de fiets",                    "placeholder": "bijv. een zadel van cactus, een glitterkanon"                         },
+    "minorInconvenience": { "label": "Een klein ongemak voor de dief",              "placeholder": "bijv. altijd rood licht, een steentje in de schoen dat niet weg gaat" },
+    "ultimateFate":       { "label": "Het uiteindelijke lot van de dief",           "placeholder": "bijv. achtervolgd worden door een zwerm boze ganzen"                  }
+  },
+  "templates": [
+    {
+      "name": "Noir-detective",
+      "story": "Het was een dinsdag als alle andere — bewolkt, onverbiddelijk en met een lichte geur van spijt — toen een {{thiefInsult}} in {{thiefItem}} zijn slag sloeg. Jouw {{bikeAdj}} {{bikeType}}, liefkozend bekend als {{bikeNickname}}, stond buiten {{crimePlace}}, beveiligd door niets meer dan {{lockType}}. Het schoelje {{crimeVerb}} hem met een snelheid van {{thiefSpeed}}. Alles wat je hoorde was {{crimeSound}} dat over het trottoir weergalmde. Wat ze niet wisten — niet konden weten — was dat {{bikeNickname}} uitgerust was met {{trapFeature}}. Het universum, altijd geduldig, regelde {{minorInconvenience}}. En toen de eindrekening arriveerde, was die volledig: {{ultimateFate}}. Gerechtigheid beweegt op haar eigen snelheid. Altijd."
+    },
+    {
+      "name": "Natuurdocumentaire",
+      "story": "En hier — in de stedelijke savanne buiten {{crimePlace}} — observeren we de {{thiefInsult}} in zijn natuurlijke habitat. Let op het kenmerkende {{thiefItem}}, een duidelijke territoriummarkering van de soort. Het wezen nadert de {{bikeAdj}} {{bikeType}} bekend als {{bikeNickname}}, losjes beveiligd door {{lockType}}. Met een snelheid van {{thiefSpeed}} {{crimeVerb}} het de fiets en lost op in de betonnen wildernis. De enige getuige: {{crimeSound}}. Maar de natuur herstelt, zoals altijd, het evenwicht. De {{trapFeature}} activeerde zoals bedoeld. En zoals elke naturalist zal bevestigen, was de langetermijnprognose voor dit exemplaar somber — {{minorInconvenience}} volgde het wezen overal naartoe, totdat het uiteindelijk zijn lot ontmoette: {{ultimateFate}}. De cyclus, net als de fiets, gaat door."
+    },
+    {
+      "name": "Rechtszitting",
+      "story": "IN DE ZAAK VAN {{bikeNickname}} (EEN {{bikeAdj|upper}} {{bikeType|upper}}) TEGEN HET UNIVERSUM: De verdachte — een {{thiefInsult}}, voor het laatst gezien in {{thiefItem}} — heeft willens en wetens en met opzet {{crimeVerb}} het voornoemde voertuig van buiten {{crimePlace}}, waar het rechtmatig was beveiligd met {{lockType}}. Getuigen meldden {{crimeSound}} ten tijde van het incident. De verdachte vluchtte op {{thiefSpeed}}. De rechtbank merkt echter op dat het voertuig was uitgerust met {{trapFeature}} — een wezenlijk feit dat niet aan de verdachte was meegedeeld. Straf: {{minorInconvenience}} (onmiddellijk, onbepaalde duur). Verder: {{ultimateFate}}. Deze rechtbank is tevreden. De zitting is gesloten."
+    },
+    {
+      "name": "Verhaaltje voor het Slapengaan",
+      "story": "Er was eens op een verschrikkelijke dinsdag een {{thiefInsult}} in {{thiefItem}} die besloot dat hij een {{bikeAdj}} {{bikeType}} verdiende. \"Aha!\" riep hij, toen hij {{bikeNickname}} voor {{crimePlace}} zag staan, vastgehouden door {{lockType}}. Ze {{crimeVerb}} hem weg op {{thiefSpeed}} — en alles wat de wereld hoorde was {{crimeSound}}. Maar {{bikeNickname}} had een geheim: {{trapFeature}}. En het universum, dat de hele tijd had toegekeken, zorgde ervoor dat {{minorInconvenience}} die {{thiefInsult}} overal volgde — totdat, uiteindelijk, onvermijdelijk: {{ultimateFate}}. Einde. Slaap lekker. Zet je fiets op slot."
+    },
+    {
+      "name": "Wildeman Getuigenverslag",
+      "story": "Het volgende is een beëdigde verklaring ingediend bij het Nederlands Instituut voor Wildeman-onderzoek. Omstreeks {{thiefSpeed}} werd een {{thiefInsult}} in {{thiefItem}} waargenomen buiten {{crimePlace}} terwijl hij een {{bikeAdj}} {{bikeType}} — bij de eigenaar bekend als {{bikeNickname}} — {{crimeVerb}}, die was beveiligd met {{lockType}}. Het laatste geluid gemeld op de locatie was {{crimeSound}}. Wat de dief niet voorzag, was de Wildeman, die {{crimePlace}} al sinds 1987 gebruikt als fourageerplaats en een zeer negatieve kijk heeft op fietsendiefstal. De {{trapFeature}} alarmeerde het wezen onmiddellijk. Onderzoekers bevestigden later dat {{minorInconvenience}} consistent is met een door de Wildeman opgelegde straf. De huidige verblijfplaats van de dief is onbekend, maar wildcamera's bij de bosrand hebben beelden vastgelegd die consistent zijn met {{ultimateFate}}. De zaak blijft open. De fiets niet."
+    },
+    {
+      "name": "Spoken",
+      "story": "Ze zeggen dat {{bikeNickname}} — een {{bikeAdj}} {{bikeType}}, geketend aan een paal buiten {{crimePlace}} door niets dan {{lockType}} — nooit echt wegging. De {{thiefInsult}} die hem op {{thiefSpeed}} {{crimeVerb}}, op onverklaarbare wijze gekleed in {{thiefItem}}, hoorde alleen {{crimeSound}} toen ze vluchtten. Maar die nacht begon het rammelen. De {{trapFeature}} had iets gewekt. Elke ochtend: {{minorInconvenience}}. Elke nacht: het zachte geknars van een fietsketting die niet zou moeten bestaan. Buren meldden een gloeiende {{bikeAdj}} gedaante door de gangen te zien drijven. Een priester werd gebeld. Hij hielp niet. De spoken culmineerden, zoals alle spoken moeten, in {{ultimateFate}}. Het spook van {{bikeNickname}} is sindsdien niet meer gesignaleerd. Of het vrede vond, of gewoon een betere dief vond om te kwellen, is onbekend."
+    },
+    {
+      "name": "Mothman Profetie",
+      "story": "Drie dagen voor het incident werd Mothman gezien op een straatlantaarn boven {{crimePlace}}, starend naar het {{lockType}} waarmee {{bikeNickname}} was beveiligd. Niemand lette op het omen. Op de vastgestelde dag arriveerde de {{thiefInsult}} — door getuigen herkend aan zijn {{thiefItem}} — en {{crimeVerb}} de {{bikeAdj}} {{bikeType}} met karakteristieke brutaliteit, vertrekkend op {{thiefSpeed}} terwijl {{crimeSound}} door de straat klonk. Mothman, die dit had voorspeld, had ook voorspeld wat er daarna zou komen. De {{trapFeature}} werd ingezet. De {{minorInconvenience}} begon de volgende ochtend en is sindsdien niet gestopt. Mothman werd voor het laatst gezien op de nacht van {{ultimateFate}}, toekijkend vanuit grote hoogte, vleugels gevouwen, ogenschijnlijk tevreden. Sommigen zeggen dat hij nog steeds kijkt. De meesten zeggen: zet je fiets beter op slot."
+    },
+    {
+      "name": "Nessie-Getuigenis",
+      "story": "GETUIGENIS VAN NESSIE, opgenomen via onderwatersteno en vertaald vanuit het aquatisch. \"Ik was aan het opduiken bij de afvoerpijp naast {{crimePlace}} toen ik een {{thiefInsult}} in {{thiefItem}} zag naderen van een {{bikeAdj}} {{bikeType}} geïdentificeerd als {{bikeNickname}}. Het beveiligingsapparaat — {{lockType}} — bood geen weerstand. Het subject {{crimeVerb}} het voertuig op {{thiefSpeed}}. Ik hoorde {{crimeSound}}. Ik leef al vierhonderd miljoen jaar en heb nooit zulk schaamteloos gedrag gezien. Ik activeerde de {{trapFeature}} met mijn staart toen de dief passeerde. Ik heb persoonlijk gezorgd dat {{minorInconvenience}} sindsdien van kracht is. De zaak werd vorige donderdag afgesloten met {{ultimateFate}}. Ik keer nu terug naar het loch. Ik was hier nooit.\""
+    },
+    {
+      "name": "Onderschept Bericht",
+      "story": "ONDERSCHEPT BERICHT — DIEPRUIMTE RELAISSTATION 7: \"Subjecten op de derde rots blijven verwarrend gedrag vertonen. Vandaag werd een {{thiefInsult}} in {{thiefItem}} waargenomen terwijl hij een {{bikeAdj}} {{bikeType}} (lokaal aangeduid als {{bikeNickname}}) stal buiten {{crimePlace}}. Methode: {{crimeVerb}}. Beveiligingsapparaat: {{lockType}}. Vluchtvector: {{thiefSpeed}}. Akoestische handtekening bij vertrek: {{crimeSound}}. We monitorden {{bikeNickname}} al zes van hun weken vanwege de {{trapFeature}}, die onze instrumenten identificeerden als potentiële energiebron. We hebben ingegrepen. Het subject ervaart nu {{minorInconvenience}} — een standaard laaggradig gevolg naar onze maatstaven. De volledige interventie eindigde met {{ultimateFate}}. We beschouwen de karmische infrastructuur van deze planeet als onderontwikkeld maar veelbelovend. EINDE BERICHT.\""
+    }
+  ]
+}
