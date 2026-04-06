@@ -62,6 +62,38 @@ const GriefCounseling = () => {
 
     return (
         <div className="page">
+
+            <div style={{ marginTop: '0rem' }}>
+                <div className="page__header" style={{ marginBottom: '0' }}>
+                    <h2>Counseling Services</h2>
+                    <p>Additional premium resources to aid your spiritual recovery.</p>
+                </div>
+                <section className="features">
+                    <Link to="/obituary-templates" style={{ textDecoration: 'none' }}>
+                        <motion.div className="feature-card" whileHover={{ y: -5 }}>
+                            <div className="feature-card__icon"><GiScrollQuill /></div>
+                            <h3>Obituary Templates</h3>
+                            <p>Beautifully crafted, pre-written obituaries for your local classifieds. Honor the exact top-tube geometry and emotional impact your bike had on your life.</p>
+                        </motion.div>
+                    </Link>
+                    <Link to="/grief-articles" style={{ textDecoration: 'none' }}>
+                        <motion.div className="feature-card" whileHover={{ y: -5 }}>
+                            <div className="feature-card__icon"><GiOpenBook /></div>
+                            <h3>Grief Articles</h3>
+                            <p>Explore our peer-reviewed library dissecting the psychological impact of seeing a stranger riding your bike two weeks later and knowing there's nothing you can do.</p>
+                        </motion.div>
+                    </Link>
+                    <Link to="/online-medium" style={{ textDecoration: 'none' }}>
+                        <motion.div className="feature-card" whileHover={{ y: -5 }}>
+                            <div className="feature-card__icon"><GiCrystalBall /></div>
+                            <h3>Personal Medium</h3>
+                            <p>Connect with an automated online medium who can channel online the remaining spirit of your bicycle, helping you finally say goodbye to its ghost.</p>
+                        </motion.div>
+                    </Link>
+                </section>
+                
+            </div>
+
             <div className="page__header">
                 <h2>The 5 Stages of Bike Grief</h2>
                 <p>Processing the loss of your two-wheeled companion.</p>
@@ -75,6 +107,17 @@ const GriefCounseling = () => {
                     <motion.button whileHover={{ scale: 1.1, boxShadow: '0 6px 16px rgba(0,0,0,0.12)' }} whileTap={{ scale: 0.95 }} onClick={handleNext} aria-label="Next Perspective" style={{ background: 'var(--color-surface)', color: 'var(--color-text-main)', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 12px rgba(0,0,0,0.08)', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
                         <IoChevronForward size={18} />
                     </motion.button>
+                </div>
+                <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+                    {!isExpanded ? (
+                        <button className="btn btn--primary" onClick={() => setIsExpanded(true)}>
+                            I'm ready. Show me all the stages.
+                        </button>
+                    ) : (
+                        <button className="btn btn--secondary" onClick={() => { setIsExpanded(false); setCurrentStageIndex(0); }}>
+                            I need to take a step back.
+                        </button>
+                    )}
                 </div>
             </div>
 
@@ -107,49 +150,7 @@ const GriefCounseling = () => {
                     )}
                 </motion.ul>
             </AnimatePresence>
-
-            <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-                {!isExpanded ? (
-                    <button className="btn btn--primary" onClick={() => setIsExpanded(true)}>
-                        I'm ready. Show me all the stages.
-                    </button>
-                ) : (
-                    <button className="btn btn--secondary" onClick={() => { setIsExpanded(false); setCurrentStageIndex(0); }}>
-                        I need to take a step back.
-                    </button>
-                )}
-            </div>
-
-            <div style={{ marginTop: '5rem' }}>
-                <div className="page__header" style={{ marginBottom: '0' }}>
-                    <h2>Counseling Services</h2>
-                    <p>Additional premium resources to aid your spiritual recovery.</p>
-                </div>
-                <section className="features">
-                    <Link to="/obituary-templates" style={{ textDecoration: 'none' }}>
-                        <motion.div className="feature-card" whileHover={{ y: -5 }}>
-                            <div className="feature-card__icon"><GiScrollQuill /></div>
-                            <h3>Obituary Templates</h3>
-                            <p>Beautifully crafted, pre-written obituaries for your local classifieds. Honor the exact top-tube geometry and emotional impact your bike had on your life.</p>
-                        </motion.div>
-                    </Link>
-                    <Link to="/grief-articles" style={{ textDecoration: 'none' }}>
-                        <motion.div className="feature-card" whileHover={{ y: -5 }}>
-                            <div className="feature-card__icon"><GiOpenBook /></div>
-                            <h3>Grief Articles</h3>
-                            <p>Explore our peer-reviewed library dissecting the psychological impact of seeing a stranger riding your bike two weeks later and knowing there's nothing you can do.</p>
-                        </motion.div>
-                    </Link>
-                    <Link to="/online-medium" style={{ textDecoration: 'none' }}>
-                        <motion.div className="feature-card" whileHover={{ y: -5 }}>
-                            <div className="feature-card__icon"><GiCrystalBall /></div>
-                            <h3>Personal Medium</h3>
-                            <p>Connect with an automated online medium who can channel online the remaining spirit of your bicycle, helping you finally say goodbye to its ghost.</p>
-                        </motion.div>
-                    </Link>
-                </section>
-                
-            </div>
+ 
             <BannerAdvert />
         </div>
     );

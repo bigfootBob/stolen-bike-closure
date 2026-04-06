@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Craigslist Paranoia | StolenBikeClosure.com</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0f0ee;
+      color: #1a1a1a;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      line-height: 1.7;
+    }
+
+    .site-header {
+      text-align: center;
+      border-bottom: 2px solid #4a5c3a;
+      padding-bottom: 14px;
+      margin-bottom: 36px;
+    }
+
+    .site-header a {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #4a5c3a;
+      text-decoration: none;
+    }
+
+    .coalition-badge {
+      background: #4a5c3a;
+      color: #fff;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      padding: 5px 12px;
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+
+    .doc-number {
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.6em;
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      color: #444;
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .author-block {
+      font-size: 12px;
+      color: #777;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      margin: 22px 0 32px 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .author-block span {
+      display: inline-block;
+    }
+
+    .alert-box {
+      background: #fffbe5;
+      border: 1px solid #d4a800;
+      border-left: 5px solid #d4a800;
+      padding: 16px 20px;
+      font-size: 13.5px;
+      margin-bottom: 32px;
+      color: #4a3800;
+    }
+
+    .alert-box strong {
+      display: block;
+      text-transform: uppercase;
+      font-size: 10.5px;
+      letter-spacing: 0.1em;
+      color: #d4a800;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 1em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #4a5c3a;
+      margin-top: 38px;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #4a5c3a;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    .callout {
+      background: #e8ede3;
+      border-left: 4px solid #4a5c3a;
+      padding: 16px 20px;
+      margin: 28px 0;
+      font-style: italic;
+      font-size: 1.05em;
+      color: #2c3a22;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 28px;
+      margin: 28px 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #ccc;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 22px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -24px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      background: #4a5c3a;
+      border-radius: 50%;
+    }
+
+    .timeline-time {
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #4a5c3a;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .timeline-item p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .criteria-list {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0;
+    }
+
+    .criteria-list li {
+      padding: 10px 14px 10px 38px;
+      position: relative;
+      font-size: 14px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .criteria-list li:last-child {
+      border-bottom: none;
+    }
+
+    .criteria-list li::before {
+      content: attr(data-num);
+      position: absolute;
+      left: 10px;
+      font-weight: 700;
+      font-size: 12px;
+      color: #4a5c3a;
+      background: #e8ede3;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 12px;
+      text-align: center;
+      line-height: 18px;
+    }
+
+    .criteria-list li.checked::before {
+      content: '✓';
+      background: #4a5c3a;
+      color: white;
+    }
+
+    /* Score meter */
+    .score-box {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 28px 0;
+      text-align: center;
+    }
+
+    .score-box .score-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .score-meter {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      height: 48px;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 8px 0;
+      font-size: 11px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .score-meter .zone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+      flex: 1;
+    }
+
+    .zone-normal { background: #7aaa5c; }
+    .zone-concerning { background: #d4a800; }
+    .zone-advanced { background: #c85a00; }
+    .zone-clinical { background: #a81a00; }
+
+    .score-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    .score-box .caption {
+      font-size: 12px;
+      color: #666;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    .listing-mockup {
+      background: #fff;
+      border: 1px solid #bbb;
+      font-family: 'Courier New', monospace;
+      font-size: 12.5px;
+      padding: 0;
+      margin: 28px 0;
+      color: #222;
+    }
+
+    .listing-mockup .listing-header {
+      background: #6d8654;
+      color: white;
+      padding: 8px 14px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .listing-item {
+      padding: 12px 14px;
+      border-bottom: 1px solid #eee;
+      position: relative;
+    }
+
+    .listing-item:last-child { border-bottom: none; }
+
+    .listing-item .listing-title {
+      color: #00519c;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 3px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .listing-item .listing-meta {
+      color: #888;
+      font-size: 11px;
+      font-family: Arial, sans-serif;
+    }
+
+    .listing-item .annotation {
+      background: #fffbe5;
+      border: 1px solid #d4a800;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: #6b4400;
+      padding: 4px 8px;
+      margin-top: 6px;
+      display: inline-block;
+    }
+
+    sup {
+      color: #4a5c3a;
+      font-size: 0.75em;
+    }
+
+    .footnotes {
+      font-size: 12px;
+      color: #888;
+      border-top: 1px solid #ccc;
+      margin-top: 50px;
+      padding-top: 16px;
+    }
+
+    .footnotes ol {
+      padding-left: 18px;
+    }
+
+    .footnotes li {
+      margin-bottom: 6px;
+    }
+
+    .disclaimer {
+      background: #f5f5f5;
+      border: 1px solid #ccc;
+      padding: 12px 16px;
+      font-size: 12px;
+      color: #777;
+      margin-top: 36px;
+      border-radius: 3px;
+    }
+
+    .coalition-footer {
+      text-align: center;
+      font-size: 11px;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="site-header">
+    <a href="https://stolenbikeclosure.com">← StolenBikeClosure.com | Evidence-Based Anguish</a>
+  </div>
+
+  <div class="coalition-badge">Official Coalition Publication — For Internal Distribution Only (But Please Share)</div>
+  <div class="doc-number">Document Ref: CORSA-2026-03 &nbsp;|&nbsp; Clearance Level: Anyone Who's Been There</div>
+
+  <h1>Craigslist Paranoia</h1>
+  <p class="subtitle">Understanding the compulsive need to refresh local classifieds at 3 AM looking for a 2018 Trek Marlin 5 that "kinda looks like yours even though the picture is blurry."</p>
+
+  <div class="author-block">
+    <span>Issued by: <strong>The Coalition for Refined Searching Algorithms (CORSA)</strong></span>
+    <span>Published: March 29, 2026 &nbsp;|&nbsp; 3rd Edition (Substantially Expanded)</span>
+  </div>
+
+  <div class="alert-box">
+    <strong>⚠ Coalition Advisory</strong>
+    If you are currently reading this between the hours of 11 PM and 4 AM, you may already be experiencing the condition described herein. CORSA recommends you finish reading, then close all tabs. You will not close all tabs. We understand. Please continue.
+  </div>
+
+  <h2>Executive Summary</h2>
+
+  <p>Each year, millions of bicycles are stolen. Each year, the owners of those bicycles spend a cumulative estimated 14.7 million hours refreshing Craigslist, Facebook Marketplace, and OfferUp in a state of exhausted, electric-eyed vigilance that clinicians have begun calling <em>Classifieds Paranoia Disorder</em>, and that the rest of us have been calling "Tuesday night" for years.</p>
+
+  <p>This document, produced by the Coalition for Refined Searching Algorithms, represents our most comprehensive overview to date of the behavioral, psychological, and logistical dimensions of post-theft marketplace monitoring. It is not a cure. We do not have a cure. We have, however, developed a very precise vocabulary for the problem, which is something.</p>
+
+  <h2>Phase I: The Rational Search (Hours 0–48)</h2>
+
+  <p>In the immediate aftermath of a theft, classifieds monitoring begins sensibly. The rider files a police report, notes the serial number, photographs the receipt. They open Craigslist and type in the make, model, and year with focused calm. This phase is characterized by a reasonable conviction that the bike will simply <em>be there</em>, posted by some blissfully unaware fence who didn't notice the personalized handlebar tape.</p>
+
+  <p>Searches during Phase I are efficient and well-structured. The subject uses correct terminology. Results are reviewed systematically. The subject closes the laptop at a normal hour and expresses cautious optimism. This is the last time any of this is true.</p>
+
+  <div class="callout">
+    "The rational search is the bicycle theft experience's version of denial. It is comfortable, organized, and has approximately a 4% success rate. We at CORSA cherish it while it lasts."
+    <br>— CORSA Field Notes, Vol. 12
+  </div>
+
+  <h2>Phase II: Scope Expansion (Days 3–10)</h2>
+
+  <p>By day three, the subject has accepted that their exact bike is not listed under "bikes — by owner." They have begun searching adjacent categories. Then adjacent cities. They are now browsing "general > free stuff" in a metro area four hours away "just to see." Their search terms have evolved.</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-time">Day 1</span>
+      <p>"Trek Marlin 5 2018 blue"</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-time">Day 3</span>
+      <p>"Trek Marlin mountain bike" — city + three surrounding regions</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-time">Day 5</span>
+      <p>"Trek mountain bike" — all sizes, all years, all colors, all conditions</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-time">Day 7</span>
+      <p>"mountain bike" — 83 results reviewed, two flagged as "suspicious," zero confirmed</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-time">Day 9</span>
+      <p>"bike" — 214 results. Subject notes the Huffy in listing #7 has the same stem length. Subject is aware this is meaningless. Subject bookmarks the listing anyway.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-time">Day 11</span>
+      <p>"blue" — we do not discuss what happened on day 11</p>
+    </div>
+  </div>
+
+  <h2>Phase III: The 3 AM Threshold</h2>
+
+  <p>The most clinically significant phase of Craigslist Paranoia is defined not by search terms but by timestamp. CORSA data shows a sharp inflection in session frequency and duration between the hours of 11 PM and 4 AM, peaking at approximately 2:40 AM — a phenomenon the research team calls the <em>Witching Refresh</em>.</p>
+
+  <p>Several factors converge to make late-night searching uniquely irrational and uniquely compelling. The subject is tired and therefore less resistant to wishful interpretation. Screen brightness in a dark room creates a false sense of intimacy with the results. And there is, beneath everything, a persistent magical belief that <em>thieves post at night</em> — that somewhere, at this very moment, the person who took the bike is photographing it under a bare bulb and typing a description while you, vigilant and sleepless, wait to catch them.</p>
+
+  <p>This belief is not supported by data. CORSA has reviewed posting timestamps for 22,000 used-bike listings across 18 cities. The modal posting time is 4:30 PM on a Saturday. Nobody is posting at 2:40 AM. Nobody except the subject, who is posting a detailed "stolen bike — please look out" notice they have already posted four times this week.</p>
+
+  <h2>Diagnostic Criteria: The CORSA Paranoia Index</h2>
+
+  <p>The following behaviors, when present in combination, indicate active Craigslist Paranoia. CORSA recommends self-assessment using the checklist below.</p>
+
+  <div class="listing-mockup">
+    <div class="listing-header">🔍 Craigslist — Bicycles — All Nearby Areas — Sorted by: Newest (Auto-Refresh: ON)</div>
+    <div class="listing-item">
+      <span class="listing-title">Trek mountain bike - good condition - $180</span>
+      <div class="listing-meta">Northside · 22 minutes ago · 1 image</div>
+      <div class="annotation">⚑ FLAGGED: Price suspiciously low. No serial number mentioned. Photo shows handlebar grip that "could be" the same brand. Subject has opened this listing 7 times.</div>
+    </div>
+    <div class="listing-item">
+      <span class="listing-title">Bike - blue - works fine - $150 OBO</span>
+      <div class="listing-meta">Eastside · 1 hour ago · 1 image (blurry)</div>
+      <div class="annotation">⚑ FLAGGED: Blurry image. No model listed. Seller says "just upgrading" but profile is new. Subject has drafted and deleted a message to seller 3 times.</div>
+    </div>
+    <div class="listing-item">
+      <span class="listing-title">Trek Marlin 5 2018 - blue - $350</span>
+      <div class="listing-meta">Far Suburbs · 3 hours ago · 6 images</div>
+      <div class="annotation">⚑ FLAGGED: Exact match. Clear photos. Seller profile is 6 years old with positive reviews. All evidence suggests legitimate sale. Subject does not trust this.</div>
+    </div>
+    <div class="listing-item">
+      <span class="listing-title">Miscellaneous sporting goods lot - $40</span>
+      <div class="listing-meta">Warehouse District · 14 hours ago · 3 images</div>
+      <div class="annotation">⚑ FLAGGED: Photo includes what may be a blue handlebar in background. Subject has enhanced the image to 400% zoom. Inconclusive. Remains open in a tab.</div>
+    </div>
+  </div>
+
+  <ul class="criteria-list">
+    <li data-num="1">You have set up a saved search alert and check it before it has had time to find anything new.</li>
+    <li data-num="2">You have developed a personal "suspicion rubric" for sellers (new profile = suspicious; old profile = "could be a cover").</li>
+    <li data-num="3">You have enhanced a listing photo using your phone's pinch-zoom feature to examine a partially visible tire tread.</li>
+    <li data-num="4">You have messaged a seller asking for "just the serial number, for my records" and been blocked.</li>
+    <li data-num="5">You have browsed listings in cities you do not live in, cannot easily travel to, and have no plan for acting upon.</li>
+    <li data-num="6">You have identified at least one listing as "definitely mine" based on a blurry photo, then discovered it was the wrong color once the seller responded.</li>
+    <li data-num="7">You are reading this at 3 AM.</li>
+  </ul>
+
+  <div class="score-box">
+    <div class="score-title">CORSA Paranoia Index — Severity Scale</div>
+    <div class="score-meter">
+      <div class="zone zone-normal">0–1<br>Normal</div>
+      <div class="zone zone-concerning">2–3<br>Concerning</div>
+      <div class="zone zone-advanced">4–5<br>Advanced</div>
+      <div class="zone zone-clinical">6–7<br>Clinical</div>
+    </div>
+    <div class="score-labels">
+      <span>Healthy skepticism</span>
+      <span>Please sleep</span>
+    </div>
+    <div class="caption">Subjects scoring 6–7 are advised to close the laptop. They will not close the laptop. That's okay. We see you.</div>
+  </div>
+
+  <h2>The Blurry Photo Problem</h2>
+
+  <p>No discussion of Craigslist Paranoia is complete without addressing the Blurry Photo. CORSA analysis of 4,400 used-bike listings found that 34% contained at least one image of insufficient resolution to identify the make, model, or even color of the bicycle with confidence. Of these, 31% received disproportionate engagement from users matching the stolen-bike profile — suggesting that ambiguity, rather than deterring investigation, actively fuels it.</p>
+
+  <p>The blurry photo is, for the paranoid searcher, a <em>Rorschach test with a price tag</em>. Where others see an underfocused JPEG of an unknown object, the subject sees outlines, proportions, a particular quality of light. They see what might be the scuff mark on the top tube from that time they leaned it against the parking meter outside the Thai place. They zoom in. The pixels are uncooperative. They zoom in further. They are now examining individual compression artifacts for evidence.</p>
+
+  <p>This will not be the last blurry photo they examine tonight.</p>
+
+  <h2>Treatment & Coalition Recommendations</h2>
+
+  <p>CORSA does not recommend cold-turkey cessation of classifieds monitoring, as field reports indicate this produces heightened anxiety and a belief that one is "missing the listing" during the abstention period. Instead, we propose a structured harm-reduction approach:</p>
+
+  <p><strong>The Two-Tab Rule.</strong> At any given time, no more than two bike listings may be open simultaneously. Tabs in excess of two must be closed before a new one is opened. The Coalition acknowledges this rule has a 0% compliance rate but maintains it as a theoretical benchmark.</p>
+
+  <p><strong>The Escalation Pause.</strong> Before messaging any seller, the subject must wait 20 minutes. This window exists to allow the rational mind to consider whether the 2007 Schwinn they are about to accuse someone of stealing is actually a 2018 Trek. In practice, subjects use the 20 minutes to gather additional evidence and compose a longer message.</p>
+
+  <p><strong>The Seller-Benefit Protocol.</strong> When a listing appears suspicious, the subject should systematically consider benign explanations before proceeding. The bike is legitimately for sale. The seller is new to the platform. The low price reflects normal used-goods negotiation dynamics. The Coalition has found this exercise is ineffective but time-consuming, which achieves a similar result.</p>
+
+  <p><strong>The 4 AM Hard Stop.</strong> Devices should be placed in a separate room at 4 AM. Any listing that genuinely contains the stolen bike will still contain it in the morning. The thief is not monitoring refresh timestamps. The deal is not expiring. The bike will still be there at 8 AM, and so will the bad decision you were about to make by contacting that seller with a blurry photo of someone's perfectly normal bicycle.<sup>3</sup></p>
+
+  <h2>Conclusion</h2>
+
+  <p>Craigslist Paranoia is not irrational. It is the product of genuine loss, genuine hope, and a classifieds marketplace structurally optimized to reward exactly the kind of late-night, low-probability searching that stolen-bike owners are most prone to. The listings are always refreshing. The categories are always adjacent. The photos are always blurry enough.</p>
+
+  <p>The Coalition for Refined Searching Algorithms was founded on the belief that better search tools, clearer listing standards, and serial number verification requirements would meaningfully reduce post-theft anguish. We continue to believe this. We also continue to check Craigslist at 2 AM. These things are not mutually exclusive.</p>
+
+  <p>If your bike is out there — and it might be — we hope you find it. If it isn't, we hope you eventually close the tab. We'll be here either way, refreshing alongside you.</p>
+
+  <div class="footnotes">
+    <p><strong>Notes & References</strong></p>
+    <ol>
+      <li>The 14.7 million hours figure is a CORSA internal estimate derived from member survey data and is, frankly, probably low.</li>
+      <li>Listing #7 in the day 11 data set turned out to be a child's tricycle. The subject is aware of this and would like to move on.</li>
+      <li>A minority of Coalition members report that early-morning confrontations based on blurry listing photos have, on rare occasion, successfully recovered stolen bikes. CORSA does not endorse this approach, but does acknowledge the data and will not pretend otherwise.</li>
+      <li>The name "Coalition for Refined Searching Algorithms" was chosen specifically to form the acronym CORSA, which is a type of road racing, because we thought that was fun and also this is a fake organization.</li>
+    </ol>
+  </div>
+
+  <div class="disclaimer">
+    ⚠️ <strong>Parody Disclaimer:</strong> This article is satirical fiction published on StolenBikeClosure.com for entertainment purposes. CORSA is not a real organization. All statistics are fabricated. If you are currently experiencing Craigslist Paranoia, please know that we believe in you, and also please get some sleep.
+  </div>
+
+  <div class="coalition-footer">
+    The Coalition for Refined Searching Algorithms &nbsp;·&nbsp; Est. Sometime After Our Bikes Were Stolen &nbsp;·&nbsp; stolenbikeclosure.com
+  </div>
+
+</body>
+</html>

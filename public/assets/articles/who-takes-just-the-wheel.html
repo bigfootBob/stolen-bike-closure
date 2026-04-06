@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coping With "Who Takes Just the Wheel?" | StolenBikeClosure.com</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #1c1c1c;
+      color: #e8e0d0;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    .cover {
+      background: #111;
+      border-bottom: 4px solid #8b2020;
+      padding: 60px 40px 48px;
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .cover .site-link {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #8b2020;
+      margin-bottom: 40px;
+      text-decoration: none;
+    }
+
+    .cover .journal-name {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .cover h1 {
+      font-size: 3em;
+      font-weight: 700;
+      line-height: 1.15;
+      color: #f0e8d8;
+      margin: 0 0 18px 0;
+      font-style: italic;
+    }
+
+    .cover .em-dash-title {
+      font-size: 1.1em;
+      font-style: normal;
+      color: #8b2020;
+      letter-spacing: 0.04em;
+    }
+
+    .cover .subtitle {
+      font-size: 1em;
+      color: #999;
+      font-style: italic;
+      max-width: 540px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .cover .author-line {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .cover .author-line strong {
+      color: #aaa;
+    }
+
+    .body-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 50px 40px;
+    }
+
+    .opening-quote {
+      text-align: center;
+      padding: 36px 20px;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+      margin-bottom: 46px;
+      font-style: italic;
+      font-size: 1.35em;
+      color: #c8b89a;
+      line-height: 1.5;
+    }
+
+    .opening-quote cite {
+      display: block;
+      font-style: normal;
+      font-size: 0.6em;
+      color: #555;
+      margin-top: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    h2 {
+      font-size: 0.75em;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #8b2020;
+      margin-top: 48px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #333;
+    }
+
+    p {
+      font-size: 15.5px;
+      margin-bottom: 18px;
+      color: #d8d0c0;
+    }
+
+    .drop-cap::first-letter {
+      float: left;
+      font-size: 4.2em;
+      line-height: 0.75;
+      margin-right: 8px;
+      margin-top: 6px;
+      color: #8b2020;
+      font-style: italic;
+    }
+
+    blockquote {
+      border-left: 3px solid #8b2020;
+      margin: 32px 0;
+      padding: 14px 22px;
+      font-style: italic;
+      color: #b0a090;
+      font-size: 1.05em;
+    }
+
+    /* Evidence board */
+    .evidence-board {
+      background: #161616;
+      border: 1px solid #333;
+      padding: 28px;
+      margin: 36px 0;
+    }
+
+    .evidence-board .board-label {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #8b2020;
+      margin-bottom: 18px;
+      display: block;
+    }
+
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .evidence-card {
+      background: #1f1f1f;
+      border: 1px solid #2e2e2e;
+      padding: 14px;
+    }
+
+    .evidence-card .ev-label {
+      font-family: Arial, sans-serif;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .evidence-card .ev-value {
+      font-size: 14px;
+      color: #c8b89a;
+      line-height: 1.4;
+    }
+
+    .evidence-card .ev-status {
+      display: inline-block;
+      margin-top: 8px;
+      font-family: Arial, sans-serif;
+      font-size: 9px;
+      padding: 2px 7px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .status-present { background: #1a3a1a; color: #5a9a5a; }
+    .status-absent { background: #3a1a1a; color: #9a5a5a; }
+    .status-unknown { background: #2a2a1a; color: #8a8a4a; }
+
+    /* Philosophical framework table */
+    .phil-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      margin: 28px 0;
+    }
+
+    .phil-table th {
+      background: #8b2020;
+      color: #f0e8d8;
+      padding: 10px 16px;
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+
+    .phil-table td {
+      padding: 11px 16px;
+      border-bottom: 1px solid #2e2e2e;
+      color: #c8b89a;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .phil-table tr:nth-child(even) td {
+      background: #1f1f1f;
+    }
+
+    .phil-table td:first-child {
+      font-style: italic;
+      color: #888;
+      white-space: nowrap;
+      padding-right: 20px;
+    }
+
+    /* Grief stages */
+    .stages-wrap {
+      margin: 28px 0;
+    }
+
+    .stage {
+      display: flex;
+      gap: 18px;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+
+    .stage-num {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border: 1px solid #8b2020;
+      color: #8b2020;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .stage-content .stage-name {
+      font-style: italic;
+      font-size: 15px;
+      color: #c8b89a;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .stage-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #999;
+    }
+
+    /* Pull quote */
+    .pull-quote {
+      text-align: center;
+      font-size: 1.6em;
+      font-style: italic;
+      color: #8b2020;
+      line-height: 1.3;
+      margin: 42px 0;
+      padding: 28px 0;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+    }
+
+    /* Theory box */
+    .theory-box {
+      background: #1a1a1a;
+      border: 1px solid #8b2020;
+      padding: 22px 26px;
+      margin: 32px 0;
+    }
+
+    .theory-box .theory-label {
+      font-family: Arial, sans-serif;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #8b2020;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .theory-box .theory-title {
+      font-size: 1.05em;
+      font-weight: 700;
+      color: #e0d0b8;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .theory-box p {
+      margin: 0;
+      font-size: 14px;
+      color: #999;
+    }
+
+    sup {
+      color: #8b2020;
+      font-size: 0.72em;
+    }
+
+    .footnotes {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #555;
+      border-top: 1px solid #2e2e2e;
+      margin-top: 50px;
+      padding-top: 18px;
+    }
+
+    .footnotes ol {
+      padding-left: 18px;
+    }
+
+    .footnotes li {
+      margin-bottom: 7px;
+      line-height: 1.5;
+    }
+
+    .disclaimer {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      padding: 14px 18px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #555;
+      margin-top: 36px;
+      line-height: 1.6;
+    }
+
+    .final-line {
+      text-align: center;
+      font-style: italic;
+      font-size: 13px;
+      color: #444;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #222;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <a class="site-link" href="https://stolenbikeclosure.com">← StolenBikeClosure.com</a>
+    <div class="journal-name">The Review of Post-Rational Loss Experience · Vol. IV · Issue 2</div>
+    <h1>Coping With<br><span class="em-dash-title">"Who Takes Just the Wheel?"</span></h1>
+    <p class="subtitle">An exploration into the deep, unresolved existential dread when you return to the rack to find your frame, one wheel, and absolutely no logic behind what just occurred.</p>
+    <div class="author-line">Authored by <strong>Prof. Vera Sprocket, MPhil</strong> · Department of Inexplicable Loss, Brokenheim University<br>
+    Peer reviewed by: two colleagues who also had their wheels stolen, separately, which the editorial board considers a conflict of interest and a tragedy</div>
+  </div>
+
+  <div class="body-wrap">
+
+    <div class="opening-quote">
+      "The frame was still there. The lock was still there. One wheel was still there.<br>
+      And yet. <em>And yet.</em>"
+      <cite>— Survivor testimony, Rack B, Maple Street Parking Structure, 2025</cite>
+    </div>
+
+    <h2>I. The Scene</h2>
+
+    <p class="drop-cap">You round the corner and you see it. Your brain, operating in its usual optimistic pre-confirmation mode, registers the general silhouette and begins preparing the muscle memory for mounting. Then something resolves incorrectly. There is a shape where your bike should be, but the shape is wrong. It is too flat. It is listing to one side. It is resting, in a manner that communicates infinite defeat, directly on its exposed fork.</p>
+
+    <p>Your bicycle is mostly there. This is, somehow, worse than if it weren't.</p>
+
+    <p>The frame: present. The handlebars: present. The rear wheel: present, still locked, faithfully completing its one assigned job while the situation around it deteriorated completely. The front wheel: absent. Gone. Taken. By someone who looked at a complete bicycle locked to a rack and thought — <em>wheel</em>. Just the one wheel. That one, specifically. The front one.</p>
+
+    <p>You stand there for a longer time than you would like to admit. You are waiting for your brain to generate an explanation. Your brain is not generating an explanation. Your brain has submitted a ticket and is waiting for the appropriate department to respond.</p>
+
+    <div class="evidence-board">
+      <span class="board-label">📋 Scene Evidence — Inventory as Recovered</span>
+      <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="ev-label">Frame</div>
+          <div class="ev-value">Present. Intact. Leaning at a 40° angle against the rack like a person who has given up.</div>
+          <span class="ev-status status-present">Present</span>
+        </div>
+        <div class="evidence-card">
+          <div class="ev-label">Front Wheel</div>
+          <div class="ev-value">Gone. No debris. No skid marks. Simply: not here anymore.</div>
+          <span class="ev-status status-absent">Absent</span>
+        </div>
+        <div class="evidence-card">
+          <div class="ev-label">Rear Wheel</div>
+          <div class="ev-value">Present. Still locked. Has done nothing wrong. Does not understand what happened.</div>
+          <span class="ev-status status-present">Present</span>
+        </div>
+        <div class="evidence-card">
+          <div class="ev-label">Lock</div>
+          <div class="ev-value">Intact. Secured to frame and rack exactly as left. Technically "worked."</div>
+          <span class="ev-status status-present">Present (Functionally Hollow)</span>
+        </div>
+        <div class="evidence-card">
+          <div class="ev-label">Quick-Release Skewer</div>
+          <div class="ev-value">Also gone. Taken. The thief was thorough about the one thing they were doing.</div>
+          <span class="ev-status status-absent">Absent</span>
+        </div>
+        <div class="evidence-card">
+          <div class="ev-label">Logic</div>
+          <div class="ev-value">Could not be recovered at the scene. Investigators have no leads.</div>
+          <span class="ev-status status-unknown">Not Located</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>II. The Philosophical Problem</h2>
+
+    <p>The full-bike theft, while devastating, is at least <em>coherent</em>. Someone wanted a bicycle. They took the bicycle. The universe subtracted one bicycle from your possession and added it, presumably, to someone else's. Grief is appropriate. The event, however, obeys a certain internal logic that the mind can eventually process and file.</p>
+
+    <p>The partial theft does not file.</p>
+
+    <p>The partial theft sits in your mental inbox, refusing to be categorized, because it raises a question that philosophy has not adequately addressed: what does it mean for something to be <em>almost stolen?</em> You still have a bicycle. You have most of a bicycle. You have a bicycle in the same way that a chair with one leg is still, technically, furniture. The possession is present. The utility is gone. You have been given a koan shaped like a Trek.</p>
+
+    <blockquote>"Is a bicycle without a front wheel still a bicycle? And if it is, why does looking at it feel like looking at a crime scene?"<br>— Prof. V. Sprocket, office whiteboard, erased and rewritten fourteen times</blockquote>
+
+    <p>The Western philosophical tradition has, historically, concerned itself with questions of identity, continuity, and the ship of Theseus. None of these frameworks were developed with quick-release axles in mind, and it shows.</p>
+
+    <table class="phil-table">
+      <thead>
+        <tr>
+          <th>Framework</th>
+          <th>Application to the Partial Theft</th>
+          <th>Verdict</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ship of Theseus</td>
+          <td>If you replace the stolen wheel, is it still your bike? If you don't, is it still a bike?</td>
+          <td>Unhelpfully circular. Provides no guidance on whether to call the insurance company.</td>
+        </tr>
+        <tr>
+          <td>Sartrean Existentialism</td>
+          <td>Existence precedes essence; the bike exists but has lost its cycling essence. You are condemned to be free — and also to walk.</td>
+          <td>Technically accurate. Emotionally useless.</td>
+        </tr>
+        <tr>
+          <td>Camus & Absurdism</td>
+          <td>The universe is indifferent. The theft is without meaning. You must imagine Sisyphus happy, but Sisyphus did not have to carry his boulder 1.4 miles to the train station.</td>
+          <td>Points for honesty. Zero practical utility.</td>
+        </tr>
+        <tr>
+          <td>Stoicism</td>
+          <td>The wheel was never truly yours. Distinguish what is and isn't in your control. The wheel is gone; your response is not.</td>
+          <td>Valid in theory. Very easy to say when your bike has both wheels.</td>
+        </tr>
+        <tr>
+          <td>Pragmatism</td>
+          <td>A belief is true insofar as it works. The belief that your bike is "fine" does not work. Therefore: false.</td>
+          <td>The most useful framework so far. Still doesn't get you home.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>III. The Psychological Stages of Partial Theft Processing</h2>
+
+    <p>Standard grief literature describes five stages: denial, anger, bargaining, depression, acceptance. The partial theft generates six stages, with one unique to this experience that does not appear in Kübler-Ross and which we have designated <em>Prolonged Confusion.</em></p>
+
+    <div class="stages-wrap">
+      <div class="stage">
+        <div class="stage-num">1</div>
+        <div class="stage-content">
+          <span class="stage-name">Inventory Disbelief</span>
+          <p>The subject counts the wheels multiple times. They crouch. They peer. They walk around the bike to confirm from a different angle. They are aware they are doing this. They do it again anyway. The wheel count remains one.</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="stage-num">2</div>
+        <div class="stage-content">
+          <span class="stage-name">Prolonged Confusion (Novel Stage)</span>
+          <p>The subject understands that a theft has occurred. They do not understand <em>why this theft.</em> This stage can last minutes or days. The subject replays the logic, searching for an entry point. They consider whether they are somehow in the wrong location. They check if there's another rack. This is the stage this paper is primarily about.</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="stage-num">3</div>
+        <div class="stage-content">
+          <span class="stage-name">Misplaced Gratitude</span>
+          <p>The subject notices the frame is still there and feels, briefly, relieved. Then feels immediately angry at themselves for feeling relieved. Then acknowledges that, okay, the frame is worth more than the wheel, so technically—. They stop that thought before it finishes.</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="stage-num">4</div>
+        <div class="stage-content">
+          <span class="stage-name">Forensic Speculation</span>
+          <p>The subject begins reconstructing the scene. The thief had a quick-release tool — or didn't need one, if the subject used a quick-release. Did they plan for the front wheel specifically, or was it opportunistic? Was someone else's front wheel already taken, and their bike stripped further, and this is all part of a larger ecosystem the subject is only now glimpsing? They are now thinking about the criminal supply chain. They are still standing at the rack.</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="stage-num">5</div>
+        <div class="stage-content">
+          <span class="stage-name">The Carrier Question</span>
+          <p>How did they carry it? A single wheel is awkward. You can roll it, but only in a straight line, and you look suspicious. You can carry it under your arm. You can put it in a bag, if the bag is large enough. The subject spends meaningful time thinking about this. The subject's coworkers will later describe them as "distracted" during the 3 PM meeting.</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="stage-num">6</div>
+        <div class="stage-content">
+          <span class="stage-name">Reluctant Pragmatism</span>
+          <p>The subject determines what to do with the remaining bike. This is a surprisingly difficult decision. They cannot ride it home. They cannot leave it (it will be further stripped). They can carry it, but it is a full bike frame with one wheel and that is not a casual thing to carry on the train. They call someone. They feel embarrassed about why.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pull-quote">
+      "The lock worked perfectly.<br>This is, somehow, part of the problem."
+    </div>
+
+    <h2>IV. Theories of Motive</h2>
+
+    <p>In the absence of a confession — which, in 99.4% of partial-theft cases, is not forthcoming — the subject is left to theorize. This section catalogs the most commonly proposed explanations collected from our subject pool, ranked by internal coherence.</p>
+
+    <div class="theory-box">
+      <span class="theory-label">Theory 01 — Highest Coherence</span>
+      <span class="theory-title">The Replacement Parts Hypothesis</span>
+      <p>The thief needed a specific wheel for a specific bicycle they already owned or had recently stolen. They identified the subject's front wheel as compatible, removed it efficiently, and departed. The act was surgical, targeted, and rational within its own context — a context the subject was not privy to and does not find comforting to imagine.</p>
+    </div>
+
+    <div class="theory-box">
+      <span class="theory-label">Theory 02 — Moderate Coherence</span>
+      <span class="theory-title">The Interrupted Theft Hypothesis</span>
+      <p>The thief intended to take the entire bicycle but was disturbed — by a passing pedestrian, a shop owner, an approaching bus, the sudden and inconvenient arrival of a conscience — and departed with only what they had already detached. This theory offers the subject a narrative of near-rescue that is entirely unsatisfying because the wheel is still gone.</p>
+    </div>
+
+    <div class="theory-box">
+      <span class="theory-label">Theory 03 — Low Coherence</span>
+      <span class="theory-title">The Upgrade Hypothesis</span>
+      <p>The thief had a bicycle they rode to the scene. They preferred the subject's front wheel to their own. They swapped wheels, leaving their old wheel behind — except they didn't, because there was no wheel left at the scene, which undermines this theory considerably. Nevertheless, subjects propose it frequently, perhaps because it implies the thief departed on a degraded bicycle, which is some comfort, however speculative.</p>
+    </div>
+
+    <div class="theory-box">
+      <span class="theory-label">Theory 04 — No Coherence</span>
+      <span class="theory-title">The Chaos Agent Hypothesis</span>
+      <p>There was no plan. There was no need. There was an unattended wheel on a quick-release skewer and a person who, in that moment, simply decided. Perhaps on a whim. Perhaps as a dare. Perhaps because the quick-release is a beautiful design that rewards curiosity in the worst possible way. The wheel came off in seconds. And then they just... left. With it. Because why not.<br><br>This theory is the most disturbing because it cannot be argued with.</p>
+    </div>
+
+    <h2>V. The Lock's Role in This</h2>
+
+    <p>We must speak about the lock.</p>
+
+    <p>The lock is still there. It is attached to the frame, the rear wheel, and the rack, exactly as designed, exactly as the subject installed it that morning with the quiet confidence of someone who has taken a reasonable precaution. The lock did not fail. The lock succeeded completely at the job it was assigned.</p>
+
+    <p>This is why looking at the lock feels like a betrayal.</p>
+
+    <p>The lock secured what was locked and nothing more. The front wheel, on its quick-release skewer, was not locked. The front wheel was, by the conventions of everyday cycling, considered secure enough by virtue of being attached to a locked bicycle. This is a convention the thief did not share. The thief and the subject had different mental models of what "locked" implied, and the subject is now on the losing side of that philosophical disagreement.<sup>2</sup></p>
+
+    <p>Several subjects in our study reported finding themselves subsequently overlocking. One locks both wheels, the frame, and the saddle. One has purchased a chain long enough to encircle the entire bike twice. One has begun locking the handlebar grips. When asked if this seemed excessive, they said: "It seemed excessive to take just the wheel."</p>
+
+    <p>The researcher had no response to this.</p>
+
+    <h2>VI. On Coming to Terms</h2>
+
+    <p>Resolution, in the conventional therapeutic sense, may not be fully available for the partial-theft survivor. The complete theft, however painful, at least produces a clear before-and-after. The partial theft produces something murkier: a damaged object, a logical gap, and a nagging sense that the universe has played a joke that it refuses to explain.</p>
+
+    <p>Subjects who report the highest wellbeing scores at the six-month follow-up share one common cognitive adaptation: they have stopped trying to understand why. They have filed the event not under <em>crimes with motives</em> but under <em>things that happened, for which no satisfying explanation exists</em> — alongside sunburns in October, socks disappearing in the wash, and the specific feeling of stepping off an escalator and still lifting your foot for a step that isn't there.</p>
+
+    <p>This is not acceptance. It is something adjacent to acceptance. It is the cognitive equivalent of closing a tab you know you'll never find satisfying and opening a new one.</p>
+
+    <p>The wheel is gone. The frame remains. You are, in some fundamental sense, still a cyclist — a cyclist currently carrying a partial bicycle on the subway, getting looks, declining to explain.</p>
+
+    <p>That is, for now, enough.</p>
+
+    <div class="footnotes">
+      <p><strong>Notes</strong></p>
+      <ol>
+        <li>The Department of Inexplicable Loss was established in 2023 and currently has four faculty members, all of whom have experienced partial or complete bicycle theft. This is considered a qualification, not a conflict of interest.</li>
+        <li>The philosophical term for this is "the scope of an obligation." The practical term is "you should have locked the front wheel too, and now you will, forever, for the rest of your life."</li>
+        <li>One subject, upon returning to the rack, attempted to report the theft to a passing cyclist. The cyclist nodded sympathetically, checked that their own front wheel was attached, and pedaled away without comment. This interaction is not discussed further in this paper but the subject thinks about it often.</li>
+        <li>The editorial board notes that a follow-up paper, <em>"Who Takes Just the Saddle?": The Even More Specifically Annoying Cousin of the Present Phenomenon</em>, is in preparation and is expected to be deeply unpleasant to write.</li>
+      </ol>
+    </div>
+
+    <div class="disclaimer">
+      ⚠️ <strong>Parody Disclaimer:</strong> This article is satirical fiction published on StolenBikeClosure.com for entertainment purposes. Brokenheim University, Prof. Vera Sprocket, and the Department of Inexplicable Loss are fictional. All theories, statistics, and subject testimonies are invented. If your wheel was actually stolen, we are genuinely sorry. That's a very specific kind of awful.
+    </div>
+
+    <div class="final-line">
+      StolenBikeClosure.com &nbsp;·&nbsp; The Review of Post-Rational Loss Experience &nbsp;·&nbsp; Brokenheim University Press
+    </div>
+
+  </div>
+
+</body>
+</html>
