@@ -1,4 +1,17 @@
 {
+  "ui": {
+    "title": "Virtual Séance",
+    "subtitle": "Connect with the spirit of your stolen bicycle...",
+    "idle_title": "The Spirits Are Listening",
+    "idle_body": "Our digital mediums are standing by to channel the remaining spirit of your two-wheeled companion. Press below to attempt a connection.",
+    "channeling_title": "Reaching Beyond…",
+    "channeling_body": "Establishing connection with the spirit realm. Please do not refresh.",
+    "transmission_title": "Transmission Received",
+    "transmission_from": "— from the spirit of",
+    "btn_attempt": "Attempt Connection",
+    "btn_channeling": "Channeling…",
+    "btn_contact_again": "Contact Again"
+  },
   "messages": [
     { "id": 1, "from": "A 2017 Trek FX3", "message": "I am… okay. They oiled my chain. First time in three years. I hate that it feels good." },
     { "id": 2, "from": "A Cannondale SuperSix Evo", "message": "Tell my owner I forgive them for the pothole on Maple Street. I always knew it would end like this. Do not buy carbon again. Learn nothing from this." },

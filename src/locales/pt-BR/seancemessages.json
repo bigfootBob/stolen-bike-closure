@@ -1,4 +1,17 @@
 {
+  "ui": {
+    "title": "Sessão Espírita Virtual",
+    "subtitle": "Conecte-se com o espírito da sua bicicleta roubada...",
+    "idle_title": "Os Espíritos Estão Ouvindo",
+    "idle_body": "Nossos médiuns digitais estão prontos para canalizar o espírito restante do seu companheiro de duas rodas. Pressione abaixo para tentar uma conexão.",
+    "channeling_title": "Alcançando o Além…",
+    "channeling_body": "Estabelecendo conexão com o reino espiritual. Por favor, não atualize a página.",
+    "transmission_title": "Transmissão Recebida",
+    "transmission_from": "— do espírito de",
+    "btn_attempt": "Tentar Conexão",
+    "btn_channeling": "Canalizando…",
+    "btn_contact_again": "Contatar Novamente"
+  },
   "messages": [
     { "id": 1, "from": "Uma Trek FX3 2017", "message": "Eu estou… bem. Eles lubrificaram minha corrente. Primeira vez em três anos. Odeio que tenha ficado bom." },
     { "id": 2, "from": "Uma Cannondale SuperSix Evo", "message": "Diga ao meu dono que eu o perdoo pelo buraco na Rua do Ipê. Eu sempre soube que terminaria assim. Não compre carbono de novo. Não aprenda nada com isso." },

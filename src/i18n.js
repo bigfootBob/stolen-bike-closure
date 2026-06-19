@@ -65,6 +65,10 @@ import enAUBuildAStory from './locales/en-AU/buildastory.json';
 import nlNLBuildAStory from './locales/nl-NL/buildastory.json';
 import deDEBuildAStory from './locales/de-DE/buildastory.json';
 
+i18n.on('languageChanged', (lng) => {
+  document.documentElement.lang = lng;
+});
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)

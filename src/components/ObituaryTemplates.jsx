@@ -335,7 +335,6 @@ const ObituaryTemplates = () => {
                                     alignItems: 'center',
                                     gap: '1rem',
                                     padding: '1rem',
-                                    outline: 'none',
                                     marginTop: '1rem'
                                 }}
                             >

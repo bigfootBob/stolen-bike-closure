@@ -12,6 +12,7 @@ const Layout = ({ children }) => {
 
     return (
         <div className="layout">
+            <a href="#main-content" className="skip-link">{t('nav.skip_to_content')}</a>
             <nav className="navbar">
                 <div className="navbar__container">
                     <Link to="/" className="navbar__logo">
@@ -29,6 +30,7 @@ const Layout = ({ children }) => {
             </nav>
 
             <motion.main
+                id="main-content"
                 className="main-content"
                 initial={shouldReduceMotion ? false : { y: 20 }}
                 animate={shouldReduceMotion ? false : { y: 0 }}
@@ -91,7 +93,9 @@ const LanguageSwitcher = () => {
                             role="option"
                             aria-selected={lang.code === i18n.language}
                             className={`lang-switcher__option${lang.code === i18n.language ? ' lang-switcher__option--active' : ''}`}
+                            tabIndex={0}
                             onClick={() => { i18n.changeLanguage(lang.code); setOpen(false); }}
+                            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); i18n.changeLanguage(lang.code); setOpen(false); } }}
                         >
                             <span className="lang-switcher__flag">{lang.flag}</span>
                             {lang.label}

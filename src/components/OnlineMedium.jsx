@@ -27,8 +27,8 @@ const OnlineMedium = () => {
     return (
         <div className="page">
             <div className="page__header">
-                <h2>Virtual Séance</h2>
-                <p>Connect with the spirit of your stolen bicycle...</p>
+                <h2>{t('ui.title')}</h2>
+                <p>{t('ui.subtitle')}</p>
             </div>
 
             <motion.div
@@ -58,9 +58,9 @@ const OnlineMedium = () => {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                         >
-                            <h3 style={{ marginBottom: '1rem', color: 'var(--color-accent)' }}>The Spirits Are Listening</h3>
+                            <h3 style={{ marginBottom: '1rem', color: 'var(--color-accent)' }}>{t('ui.idle_title')}</h3>
                             <p style={{ color: 'var(--color-text-muted)' }}>
-                                Our digital mediums are standing by to channel the remaining spirit of your two-wheeled companion. Press below to attempt a connection.
+                                {t('ui.idle_body')}
                             </p>
                         </motion.div>
                     )}
@@ -72,8 +72,8 @@ const OnlineMedium = () => {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                         >
-                            <h3 style={{ marginBottom: '1rem', color: 'var(--color-accent)' }}>Reaching Beyond…</h3>
-                            <p style={{ color: 'var(--color-text-muted)' }}>Establishing connection with the spirit realm. Please do not refresh.</p>
+                            <h3 style={{ marginBottom: '1rem', color: 'var(--color-accent)' }}>{t('ui.channeling_title')}</h3>
+                            <p style={{ color: 'var(--color-text-muted)' }}>{t('ui.channeling_body')}</p>
                         </motion.div>
                     )}
 
@@ -84,9 +84,9 @@ const OnlineMedium = () => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0 }}
                         >
-                            <h3 style={{ marginBottom: '0.5rem', color: 'var(--color-accent)' }}>Transmission Received</h3>
+                            <h3 style={{ marginBottom: '0.5rem', color: 'var(--color-accent)' }}>{t('ui.transmission_title')}</h3>
                             <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>
-                                — from the spirit of <em>{transmission.from}</em>
+                                {t('ui.transmission_from')} <em>{transmission.from}</em>
                             </p>
                             <p style={{
                                 color: 'var(--color-text-main)',
@@ -109,7 +109,7 @@ const OnlineMedium = () => {
                     onClick={handleAttemptConnection}
                     disabled={isChanneling}
                 >
-                    {isChanneling ? 'Channeling…' : transmission ? 'Contact Again' : 'Attempt Connection'}
+                    {isChanneling ? t('ui.btn_channeling') : transmission ? t('ui.btn_contact_again') : t('ui.btn_attempt')}
                 </button>
             </motion.div>
         </div>

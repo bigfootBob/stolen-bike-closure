@@ -4,7 +4,8 @@
     "grief_counseling": "悲伤辅导",
     "karma_chronicles": "因果编年史",
     "recovery_merch": "疗愈周边",
-    "select_language": "选择语言"
+    "select_language": "选择语言",
+    "skip_to_content": "跳到主要内容"
   },
   "footer": {
     "copyright": "© {{year}} Stolen Bike Closure. 在自行车失踪后寻找平静。",

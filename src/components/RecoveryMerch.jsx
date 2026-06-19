@@ -32,7 +32,7 @@ const RecoveryMerch = () => {
         };
 
         fetchProducts();
-    }, []);
+    }, [t]);
 
     const stripHtml = (html) => {
         if (!html) return '';

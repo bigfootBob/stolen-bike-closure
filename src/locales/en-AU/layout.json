@@ -4,7 +4,8 @@
     "grief_counseling": "Grief Counselling",
     "karma_chronicles": "Karma Chronicles",
     "recovery_merch": "Recovery Merch",
-    "select_language": "Select language"
+    "select_language": "Select language",
+    "skip_to_content": "Skip to main content"
   },
   "footer": {
     "copyright": "© {{year}} Stolen Bike Closure. Finding peace after a bike's disappearance.",

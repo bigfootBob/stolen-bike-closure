@@ -4,7 +4,8 @@
     "grief_counseling": "Trauerbegleitung",
     "karma_chronicles": "Karma-Chroniken",
     "recovery_merch": "Genesungs-Merchandise",
-    "select_language": "Sprache auswählen"
+    "select_language": "Sprache auswählen",
+    "skip_to_content": "Zum Hauptinhalt springen"
   },
   "footer": {
     "copyright": "© {{year}} Stolen Bike Closure. Frieden finden nach dem Verschwinden eines Fahrrads.",

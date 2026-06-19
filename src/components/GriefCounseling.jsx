@@ -58,7 +58,7 @@ const GriefCounseling = () => {
             }, isExpanded ? 30000 : 6000);
         }
         return () => clearInterval(timer);
-    }, [isPaused, isExpanded, currentSetIndex]);
+    }, [isPaused, isExpanded, currentSetIndex, stagesData]);
 
     const currentStages = stagesData[currentSetIndex];
 
@@ -123,8 +123,9 @@ const GriefCounseling = () => {
                 </div>
             </div>
 
+            <div aria-live="polite" aria-atomic="true">
             <AnimatePresence mode="wait">
-                <motion.ul 
+                <motion.ul
                     key={isExpanded ? `expanded-${currentSetIndex}` : `single-${currentSetIndex}-${currentStageIndex}`}
                     className="counseling-list"
                     variants={containerVariants}
@@ -152,7 +153,8 @@ const GriefCounseling = () => {
                     )}
                 </motion.ul>
             </AnimatePresence>
- 
+            </div>
+
             <BannerAdvert />
         </div>
     );

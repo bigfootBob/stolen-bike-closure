@@ -1,4 +1,17 @@
 {
+  "ui": {
+    "title": "Virtuelles Séance",
+    "subtitle": "Verbinde dich mit dem Geist deines gestohlenen Fahrrads...",
+    "idle_title": "Die Geister hören zu",
+    "idle_body": "Unsere digitalen Medien stehen bereit, um den verbleibenden Geist deines zweirädrigen Begleiters zu kanalisieren. Drücke unten, um eine Verbindung herzustellen.",
+    "channeling_title": "Jenseits der Schwelle…",
+    "channeling_body": "Verbindung mit dem Geisterreich wird hergestellt. Bitte nicht aktualisieren.",
+    "transmission_title": "Übertragung empfangen",
+    "transmission_from": "— vom Geist von",
+    "btn_attempt": "Verbindung herstellen",
+    "btn_channeling": "Kanalisierung…",
+    "btn_contact_again": "Erneut Kontakt aufnehmen"
+  },
   "messages": [
     { "id": 1, "from": "Ein 2017er Trek FX3", "message": "Ich bin… okay. Sie haben meine Kette geölt. Das erste Mal seit drei Jahren. Ich hasse es, dass es sich gut anfühlt." },
     { "id": 2, "from": "Ein Cannondale SuperSix Evo", "message": "Sag meinem Besitzer, ich vergebe ihm wegen des Schlaglochs in der Ahornstraße. Ich wusste immer, dass es so enden würde. Kauf nie wieder Carbon. Lern nichts daraus." },

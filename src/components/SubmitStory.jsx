@@ -13,8 +13,12 @@ const SubmitStory = () => {
     return (
         <div className="page">
             <div className="page__header">
-                <h2>COMING SOON!Submit Your Own Story</h2>
+                <h2>Submit Your Own Story</h2>
                 <p>Share your tale of karmic justice with the world.</p>
+                <div className="coming-soon-banner">
+                    <h3>Coming Soon</h3>
+                    <p>This feature is currently under development.</p>
+                </div>
             </div>
             <motion.div 
                 className="karma-card"
@@ -30,9 +34,9 @@ const SubmitStory = () => {
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                         <label htmlFor="karmaLevel" style={{ color: 'var(--color-primary)', fontWeight: 'bold' }}>Karma Level</label>
                         <select id="karmaLevel" style={{ padding: '0.8rem', borderRadius: '4px', border: '1px solid var(--color-text-muted)', background: 'transparent', color: 'var(--color-text-main)' }}>
-                            <option>Immediate</option>
-                            <option>Psychological</option>
-                            <option>Slow Burn</option>
+                            <option value="immediate">Immediate</option>
+                            <option value="psychological">Psychological</option>
+                            <option value="slow-burn">Slow Burn</option>
                         </select>
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>

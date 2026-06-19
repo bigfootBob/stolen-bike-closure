@@ -1,4 +1,17 @@
 {
+  "ui": {
+    "title": "Virtuele Seance",
+    "subtitle": "Maak verbinding met de geest van je gestolen fiets...",
+    "idle_title": "De Geesten Luisteren",
+    "idle_body": "Onze digitale mediums staan klaar om de resterende geest van jouw tweewielige metgezel te kanaliseren. Druk hieronder om verbinding te maken.",
+    "channeling_title": "Reiken voorbij het gordijn…",
+    "channeling_body": "Verbinding maken met het geestenrijk. Ververs de pagina niet.",
+    "transmission_title": "Transmissie Ontvangen",
+    "transmission_from": "— van de geest van",
+    "btn_attempt": "Verbinding Proberen",
+    "btn_channeling": "Kanaliseren…",
+    "btn_contact_again": "Opnieuw Contact"
+  },
   "messages": [
     { "id": 1, "from": "Een 2017 Trek FX3", "message": "Ik ben… oké. Ze hebben mijn ketting gesmeerd. Voor het eerst in drie jaar. Ik haat dat het lekker aanvoelt." },
     { "id": 2, "from": "Een Cannondale SuperSix Evo", "message": "Zeg mijn eigenaar dat ik ze vergeet voor het gat in de Esdoornstraat. Ik wist altijd dat het zo zou eindigen. Koop geen carbon meer. Leer niets van dit alles." },

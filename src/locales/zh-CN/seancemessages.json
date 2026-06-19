@@ -1,4 +1,17 @@
 {
+  "ui": {
+    "title": "虚拟降灵会",
+    "subtitle": "与您被盗自行车的灵魂建立联系...",
+    "idle_title": "灵魂正在倾听",
+    "idle_body": "我们的数字灵媒随时准备引导您两轮伙伴的残留灵魂。点击下方尝试建立联系。",
+    "channeling_title": "正在穿越…",
+    "channeling_body": "正在与灵界建立连接，请勿刷新页面。",
+    "transmission_title": "已收到传输",
+    "transmission_from": "——来自",
+    "btn_attempt": "尝试连接",
+    "btn_channeling": "引导中…",
+    "btn_contact_again": "再次联系"
+  },
   "messages": [
     { "id": 1, "from": "一辆2017年Trek FX3", "message": "我……还好。他们给我的链条上了油。三年来第一次。我讨厌这种感觉很好的感觉。" },
     { "id": 2, "from": "一辆Cannondale SuperSix Evo", "message": "转告我的主人，我原谅他们枫树街上那个坑洞的事。我早就知道会以这种方式结束。不要再买碳纤维车了。从这件事上什么都不要学。" },

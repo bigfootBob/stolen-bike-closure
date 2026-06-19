@@ -4,7 +4,8 @@
     "grief_counseling": "Rouwbegeleiding",
     "karma_chronicles": "Karma Kronieken",
     "recovery_merch": "Herstel Merchandise",
-    "select_language": "Taal selecteren"
+    "select_language": "Taal selecteren",
+    "skip_to_content": "Naar hoofdinhoud springen"
   },
   "footer": {
     "copyright": "© {{year}} Stolen Bike Closure. Vrede vinden na het verdwijnen van je fiets.",

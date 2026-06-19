@@ -75,8 +75,9 @@ const BuildStory = () => {
                         <div className="build-story__fields">
                             {section.fieldKeys.map(fieldKey => (
                                 <div key={fieldKey} className="build-story__field">
-                                    <label className="build-story__label">{t(`fields.${fieldKey}.label`)}</label>
+                                    <label htmlFor={fieldKey} className="build-story__label">{t(`fields.${fieldKey}.label`)}</label>
                                     <input
+                                        id={fieldKey}
                                         className={`build-story__input${showErrors && !values[fieldKey].trim() ? ' build-story__input--error' : ''}`}
                                         type="text"
                                         placeholder={t(`fields.${fieldKey}.placeholder`)}
